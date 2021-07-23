@@ -70,6 +70,10 @@ a:hover {
     padding: 20px;
 }
 
+.m-5-0 {
+    margin: 5px 0;
+}
+
 .m-20 {
     margin: 20px;
 }
@@ -94,20 +98,53 @@ a:hover {
     background: #e7aaaa82;
 }
 
-p:hover {
-    color: rgb(205, 50, 50);
-    text-decoration: underline;
+.bg-5 {
+    background: rgb(165 187 188 / 44%);
+}
+
+.bg-6 {
+    background: rgb(255 145 175 / 44%);
+}
+
+.bg-7 {
+    background: #e57de1a8;
+}
+
+.bg-8 {
+    background: #2ec68982;
+}
+
+.bg-9 {
+    background: #d0ff1f8a;
+}
+
+.bg-10 {
+    background: #41f1509e;
 }
 
 h2 {
     font-size: 20px;
 }
 
+h4 {
+    text-align: center;
+    font-size: 16px;
+}
+
 p {
     padding: 3px 0;
-    transition: all 0.1s ease-in-out;
-    -webkit-transition: all 0.1s ease-in-out;
-    -moz-transition: all 0.1s ease-in-out;
-    -ms-transition: all 0.1s ease-in-out;
-    -o-transition: all 0.1s ease-in-out;
+}
+
+.faculty {
+    position: relative;
+    top: 0;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.faculty:hover {
+    top: -10px
 }
