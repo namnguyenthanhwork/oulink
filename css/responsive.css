@@ -27,7 +27,7 @@
 
 /* tablet */
 @media (max-width:991px) {
-    .tac {
+    h2 {
         font-size: 18px;
     }
 }
@@ -36,6 +36,15 @@
 @media (max-width:767px) {
     body {
         font-size: 15px;
+        padding: 0 20px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    h4 {
+        font-size: 14px;
     }
 }
 
