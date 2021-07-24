@@ -53,6 +53,25 @@ body {
     background-color: var(--bg-black-50);
 }
 
+/* override custom css variable for dark theme */
+body.dark {
+    --bg-black-900: #fff;
+    --bg-black-100: #353535;
+    --bg-black-50: #2b2c2f;
+    --bg-opacity: rgba(43, 44, 47, 0.5);
+
+    --link: #052339;
+
+    --text-black-900: #fff;
+    --text-black-700: #999;
+    --text-black-600: #bbb;
+
+    --outer-shadow: 3px 3px 3px #222327, -3px -3px 3px #363636;
+    --outer-shadow-0: 0 0 0 #222327, 0 0 0 #363636;
+    --inner-shadow: inset 3px 3px 3px #222327, inset -3px -3px 3px #363636;
+    --inner-shadow-0: inset 0 0 0 #222327, inset 0 0 0 #363636;
+}
+
 body.hidden-scrolling {
     overflow-y: hidden;
 }
@@ -62,11 +81,11 @@ ul {
 }
 
 a {
-    display: inline-block;
+    display: inline;
 
     color: var(--link);
     text-decoration: none;
-    padding: 0 10px;
+    padding: 0 5px;
     word-break: break-all;
 
     transition: all 0.3s ease-in-out;
@@ -285,9 +304,9 @@ p {
     top: 0;
     left: 0;
     z-index: 99;
-color:#6b6b6b;
+    color: #6b6b6b;
     width: 100%;
-    padding: 15px 15px 0;
+    padding: 15px 15px 10px;
 
     background: var(--bg-black-50);
 }
@@ -302,7 +321,7 @@ color:#6b6b6b;
 }
 
 .header .logo img.active {
-    display: block;
+    display: unset;
 }
 
 .header .hamburger-btn {
@@ -312,6 +331,7 @@ color:#6b6b6b;
 
     width: 40px;
     height: 40px;
+    margin-right: 10px;
 
     cursor: pointer;
 
@@ -533,6 +553,7 @@ color:#6b6b6b;
     -o-transform: translateY(-50%) rotate(-90deg);
 }
 
+
 /* notice */
 .notice {
     margin: 10px 0 20px;
@@ -558,4 +579,14 @@ color:#6b6b6b;
 .faculty:hover,
 .post:hover {
     top: -10px
+}
+
+/* post group */
+.post-item img {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+
+    width: 50px;
+    height: 40px;
 }
