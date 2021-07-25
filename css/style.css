@@ -60,7 +60,7 @@ body.dark {
     --bg-black-50: #2b2c2f;
     --bg-opacity: rgba(43, 44, 47, 0.5);
 
-    --link: #052339;
+    --link: #000;
 
     --text-black-900: #fff;
     --text-black-700: #999;
@@ -122,6 +122,10 @@ section {
 
 .dib {
     display: inline-block;
+}
+
+.p-20-0 {
+    padding: 20px 0;
 }
 
 .p-10 {
@@ -616,4 +620,10 @@ p {
 
     width: 50px;
     height: 40px;
+}
+
+/* Footer */
+footer a {
+    color: #ff7700;
+    font-weight: bold;
 }
