@@ -112,6 +112,10 @@ section {
     text-align: center;
 }
 
+.tau {
+    text-align: unset;
+}
+
 .border-radius {
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -136,12 +140,20 @@ section {
     padding: 20px;
 }
 
+.m-0 {
+    margin: 0;
+}
+
 .m-5-0 {
     margin: 5px 0;
 }
 
 .m-20 {
     margin: 20px;
+}
+
+.mb-5 {
+    margin-bottom: 5px;
 }
 
 .mb-10 {
@@ -588,6 +600,11 @@ p {
 /* notice */
 .notice {
     margin: 10px 0 20px;
+}
+
+/* Qna */
+.qna {
+    margin-left: 5px;
 }
 
 /* faculty */
