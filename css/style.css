@@ -639,6 +639,28 @@ p {
     height: 40px;
 }
 
+.date-post {
+    position: relative;
+    display: inline-block;
+}
+
+.date-post::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+   
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(319deg, #d63230 0%, #f39237 37%, #97cc04 100%);
+   
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
 /* Footer */
 footer a {
     color: #ff7700;
