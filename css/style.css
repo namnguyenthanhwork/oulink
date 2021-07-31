@@ -609,12 +609,14 @@ p {
 
 /* faculty */
 .faculty-item,
-.post-item {
+.post-item,
+.club-item {
     display: flex !important;
 }
 
 .faculty,
-.post {
+.post,
+.club {
     position: relative;
     top: 0;
     transition: all 0.3s ease;
@@ -625,7 +627,8 @@ p {
 }
 
 .faculty:hover,
-.post:hover {
+.post:hover,
+.club:hover {
     top: -10px
 }
 
@@ -649,11 +652,11 @@ p {
     position: absolute;
     bottom: 0;
     left: 0;
-   
+
     width: 100%;
     height: 3px;
     background: linear-gradient(319deg, #d63230 0%, #f39237 37%, #97cc04 100%);
-   
+
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
