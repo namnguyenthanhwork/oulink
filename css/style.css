@@ -77,7 +77,7 @@ body.hidden-scrolling {
 }
 
 ul {
-    margin-left: 30px;
+    margin-left: 15px;
 }
 
 a {
@@ -631,6 +631,10 @@ p {
 .post:hover,
 .club:hover {
     top: -10px
+}
+
+.faculty ul {
+    margin-left: 30px;
 }
 
 /* post group */
