@@ -80,6 +80,10 @@ ul {
     margin-left: 15px;
 }
 
+li {
+    position: relative;
+}
+
 a {
     display: inline;
 
@@ -600,6 +604,15 @@ p {
 /* notice */
 .notice {
     margin: 10px 0 20px;
+}
+
+ul>li>img {
+    position: absolute;
+    top: 0;
+    left: -70px;
+
+    width: 50px;
+    height: 40px;
 }
 
 /* Qna */
