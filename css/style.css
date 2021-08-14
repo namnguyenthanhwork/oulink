@@ -60,9 +60,9 @@ body.dark {
     --bg-black-50: #2b2c2f;
     --bg-opacity: rgba(43, 44, 47, 0.5);
 
-    --link: #000;
+    --link: #ababab;
 
-    --text-black-900: #fff;
+    --text-black-900: rgb(220 220 220);
     --text-black-700: #999;
     --text-black-600: #bbb;
 
@@ -70,6 +70,27 @@ body.dark {
     --outer-shadow-0: 0 0 0 #222327, 0 0 0 #363636;
     --inner-shadow: inset 3px 3px 3px #222327, inset -3px -3px 3px #363636;
     --inner-shadow-0: inset 0 0 0 #222327, inset 0 0 0 #363636;
+}
+
+body.dark .bg-1,
+body.dark .bg-2,
+body.dark .bg-3,
+body.dark .bg-4,
+body.dark .bg-5,
+body.dark .bg-6,
+body.dark .bg-7,
+body.dark .bg-8,
+body.dark .bg-9,
+body.dark .bg-10 {
+    background: #0000003d !important;
+}
+
+body.dark h2 {
+    color: #ff733a;
+}
+
+body.dark h4 {
+    color: #6492ff;
 }
 
 body.hidden-scrolling {
@@ -623,13 +644,15 @@ ul>li>img {
 /* faculty */
 .faculty-item,
 .post-item,
-.club-item {
+.club-item,
+.system-item {
     display: flex !important;
 }
 
 .faculty,
 .post,
-.club {
+.club,
+.system {
     position: relative;
     top: 0;
     width: 100%;
@@ -642,7 +665,8 @@ ul>li>img {
 
 .faculty:hover,
 .post:hover,
-.club:hover {
+.club:hover,
+.system:hover {
     top: -10px
 }
 
@@ -680,6 +704,11 @@ ul>li>img {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+}
+
+/* system */
+.desc {
+    color: #ff7700;
 }
 
 /* Footer */
