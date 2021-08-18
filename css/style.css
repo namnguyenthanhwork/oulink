@@ -716,3 +716,9 @@ footer a {
     color: #ff7700;
     font-weight: bold;
 }
+
+iframe {
+    margin: auto;
+    display: flex;
+    width: 70% !important;
+}
