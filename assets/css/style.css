@@ -601,7 +601,7 @@ p {
 
 .sticky .navbar-nav .nav-item.active>a,
 .sticky .navbar-nav .nav-item:hover>a {
-  color: #0056b2;
+  color: #ea5656;
 }
 
 /*===== HEADER HERO =====*/
@@ -1058,7 +1058,7 @@ p {
 }
 
 .single-blog .blog-content {
-  padding-top: 25px;
+  padding-top: 5px;
 }
 
 .single-blog .blog-content .meta li {
@@ -1252,7 +1252,8 @@ p {
 
 .copyright-content a {
   font-size: 16px;
-  color: #fff;
+  color: #2cffd0;
+  font-weight: bold;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;

@@ -106,7 +106,7 @@ $(function () {
     if (document.getElementById("particles-1")) particlesJS("particles-1", {
         "particles": {
             "number": {
-                "value": 40,
+                "value": 90,
                 "density": {
                     "enable": !0,
                     "value_area": 4000
@@ -159,7 +159,7 @@ $(function () {
             },
             "move": {
                 "enable": !0,
-                "speed": 1,
+                "speed": 2,
                 "direction": "top",
                 "random": !0,
                 "straight": !1,
@@ -217,7 +217,7 @@ $(function () {
     if (document.getElementById("particles-2")) particlesJS("particles-2", {
         "particles": {
             "number": {
-                "value": 40,
+                "value": 90,
                 "density": {
                     "enable": !0,
                     "value_area": 4000
@@ -270,7 +270,7 @@ $(function () {
             },
             "move": {
                 "enable": !0,
-                "speed": 1,
+                "speed": 2,
                 "direction": "top",
                 "random": !0,
                 "straight": !1,
