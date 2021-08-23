@@ -200,7 +200,7 @@ p {
 }
 
 .section-title .title {
-  font-size: 32px;
+  font-size: 25px;
   padding-top: 10px;
 }
 
@@ -772,6 +772,7 @@ p {
 .single-services .services-content .services-title span {
   font-weight: normal;
   display: block;
+  font-size: 15px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
