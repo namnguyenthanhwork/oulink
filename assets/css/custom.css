@@ -1,0 +1,45 @@
+.section-content {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.section-content a {
+    word-break: break-all;
+}
+
+.fix-word {
+    word-break: break-all;
+}
+
+.btn-post {
+    display: block;
+    width: 160px;
+    margin: 20px auto 0;
+}
+
+.faculty ul li,
+.club ul li {
+    list-style-type: disc;
+    list-style-position: inside;
+    margin-left: 20px;
+}
+
+.faculty .blog-content a,
+.club .blog-content a {
+    word-break: break-all;
+    display: unset;
+}
+
+.faculty h4,
+.club h4 {
+    font-size: 18px;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+
+    .faculty h4,
+    .club h4 {
+        font-size: 16px;
+    }
+}
