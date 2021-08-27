@@ -23,9 +23,9 @@ $(function () {
 
 
     /*-------------------- Alert -------------------------*/
-    $('#eng').on('click', function () {
-        swal("Lỗi!", "Tính năng chưa được cập nhật", "error");
-    });
+    // $('#eng').on('click', function () {
+    //     swal("Lỗi!", "Tính năng chưa được cập nhật", "error");
+    // });
 
 
     //===== close navbar-collapse when a  clicked
