@@ -36,8 +36,9 @@
     text-align: center;
 }
 
-.header-hero-right {
-    padding: 0 0 300px 0;
+
+.bg_cover-fix {
+    padding: 0 0 200px 0;
 }
 
 .lottie-banner-right {
@@ -69,11 +70,8 @@
         height: 500px !important;
     }
 
-
-
     .lottie-banner-right {
         padding: unset;
-
     }
 }
 
@@ -83,7 +81,7 @@
         height: 450px !important;
     }
 
-    .header-hero-right {
-        padding: 0 0 400px 0;
+    .bg_cover-fix {
+        padding: 0 0 300px 0;
     }
 }
