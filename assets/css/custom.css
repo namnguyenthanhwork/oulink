@@ -46,6 +46,15 @@
     margin: 0 auto;
 }
 
+#group,
+#faculty {
+    background-image: url(../images/bg/section_bg1.png.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 100px 0;
+}
+
 @media (max-width: 767px) {
 
     .faculty h4,
@@ -60,6 +69,11 @@
 
     .lottie-banner-right {
         padding: unset;
+    }
+
+    #group,
+    #faculty {
+        padding: 50px 0;
     }
 
 }

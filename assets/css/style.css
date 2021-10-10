@@ -3,6 +3,7 @@
 ===========================*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,700|Lato:300,400,700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
 body {
   font-family: "Lato", sans-serif;
@@ -1039,6 +1040,7 @@ p {
   top: 0;
   padding: 20px;
   border: 2px solid #FE7E71;
+  background: #fff;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
