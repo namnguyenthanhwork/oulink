@@ -99,3 +99,9 @@
         padding: 0 0 300px 0;
     }
 }
+
+@media (max-width:575px) {
+    .df {
+        width: 90%;
+    }
+}
