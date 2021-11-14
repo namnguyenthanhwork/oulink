@@ -301,83 +301,123 @@ let post = [{
         title: 'Góc nhìn về đại học Mở từ 1 sv năm nhất.'
     },
     {
-        author: '',
-        image: 'assets/images/postGr/post-13.jpg',
-        link: '',
-        time_delay: '0.2s',
-        time: '05/10/2021',
-        title: ''
+        author: 'Thành Nam',
+        image: 'assets/images/postGr/post-4.jpg',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1268234536926485/',
+        time_delay: '0.5s',
+        time: '23/06/2021',
+        title: 'Review cơ sở 371 Nguyễn Kiệm.'
     },
     {
-        author: '',
-        image: 'assets/images/postGr/post-13.jpg',
-        link: '',
-        time_delay: '0.2s',
-        time: '05/10/2021',
-        title: ''
+        author: 'Diệu Nhân',
+        image: 'assets/images/postGr/post-5.jpg',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1268858743530731/',
+        time_delay: '0.8s',
+        time: '24/06/2021',
+        title: 'Ngôn ngữ Anh năm nhất cần chuẩn bị gì?'
     },
     {
-        author: '',
-        image: 'assets/images/postGr/post-13.jpg',
-        link: '',
+        author: 'Thành Nam',
+        image: 'assets/images/postGr/post-6.jpg',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1285563878526884/',
         time_delay: '0.2s',
-        time: '05/10/2021',
-        title: ''
+        time: '10/07/2021',
+        title: 'Hướng dẫn đăng ký nhập học (Tham khảo)'
     },
     {
-        author: '',
-        image: 'assets/images/postGr/post-13.jpg',
-        link: '',
-        time_delay: '0.2s',
-        time: '05/10/2021',
-        title: ''
+        author: 'Đình Phương',
+        image: 'assets/images/postGr/post-7.jpg',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1292592317824040/',
+        time_delay: '0.5s',
+        time: '30/07/2021',
+        title: 'Review cơ sở khoa Quản Trị Kinh Doanh'
     },
     {
-        author: '',
-        image: 'assets/images/postGr/post-13.jpg',
-        link: '',
-        time_delay: '0.2s',
-        time: '05/10/2021',
-        title: ''
+        author: 'Trần ĐạtK',
+        image: 'assets/images/postGr/post-8.png',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1080016299081644/',
+        time_delay: '0.8s',
+        time: '27/09/2020',
+        title: 'Review kiểm tra anh văn đầu vào.'
     },
     {
-        author: '',
-        image: 'assets/images/postGr/post-13.jpg',
-        link: '',
+        author: 'Thành Nam',
+        image: 'assets/images/postGr/post-10.jpg',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1284282711988334/',
         time_delay: '0.2s',
-        time: '05/10/2021',
-        title: ''
+        time: '18/07/2021',
+        title: 'Hướng dẫn chụp ảnh 3x4 upload web.'
     },
     {
-        author: '',
-        image: 'assets/images/postGr/post-13.jpg',
-        link: '',
-        time_delay: '0.2s',
-        time: '05/10/2021',
-        title: ''
+        author: 'Đình Phương',
+        image: 'assets/images/postGr/post-11.jpg',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1283885785361360/',
+        time_delay: '0.5s',
+        time: '17/07/2021',
+        title: 'Xác nhận nhập học là gì ?'
     },
     {
-        author: '',
-        image: 'assets/images/postGr/post-13.jpg',
-        link: '',
-        time_delay: '0.2s',
-        time: '05/10/2021',
-        title: ''
+        author: 'Thành Nam',
+        image: 'assets/images/postGr/post-12.jpg',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1269464106803528/',
+        time_delay: '0.8s',
+        time: '25/06/2021',
+        title: 'Đơn xin chỉnh sửa thông tin.'
     },
     {
-        author: '',
+        author: 'Thành Nam',
         image: 'assets/images/postGr/post-13.jpg',
-        link: '',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1263059244110681/',
         time_delay: '0.2s',
-        time: '05/10/2021',
-        title: ''
+        time: '16/06/2021',
+        title: '1 số câu hỏi thường gặp (QnA).'
     },
     {
-        author: '',
-        image: 'assets/images/postGr/post-13.jpg',
-        link: '',
+        author: 'Đình Phương',
+        image: 'assets/images/postGr/post-14.jpg',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1262810120802260/',
+        time_delay: '0.5s',
+        time: '15/06/2021',
+        title: 'Tuyến xe buýt và các địa điểm liên quan.'
+    },
+    {
+        author: 'Thành Nam',
+        image: 'assets/images/postGr/post-15.jpg',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1233421343741138/',
+        time_delay: '0.8s',
+        time: '01/05/2021',
+        title: 'Phương thức xét tuyển thi THPTQG 2021.'
+    },
+    {
+        author: 'Thành Nam',
+        image: 'assets/images/postGr/post-16.jpg',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1213472462402693/',
         time_delay: '0.2s',
-        time: '05/10/2021',
-        title: ''
+        time: '31/03/2021<',
+        title: 'Điểm chuẩn học bạ, thi thptqg từng năm, học phí(2021)....'
+    },
+    {
+        author: 'Thành Nam',
+        image: 'assets/images/postGr/post-17.jpg',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1208242736258999/',
+        time_delay: '0.5s',
+        time: '23/03/2021',
+        title: 'Phương thức xét tuyển bằng học bạ.'
+    },
+    {
+        author: 'Thành Nam',
+        image: 'assets/images/postGr/post-1.jpg',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1191871581229448/',
+        time_delay: '0.8s',
+        time: '27/02/2021',
+        title: 'Review quân sự.'
+    },
+    {
+        author: 'NT Diễm',
+        image: 'assets/images/postGr/post-9.jpg',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1078602749222999/',
+        time_delay: '0.2s',
+        time: '25/09/2020',
+        title: 'Mẹo thuê phòng trọ.'
     }
 ]

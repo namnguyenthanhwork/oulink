@@ -71,11 +71,15 @@
         padding: unset;
     }
 
+    .lottie-ts-right {
+        width: 300px !important;
+        height: 300px !important;
+    }
+
     #group,
     #faculty {
         padding: 50px 0;
     }
-
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -86,6 +90,11 @@
 
     .lottie-banner-right {
         padding: unset;
+    }
+
+    .lottie-ts-right {
+        width: 300px !important;
+        height: 300px !important;
     }
 }
 
