@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:url" content="" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Sinh viên Đại học Mở Tp>.HCM" />
+    <meta property="og:title" content="Sinh viên Đại học Mở Tp.HCM" />
     <meta property="og:description" content="Page sinh viên Đại học Mở Tp.HCM" />
     <meta property="og:image"
         content="https://thituyensinh.ican.vn/wp-content/uploads/2020/12/truong-dai-hoc-mo-tphcm-tuyen-dung-giang-vien-trinh-do-tien-si-2019-docx-1572607376073.jpeg" />
@@ -425,7 +425,7 @@
                     </div>
                 </div>
                 <div class="row justify-content-around">
-                    <div class="col-lg-6 col-md-5 col-sm-12">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
                         <div class="footer-link d-flex mt-20">
                             <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
                                 <div class="footer-title">
@@ -439,17 +439,56 @@
                             </div> <!-- footer wrapper -->
                         </div> <!-- footer link -->
                     </div>
-                    <div class="col-lg-6 col-md-5 col-sm-12">
+
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="footer-link d-flex mt-20">
+                            <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
+                                <div class="footer-title">
+                                    <h4 class="title">Liên hệ</h4>
+                                </div>
+                                <ul class="link">
+                                    <li>
+                                        <p>
+                                            Email ban tuyển sinh: <a
+                                                href="mailto:tuyensinh@ou.edu.vn">tuyensinh@ou.edu.vn</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Email phòng quản lý đào tạo: <a
+                                                href="mailto:quanlydaotao@ou.edu.vn">quanlydaotao@ou.edu.vn</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Fanpage trường: <a href="https://www.facebook.com/tuyensinh.ou.edu.vn"
+                                                target="_blank">https://www.facebook.com/tuyensinh.ou.edu.vn</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Sđt hotline:
+                                            <a href="tel:1800585884">1800 5858 84</a> |
+                                            <a href="tel:02839207627">(028).39207627</a> |
+                                            <a href="tel:0839300072">08.39300072</a> |
+                                            <a href="tel:02839207626">028.39207626</a> |
+                                            <a href="tel:02839207639">028.39207639</a>
+                                        </p>
+                                        <p>Thời gian làm việc: <b> từ t2 - t6 (8h - 17h)</b></p>
+                                    </li>
+                                </ul>
+
+                            </div> <!-- footer wrapper -->
+                        </div> <!-- footer link -->
+                    </div>
+
+                    <div class="col-lg-12 col-md-12 col-sm-12">
                         <div class="copyright d-sm-flex mt-20">
-                            <div class="copyright-content wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
+                            <div class="copyright-content wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
                                 <p>
                                     Copyright ©2021 All rights reserved |
                                     <i class="lni lni-heart-filled" style="color: #fe5151"></i> by
                                     <a href="https://www.facebook.com/NguyenThanhNam1601" target="_black">Thành Nam</a>
-                                </p>
-                                <p class="mb-10">Có thể ủng hộ mình ly café qua <a
-                                        href="https://nhantien.momo.vn/thanhnamnguyen" target="_black">MoMo</a>
-                                    <i class="lni lni-heart-filled" style="color: #fe5151"></i>
                                 </p>
                             </div> <!-- copyright content -->
                         </div> <!-- copyright -->
@@ -504,6 +543,48 @@
     <!--====== Main js ======-->
     <script src="assets/js/main.js"></script>
     <script src="assets/lib/cursor/cursor.js"></script>
+
+    <script src="assets/js/post.js"></script>
+    <script>
+        let post_list = document.querySelector('#post');
+
+        renderPost = (post) => {
+            post.forEach(function (e, i) {
+                if (i > 29)
+                    return;
+                else if (i > 14 && i <= 29) {
+                    let prod =
+                        `
+                            <div class="df col-lg-4 col-md-6 col-sm-9">
+                                <div class="single-blog mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="${e.time_delay}">
+                                    <div class="blog-image">
+                                        <img src="${e.image}" alt="blog">       
+                            `
+
+                    if (!e.image_hot == '')
+                        prod += `<img src="${e.image_hot}" alt="new">`
+
+                    prod +=
+                        ` </div>
+                            <div class="blog-content">
+                                <ul class="meta">
+                                    <li><b>Đăng bởi:</b> <a href="#">${e.author}</a></li>
+                                    <li>${e.time}</li>
+                                </ul>
+                                <p class="text">${e.title}</p>
+                                <a class="more" href="${e.link}"
+                                    target="_blank">Xem
+                                    chi tiết<i class="lni-chevron-right"></i></a>
+                            </div>
+                        </div> <!-- single blog -->
+                    </div>
+                    `
+                    post_list.insertAdjacentHTML("beforeend", prod);
+                }
+            })
+        }
+        renderPost(post);
+    </script>
 </body>
 
 </html>
