@@ -103,5 +103,10 @@
 @media (max-width:575px) {
     .df {
         width: 90%;
+        margin: auto;
+    }
+
+    .review-post {
+        height: 400px;
     }
 }

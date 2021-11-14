@@ -77,7 +77,7 @@ renderPost = (post) => {
         }
         let prod =
             `
-            <div class="df col-lg-4 col-md-6 col-sm-9">
+            <div class="df col-lg-4 col-md-6 col-sm-6">
                 <div class="single-blog mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="${e.time_delay}">
                     <div class="blog-image">
                         <img src="${e.image}" alt="blog">       
@@ -105,6 +105,234 @@ renderPost = (post) => {
     })
 }
 renderPost(post);
+
+/* =============== post group utility =============== */
+let postUtil = [{
+        author: 'Thành Nam',
+        image: 'assets/images/postGr/post-16.jpg',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1347522502331021/',
+        time_delay: '0.8s',
+        time: '18/10/2021',
+        title: 'Hướng dẫn sửa lỗi font slide của giảng viên'
+    },
+    {
+        author: 'Thảo Vy Ngo ',
+        image: 'assets/images/postGr/post-15.jpg',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1337789979970940/',
+        time_delay: '0.2s',
+        time: '04/10/2021',
+        title: 'NOTION PERSONAL PRO - XÀI FREE NHỜ CÓ MAIL TRƯỜNG'
+    },
+    {
+        author: 'Thành Nam',
+        image: 'assets/images/postGr/post-14.jpg',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1320830008333604/',
+        time_delay: '0.2s',
+        time: '09/09/2021',
+        title: 'Chatbot ôn luyện tin học và anh văn đầu vào'
+    },
+    {
+        author: 'Thảo Vy Ngo',
+        image: 'assets/images/postGr/post-13.jpg',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1343930692690202/',
+        time_delay: '0.2s',
+        time: '13/10/2021',
+        title: 'CANVA FOR EDUCATION - XÀI FREE NHỜ CÓ MAIL TRƯỜNG'
+    },
+    {
+        author: 'Thành Nam',
+        image: 'assets/images/postGr/post-12.jpg',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1284282711988334/',
+        time_delay: '0.2s',
+        time: '18/07/2021',
+        title: 'Hướng dẫn chụp ảnh 3x4 upload web.'
+    }
+]
+
+let post_util_list = document.querySelector('#group-post-util')
+renderPostUtil = (post) => {
+    post.forEach(function (e, i) {
+        switch (i) {
+            case 0:
+            case 3: {
+                e.time_delay = "0.2s"
+                break
+            }
+            case 1:
+            case 4: {
+                e.time_delay = "0.5s"
+                break
+            }
+            case 2:
+            case 5: {
+                e.time_delay = "0.8s"
+                break
+            }
+        }
+        let prod =
+            `
+        <div class="df col-lg-4 col-md-6 col-sm-6">
+            <div class="single-blog mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="${e.time_delay}">
+                    <div class="blog-image">
+                        <img src="${e.image}" alt="blog">       
+                    </div>
+                <div class="blog-content">
+                    <ul class="meta">
+                        <li><b>Đăng bởi:</b> <a href="#">${e.author}</a></li>
+                        <li>${e.time}</li>
+                    </ul>
+                    <p class="text">${e.title}</p>
+                    <a class="more" href="${e.link}"
+                        target="_blank">Xem
+                        chi tiết<i class="lni-chevron-right"></i></a>
+                </div>
+            </div> <!-- single blog -->
+        </div>
+    `
+        post_util_list.insertAdjacentHTML("beforeend", prod)
+    })
+}
+renderPostUtil(postUtil);
+
+/* =============== post group review =============== */
+let postReview = [{
+        author: 'Diệu Nhân',
+        image: 'assets/images/postGr/post-3.jpg',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1335854933497778/',
+        time_delay: '0.8s',
+        time: '01/10/2021',
+        title: 'MỘT SỐ KINH NGHIỆM ĐẠT HỌC BỔNG KHUYẾN KHÍCH HỌC TẬP'
+    },
+    {
+        author: 'Thành Nam',
+        image: 'assets/images/postGr/post-4.jpg',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1301559593593979/',
+        time_delay: '0.2s',
+        time: '12/08/2021',
+        title: 'Giới thiệu về Hệ thống điểm tích lũy 4 năm đại học.'
+    },
+    {
+        author: 'Thành Nam',
+        image: 'assets/images/postGr/post-1.jpg',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1299457123804226/',
+        time_delay: '0.2s',
+        time: '09/08/2021',
+        title: 'Giới thiệu Hệ thống điểm rèn luyện của trường Đại học Mở'
+    },
+    {
+        author: 'Quang Hà',
+        image: 'assets/images/postGr/post-2.jpg',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1293426214407317/',
+        time_delay: '0.2s',
+        time: '31/07/2021',
+        title: 'Cảm nhận về OU.'
+    },
+    {
+        author: 'Hieu Q.Nguyen',
+        image: 'assets/images/postGr/post-12.jpg',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1263937307356208/',
+        time_delay: '0.2s',
+        time: '17/06/2021',
+        title: 'NGÀNH NGÔN NGỮ ANH TẠI ĐẠI HỌC MỞ TP. HCM'
+    },
+    {
+        author: 'Quang Hà',
+        image: 'assets/images/postGr/post-6.jpg',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1291199234630015/',
+        time_delay: '0.2s',
+        time: '28/07/2021',
+        title: 'Góc nhìn về đại học Mở từ 1 sv năm nhất..'
+    },
+    {
+        author: 'Thành Nam',
+        image: 'assets/images/postGr/post-7.jpg',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1268234536926485/',
+        time_delay: '0.2s',
+        time: '23/06/2021',
+        title: 'Review cơ sở 371 Nguyễn Kiệm'
+    },
+    {
+        author: 'Diệu Nhân',
+        image: 'assets/images/postGr/post-17.jpg',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1268858743530731/',
+        time_delay: '0.2s',
+        time: '24/06/2021',
+        title: 'Ngôn ngữ Anh năm nhất cần chuẩn bị gì?'
+    },
+    {
+        author: 'Trần ĐạtK',
+        image: 'assets/images/postGr/post-16.jpg',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1080016299081644/',
+        time_delay: '0.2s',
+        time: '27/09/2020',
+        title: 'Review kiểm tra anh văn đầu vào.'
+    },
+    {
+        author: 'NT Diễm',
+        image: 'assets/images/postGr/post-15.jpg',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1078602749222999/',
+        time_delay: '0.2s',
+        time: '25/09/2020',
+        title: 'Mẹo thuê phòng trọ.'
+    },
+    {
+        author: 'Thành Nam',
+        image: 'assets/images/postGr/post-14.jpg',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1191871581229448/',
+        time_delay: '0.2s',
+        time: '27/02/2021',
+        title: 'Review quân sự.'
+    }
+]
+
+let post_review_list = document.querySelector('#group-post-review')
+renderPostReview = (post) => {
+    post.forEach(e => {
+        let prod =
+            `
+    <div class="df review-post">
+        <div class="single-blog mt-30 wow fadeIn" data-wow-duration="1s">
+            <div class="blog-image">
+                <img src="${e.image}" alt="blog">       
+            </div>
+        <div class="blog-content">
+            <ul class="meta">
+                <li><b>Đăng bởi:</b> <a href="#">${e.author}</a></li>
+                <li>${e.time}</li>
+            </ul>
+            <p class="text">${e.title}</p>
+            <a class="more" href="${e.link}"
+                target="_blank">Xem
+                chi tiết<i class="lni-chevron-right"></i></a>
+        </div>
+    </div> <!-- single blog -->
+</div>
+`
+        post_review_list.insertAdjacentHTML("beforeend", prod)
+    })
+}
+renderPostReview(postReview);
+
+$('.post-review').owlCarousel({
+    loop: true,
+    margin: 40,
+    autoplay: true,
+    autoHeight: true,
+    nav: false,
+    dots: true,
+    autoplayTimeout: 2000,
+    responsive: {
+        0: {
+            items: 1
+        },
+        575: {
+            items: 2
+        },
+        992: {
+            items: 3
+        }
+    }
+})
 
 /* =============== system =============== */
 let system = [{
@@ -198,7 +426,7 @@ renderSystem = (system) => {
         }
 
         let prod = `
-        <div class="df col-lg-4 col-md-6 col-sm-12">
+        <div class="df col-lg-4 col-md-6 col-sm-6">
             <div class="single-blog mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="${e.time_delay}">
                 <div class="blog-image">
                     <img src="${e.image}" alt="blog">
