@@ -125,6 +125,7 @@ p {
 /*===== All Button Style =====*/
 .main-btn {
   display: inline-block;
+  position: relative;
   font-weight: 500;
   text-align: center;
   white-space: nowrap;
@@ -150,6 +151,39 @@ p {
   background: -o-linear-gradient(left, #33c8c1 0%, #119bd2 50%, #33c8c1 100%);
   background: linear-gradient(to right, #33c8c1 0%, #119bd2 50%, #33c8c1 100%);
   background-size: 200%;
+}
+
+.main-btn::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+  animation: shadow 2s linear infinite;
+  -webkit-animation: shadow 2s linear infinite;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+@keyframes shadow {
+  0% {
+    box-shadow: 0px 0px 0px 0px #33c8c1;
+  }
+
+  100% {
+    box-shadow: 0px 0px 0px 15px #33c8c1;
+    opacity: 0;
+  }
 }
 
 .main-btn:hover {
@@ -703,6 +737,108 @@ p {
 }
 
 /*===========================
+      03.Student css 
+===========================*/
+.ts-student {
+  padding-top: 50px;
+}
+
+.ts-student-box {
+  padding: 40px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 #ddd4d4;
+  margin-bottom: 45px;
+  text-align: center;
+  position: relative;
+  transition: 0.3s;
+}
+
+.ts-student-box:hover {
+  box-shadow: 3px 3px 0 5px rgb(253 150 120 / 40%);
+}
+
+.ts-student-box p {
+  margin-bottom: 0;
+}
+
+.ts-student-title {
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.ts-student-icon {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fd9678;
+  margin: 0 auto 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 0 5px rgb(253 150 120 / 15%);
+}
+
+.ts-student-ico-clr1 {
+  background: #4fcecd;
+  box-shadow: 0 0 0 5px rgb(79 206 205 / 15%);
+}
+
+.ts-student-ico-clr2 {
+  background: #5aa2ec;
+  box-shadow: 0 0 0 5px rgb(90 162 236 / 15%);
+}
+
+.ts-student-ico-clr3 {
+  background: #fbbb1c;
+  box-shadow: 0 0 0 5px rgb(251 187 28 / 15%);
+}
+
+.ts-student-arrow svg {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  transition: 0.3s;
+  fill: #1f2732;
+}
+
+.ts-student-arrow {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px 0 #eee;
+  border: 2px solid rgb(253 150 120 / 67%);
+  background: #fff;
+  border-radius: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: -45px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.ts-student-box:hover .ts-student-arrow {
+  bottom: -25px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.ts-student-arrow:hover {
+  background: #fd9678;
+  box-shadow: 0 0 0 5px rgb(253 150 120 / 15%);
+}
+
+.ts-student-arrow:hover svg {
+  fill: #fff;
+}
+
+/*===========================
       04.SERVICES css 
 ===========================*/
 .single-services {
@@ -1097,7 +1233,8 @@ p {
   color: #6A6972;
 }
 
-.single-blog .blog-content .text {
+.single-blog .blog-content .text,
+.trick .text {
   font-size: 17px;
   font-weight: bold;
   line-height: 25px;
@@ -1111,7 +1248,9 @@ p {
 }
 
 @media (max-width: 767px) {
-  .single-blog .blog-content .text {
+
+  .single-blog .blog-content .text,
+  .trick .text {
     font-size: 20px;
     line-height: 30px;
   }
@@ -1131,6 +1270,73 @@ p {
 .single-blog .blog-content .more i {
   margin-left: 5px;
 }
+
+/* trick */
+.trick {
+  padding: 30px 0;
+}
+
+.trick-data {
+  box-shadow: 0 8px 20px 0 #eee;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
+  top: -50px;
+  left: 0;
+  right: 0;
+  width: 85%;
+  background: #fff;
+  margin: auto;
+  transition: 0.3s;
+}
+
+.trick-box:hover .trick-data {
+  box-shadow: 3px 3px 0 5px rgb(253 150 120 / 55%);
+}
+
+.trick-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.trick-title {
+  font-size: 22px;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.trick-data p {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.trick-more {
+  margin-top: 15px;
+  color: #fd9678;
+  font-weight: 500;
+  display: block;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.trick-more i {
+  padding-left: 3px;
+}
+
+.trick-more:hover {
+  letter-spacing: 1px;
+}
+
+.trick-img img {
+  border-radius: 10px;
+}
+
 
 /*===========================
        11.FOOTER  css 
@@ -1226,7 +1432,8 @@ p {
     font-size: 14px;
   }
 
-  .single-blog .blog-content .text {
+  .single-blog .blog-content .text,
+  .trick .text {
     font-size: 16px;
   }
 
@@ -1342,7 +1549,7 @@ p {
   color: #fff;
   position: fixed;
   right: 33px;
-  bottom: 100px;
+  bottom: 170px;
   width: 40px;
   height: 40px;
   line-height: 40px;
@@ -1352,16 +1559,23 @@ p {
   background: linear-gradient(to right, #361cc1 0%, #2e82ef 100%);
   text-align: center;
   z-index: 99;
-  -webkit-transition: all 0.3s ease-out 0s;
-  -moz-transition: all 0.3s ease-out 0s;
-  -ms-transition: all 0.3s ease-out 0s;
-  -o-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
-  display: none;
+  transition: all 0.4s ease-out;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  visibility: hidden;
+  opacity: 0;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+}
+
+.back-to-top.active {
+  bottom: 100px;
+  visibility: visible;
+  opacity: 1;
 }
 
 .back-to-top:hover {

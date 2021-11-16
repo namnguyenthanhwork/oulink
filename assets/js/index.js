@@ -172,23 +172,21 @@ renderPostUtil = (post) => {
         let prod =
             `
         <div class="df col-lg-4 col-md-6 col-sm-6">
-            <div class="single-blog mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="${e.time_delay}">
-                    <div class="blog-image">
-                        <img src="${e.image}" alt="blog">       
-                    </div>
-                <div class="blog-content">
-                    <ul class="meta">
-                        <li><b>Đăng bởi:</b> <a href="#">${e.author}</a></li>
-                        <li>${e.time}</li>
-                    </ul>
-                    <p class="text">${e.title}</p>
-                    <a class="more" href="${e.link}"
-                        target="_blank">Xem
-                        chi tiết<i class="lni-chevron-right"></i></a>
+            <div class="trick-box wow fadeIn" data-wow-duration="1s" data-wow-delay="${e.time_delay}">
+                <div class="trick-img">
+                    <img src="${e.image}" alt="blog" />
                 </div>
-            </div> <!-- single blog -->
-        </div>
-    `
+                <div class="trick-data">
+                    <div class="trick-head">
+                        <span class="trick-author">${e.author}</span>
+                        <span>${e.time}</span>
+                    </div>           
+                        <p class="text">${e.title}</p>
+                        <a href="${e.link}" class="trick-more" target="_blank">Xem chi tiết <i class="lni lni-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>  
+        `
         post_util_list.insertAdjacentHTML("beforeend", prod)
     })
 }

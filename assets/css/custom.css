@@ -80,6 +80,18 @@
     #faculty {
         padding: 50px 0;
     }
+
+    .hc-blog-img img {
+        width: 100%;
+    }
+
+    .hc-blog {
+        padding-bottom: 10px;
+    }
+
+    .ts-student {
+        padding-bottom: 30px;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -117,5 +129,9 @@
 
     .review-post {
         height: 400px;
+    }
+
+    .hc-blog-data {
+        width: 90%;
     }
 }

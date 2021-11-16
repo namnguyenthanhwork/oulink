@@ -64,10 +64,13 @@ $(function () {
 
     // Show or hide the sticky footer button
     $(window).on('scroll', function (event) {
-        if ($(this).scrollTop() > 600) {
-            $('.back-to-top').fadeIn(200)
+        var scroll1 = $(this).scrollTop();
+        console.log(scroll1)
+        if (scroll1 > 300) {
+            $('.back-to-top').addClass('active');
+
         } else {
-            $('.back-to-top').fadeOut(200)
+            $('.back-to-top').removeClass('active');
         }
     });
 
