@@ -1,3 +1,135 @@
+/* ============ news ======================*/
+let news = [{
+        title: 'Chuyên viên An ninh mạng - Hội Sở Ngân hàng Nam Á (Nam Á Bank)',
+        date: '31/12/2021',
+        link: 'http://vieclam.ou.edu.vn/viec-lam/chuyen-vien-an-ninh-mang-hoi-so-ngan-hang-nam-a-nam-a-bank-.35a895fe.html'
+    },
+    {
+        title: 'Chuyên viên lập trình - Hội Sở Ngân hàng Nam Á (Nam Á Bank)',
+        date: '31/12/2021',
+        link: 'http://vieclam.ou.edu.vn/viec-lam/chuyen-vien-lap-trinh-hoi-so-ngan-hang-nam-a-nam-a-bank-.35a89601.html'
+    },
+    {
+        title: 'Chuyên gia CoreBanking - Hội Sở Ngân hàng Nam Á (Nam Á Bank)',
+        date: '31/12/2021',
+        link: 'http://vieclam.ou.edu.vn/viec-lam/chuyen-gia-corebanking-hoi-so-ngan-hang-nam-a-nam-a-bank-.35a89606.html'
+    },
+    {
+        title: 'Chuyên viên QHKH Cá nhân - Ngân hàng TMCP Phát triển TP Hồ Chí Minh',
+        date: '30/12/2021',
+        link: 'http://vieclam.ou.edu.vn/viec-lam/chuyen-vien-qhkh-ca-nhan-ngan-hang-tmcp-phat-trien-tp-ho-chi-minh.35a87c7b.html'
+    },
+    {
+        title: 'Nhân viên bán thời gian - CÔNG TY TNHH DV TV LIÊN KHÁNH',
+        date: '30/11/2021',
+        link: 'http://vieclam.ou.edu.vn/viec-lam/nhan-vien-ban-thoi-gian-cong-ty-tnhh-dv-tv-lien-khanh.35a89779.html'
+    },
+    {
+        title: 'KẾ TOÁN VIÊN - CÔNG TY TNHH DV TV LIÊN KHÁNH',
+        date: '30/11/2021',
+        link: 'http://vieclam.ou.edu.vn/viec-lam/ke-toan-vien-cong-ty-tnhh-dv-tv-lien-khanh.35a89777.html'
+    },
+    {
+        title: 'NHÂN VIÊN KINH DOANH XUẤT NHẬP KHẨU - CÔNG TY CỔ PHẦN THỰC PHẨM GN',
+        date: '20/12/2021',
+        link: 'http://vieclam.ou.edu.vn/viec-lam/nhan-vien-kinh-doanh-xuat-nhap-khau-cong-ty-co-phan-thuc-pham-gn.35a89763.html'
+    },
+    {
+        title: 'Kế toán nội bộ - CÔNG TY TNHH THASCO INTERNATIONAL',
+        date: '15/12/2021',
+        link: 'http://vieclam.ou.edu.vn/viec-lam/ke-toan-noi-bo-cong-ty-tnhh-thasco-international.35a89762.html'
+    },
+    {
+        title: 'Project Manager Assistant - Công ty cổ phần GIHOT',
+        date: '30/11/2021',
+        link: 'http://vieclam.ou.edu.vn/viec-lam/project-manager-assistant-cong-ty-co-phan-gihot.35a895ab.html'
+    },
+    {
+        title: 'Content Marketing - CTCP NỆM THUẦN VIỆT',
+        date: '30/11/2021',
+        link: 'http://vieclam.ou.edu.vn/viec-lam/content-marketing-ctcp-nem-thuan-viet.35a894ac.html'
+    },
+    {
+        title: 'Kỹ sư công trường - Công Ty TNHH Kết Cấu Thép VIS',
+        date: '30/11/2021',
+        link: 'http://vieclam.ou.edu.vn/viec-lam/ky-su-cong-truong-cong-ty-tnhh-ket-cau-thep-vis.35a89476.html'
+    },
+    {
+        title: 'Kỹ sư quản lý Dự án - Công Ty TNHH Kết Cấu Thép VIS',
+        date: '30/11/2021',
+        link: 'http://vieclam.ou.edu.vn/viec-lam/ky-su-quan-ly-du-an-cong-ty-tnhh-ket-cau-thep-vis.35a89475.html'
+    },
+    {
+        title: 'Account Executive (Health Sales) - Công ty TNHH MTV Pacific Cross Việt Nam',
+        date: '30/11/2021',
+        link: 'http://vieclam.ou.edu.vn/viec-lam/account-executive-health-sales-cong-ty-tnhh-mtv-pacific-cross-viet-nam.35a89455.html'
+    },
+    {
+        title: 'Fresher QC/ Tester - Công ty Cổ phần Phần mềm TPS',
+        date: '03/12/2021',
+        link: 'http://vieclam.ou.edu.vn/viec-lam/fresher-qc-tester-cong-ty-co-phan-phan-mem-tps.35a893fa.html'
+    },
+    {
+        title: 'Fresher PHP Developer - Công ty Cổ phần Phần mềm TPS',
+        date: '03/12/2021',
+        link: 'http://vieclam.ou.edu.vn/viec-lam/fresher-php-developer-cong-ty-co-phan-phan-mem-tps.35a893f9.html'
+    },
+    {
+        title: 'Fresher Javascript Developer - Công ty Cổ phần Phần mềm TPS',
+        date: '03/12/2021',
+        link: 'http://vieclam.ou.edu.vn/viec-lam/fresher-javascript-developer-cong-ty-co-phan-phan-mem-tps.35a893f8.html'
+    },
+    {
+        title: 'Nhân viên/ Thực tập sinh Kế toán/ Kiểm toán - CÔNG TY TNHH KẾ TOÁN VÀ TƯ VẤN THUẾ TTL',
+        date: '31/12/2021',
+        link: 'http://vieclam.ou.edu.vn/viec-lam/nhan-vien-thuc-tap-sinh-ke-toan-kiem-toan-cong-ty-tnhh-ke-toan-va-tu-van-thue-ttl.35a8925c.html'
+    },
+    {
+        title: 'Nhân viên tín dụng Khách hàng sinh viên - Ngân hàng TMCP Tiên Phong',
+        date: '30/11/2021',
+        link: 'http://vieclam.ou.edu.vn/viec-lam/nhan-vien-tin-dung-khach-hang-sinh-vien-ngan-hang-tmcp-tien-phong.35a89150.html'
+    },
+    {
+        title: 'Nhân viên bán hàng (bán thời gian/ toàn thời gian) - Công ty CP & TM KLEVER FRUIT',
+        date: '31/12/2021',
+        link: 'http://vieclam.ou.edu.vn/viec-lam/nhan-vien-ban-hang-ban-thoi-gian-toan-thoi-gian-cong-ty-cp-tm-klever-fruit.35a89139.html'
+    }
+]
+
+let news_list = document.querySelector('#marquee')
+renderNews = (news) => {
+    news.forEach(function (e, i) {
+        switch (i) {
+            case 0:
+            case 3: {
+                e.time_delay = "0.2s"
+                break
+            }
+            case 1:
+            case 4: {
+                e.time_delay = "0.5s"
+                break
+            }
+            case 2:
+            case 5: {
+                e.time_delay = "0.8s"
+                break
+            }
+        }
+        let prod =
+            `
+        <p>
+        <i class="lni lni-slice"></i>
+            <a href="${e.link}"
+                class="marquee-link" target="_blank">${e.title}<span class="news-date">Hạn:${e.date}</span>
+            </a>
+        </p>  
+    `
+        news_list.insertAdjacentHTML("beforeend", prod)
+    })
+}
+renderNews(news);
+
 /* =============== post group =============== */
 let post = [{
         author: 'Thành Nam',

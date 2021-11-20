@@ -737,6 +737,39 @@ p {
 }
 
 /*===========================
+      02.News css 
+===========================*/
+#marquee {
+  height: 200px;
+}
+
+#marquee p {
+  display: flex;
+}
+
+#marquee p a {
+  margin-left: 10px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+#marquee p span {
+  color: #ea5656;
+  margin-left: 10px;
+}
+
+#marquee i {
+  color: #ea5656;
+}
+
+#marquee p:hover a{
+  color: #23d856;
+}
+
+/*===========================
       03.Student css 
 ===========================*/
 .ts-student {
