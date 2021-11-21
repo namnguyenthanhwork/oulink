@@ -20,8 +20,6 @@ $(function () {
         }
     });
 
-
-
     /*-------------------- Alert -------------------------*/
     // $('#eng').on('click', function () {
     //     swal("Lỗi!", "Tính năng chưa được cập nhật", "error");
@@ -44,7 +42,6 @@ $(function () {
 
 
     //====== Magnific Popup
-
     $('.video-popup').magnificPopup({
         type: 'iframe'
         // other options
@@ -52,7 +49,6 @@ $(function () {
 
 
     //===== Magnific Popup
-
     $('.image-popup').magnificPopup({
         type: 'image',
         gallery: {
@@ -65,7 +61,7 @@ $(function () {
     // Show or hide the sticky footer button
     $(window).on('scroll', function (event) {
         var scroll1 = $(this).scrollTop();
-            if (scroll1 > 300) {
+        if (scroll1 > 300) {
             $('.back-to-top').addClass('active');
 
         } else {
@@ -77,21 +73,28 @@ $(function () {
     //Animate the scroll to yop
     $('.back-to-top').on('click', function (event) {
         event.preventDefault();
-
         $('html, body').animate({
             scrollTop: 0,
         }, 1500);
     });
 
+    /*---------------------- Progress bar --------------*/
+    function progressBarScroll() {
+        let winScroll = document.body.scrollTop || document.documentElement.scrollTop,
+            height = document.documentElement.scrollHeight - document.documentElement.clientHeight,
+            scrolled = (winScroll / height) * 100;
+        document.getElementById("progressBar").style.width = scrolled + "%";
+    }
+
+    window.onscroll = function () {
+        progressBarScroll();
+    };
+
 
     //=====  WOW active
-
     new WOW().init();
 
-
     //=====  particles
-
-
     if (document.getElementById("particles-1")) particlesJS("particles-1", {
         "particles": {
             "number": {

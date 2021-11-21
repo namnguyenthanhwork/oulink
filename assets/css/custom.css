@@ -28,6 +28,12 @@
 .club .blog-content a {
     word-break: break-all;
     display: unset;
+    transition: all 0.3s ease-in-out;
+}
+
+.faculty .blog-content a:hover,
+.club .blog-content a:hover {
+    color: #d63230;
 }
 
 .faculty h4,
