@@ -138,7 +138,7 @@ let post = [{
         link: 'https://www.facebook.com/groups/oumembers/posts/1382087752207829/',
         time_delay: '0.2s',
         time: '09/12/2021',
-        title: 'Kế hoạch Đăng ký môn học trực tuyến - Đại trà - HỌC KỲ 2 – NĂM HỌC 2021/2022'
+        title: 'Kế hoạch Đăng ký môn học trực tuyến - Đại trà - HỌC KỲ 2 NĂM HỌC 2021/2022'
     },
     {
         author: 'Thành Nam',
@@ -147,7 +147,7 @@ let post = [{
         link: 'https://www.facebook.com/groups/oumembers/posts/1382089232207681/',
         time_delay: '0.5s',
         time: '09/12/2021',
-        title: 'Kế hoạch Đăng ký môn học trực tuyến - Khoa Đặc biệt - HỌC KỲ 2 – NĂM HỌC 2021- 2022'
+        title: 'Kế hoạch Đăng ký môn học trực tuyến - Khoa Đặc biệt - HỌC KỲ 2 NĂM HỌC 2021- 2022'
     },
     {
         author: 'Thành Nam',
