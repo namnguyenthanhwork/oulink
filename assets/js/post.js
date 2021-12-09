@@ -1,7 +1,34 @@
 let post = [{
         author: 'Thành Nam',
-        image: 'assets/images/postGr/post-1.jpg',
+        image: 'assets/images/postGr/post-15.jpg',
         image_hot: 'assets/images/postGr/new.gif',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1382087752207829/',
+        time_delay: '0.2s',
+        time: '09/12/2021',
+        title: 'Kế hoạch Đăng ký môn học trực tuyến - Đại trà - HỌC KỲ 2 – NĂM HỌC 2021/2022'
+    },
+    {
+        author: 'Thành Nam',
+        image: 'assets/images/postGr/post-16.jpg',
+        image_hot: 'assets/images/postGr/new.gif',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1382089232207681/',
+        time_delay: '0.5s',
+        time: '09/12/2021',
+        title: 'Kế hoạch Đăng ký môn học trực tuyến - Khoa Đặc biệt - HỌC KỲ 2 – NĂM HỌC 2021- 2022'
+    },
+    {
+        author: 'Thành Nam',
+        image: 'assets/images/postGr/post-17.jpg',
+        image_hot: 'assets/images/postGr/new.gif',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1382096435540294/',
+        time_delay: '0.8s',
+        time: '09/12/2021',
+        title: 'HƯỚNG DẪN SINH VIÊN ĐĂNG KÝ MÔN HỌC TRỰC TUYẾN TỪ HỌC KỲ 2 NĂM HỌC 2021-2022'
+    },
+    {
+        author: 'Thành Nam',
+        image: 'assets/images/postGr/post-1.jpg',
+        image_hot: '',
         link: 'https://www.facebook.com/groups/oumembers/posts/1362914554125149/',
         time_delay: '0.2s',
         time: '10/11/2021',
@@ -10,7 +37,7 @@ let post = [{
     {
         author: 'Bích Trâm',
         image: 'assets/images/postGr/post-2.jpg',
-        image_hot: 'assets/images/postGr/new.gif',
+        image_hot: '',
         link: 'https://www.facebook.com/groups/oumembers/posts/1358249727924965/',
         time_delay: '0.5s',
         time: '03/11/2021',
@@ -19,7 +46,7 @@ let post = [{
     {
         author: 'Diệp Huy',
         image: 'assets/images/postGr/post-3.jpg',
-        image_hot: 'assets/images/postGr/new.gif',
+        image_hot: '',
         link: 'https://www.facebook.com/groups/oumembers/posts/1351872075229397/',
         time_delay: '0.8s',
         time: '24/10/2021',
