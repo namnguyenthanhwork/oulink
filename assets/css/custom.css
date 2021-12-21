@@ -61,6 +61,133 @@
     padding: 100px 0;
 }
 
+.pagination>li:first-child>a,
+.pagination>li:first-child>span,
+.pagination>li:last-child>a,
+.pagination>li:last-child>span,
+.pagination>li>a,
+.pagination>li>span {
+    border-radius: 100px !important;
+    margin: 0 2px;
+    color: #777;
+    border-color: #ddd;
+}
+
+.table-responsive {
+    text-align: center;
+    white-space: nowrap;
+    padding-top: 20px;
+}
+
+.table-responsive thead {
+    white-space: nowrap;
+}
+
+.table-responsive tbody tr td:nth-child(2) {
+    text-align-last: left;
+}
+
+.study tbody tr td:nth-child(3),
+.study tbody tr td:nth-child(4) {
+    text-align-last: left;
+}
+.table th {
+    padding: 10px 25px;
+}
+
+div.dataTables_wrapper div.dataTables_filter {
+    text-align: right;
+}
+
+div.dataTables_wrapper div.dataTables_length {
+    text-align: left;
+}
+
+div.dataTables_wrapper div.dataTables_length label {
+    font-weight: 400;
+    text-align: left;
+    white-space: nowrap;
+}
+
+div.dataTables_wrapper div.dataTables_length select {
+    width: 80px;
+    margin: 0 5px;
+    display: inline-block;
+}
+
+div.dataTables_wrapper div.dataTables_filter label {
+    font-weight: 400;
+    white-space: nowrap;
+    text-align: left;
+}
+
+div.dataTables_wrapper div.dataTables_filter input {
+    margin-left: 0.5em;
+    display: inline-block;
+    width: auto;
+}
+
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_asc_disabled,
+table.dataTable thead .sorting_desc,
+table.dataTable thead .sorting_desc_disabled {
+    cursor: pointer;
+    position: relative;
+}
+
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_desc_disabled:before {
+    right: 1em;
+    content: "\2191";
+    font-size: 15px;
+}
+
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_desc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:before {
+    position: absolute;
+    bottom: 0.9em;
+    display: block;
+    opacity: .5;
+}
+
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_desc_disabled:after {
+    right: 0.5em;
+    content: "\2193";
+    font-size: 15px;
+}
+
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_desc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:before {
+    position: absolute;
+    bottom: 0.9em;
+    display: block;
+    opacity: .5;
+}
+
 @media (max-width: 767px) {
 
     .faculty h4,
@@ -97,6 +224,23 @@
 
     .ts-student {
         padding-bottom: 30px;
+    }
+
+    .ts-student-box {
+        width: 100%;
+    }
+
+    div.dataTables_wrapper div.dataTables_filter,
+    div.dataTables_wrapper div.dataTables_info,
+    div.dataTables_wrapper div.dataTables_length,
+    div.dataTables_wrapper div.dataTables_paginate {
+        text-align: center;
+        margin-top: 11px;
+        margin-bottom: 10px;
+    }
+
+    div.dataTables_wrapper div div.dataTables_paginate ul.pagination li a {
+        font-size: 11px;
     }
 }
 

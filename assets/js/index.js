@@ -1,3 +1,75 @@
+/* ============ location study =============*/
+let locatStudy = [{
+        id: 'A …',
+        location: 'Trường Đại học Mở Tp.HCM',
+        address: '97 Võ Văn Tần, P. Võ Thị Sáu, Q.3',
+        note: 'Các ngành chất lượng cao'
+    },
+    {
+        id: 'ML…',
+        location: 'Trường Cao đẳng nghề Nguyễn Trường Tộ',
+        address: '02 Mai Thị Lựu, P.Đakao, Q.1',
+        note: 'Khoa Kinh tế & Quản lý công'
+    },
+    {
+        id: 'LB…',
+        location: 'CS2 – Trường ĐH Mở TP.HCM',
+        address: 'Đường cổng 9, KP.1, P. Long Bình Tân, TP.Biên Hòa',
+        note: 'Học quân sự'
+    },
+    {
+        id: 'BD…',
+        location: 'CS3 – Trường ĐH Mở TP.HCM',
+        address: '68 Lê Thị Trung, Phường Phú Lợi, TP. Thủ Dầu Một, Bình Dương',
+        note: 'Khu thực hành khoa công nghệ sinh học'
+    },
+    {
+        id: 'HH…',
+        location: 'Cơ sở Hồ Hảo Hớn – Trường ĐH Mở TP.HCM',
+        address: '35-37 Hồ Hảo Hớn, P. Cô Giang, Q.1',
+        note: 'Học anh văn và các môn khác'
+    },
+    {
+        id: 'NK...',
+        location: 'Cơ sở Nguyễn Kiệm – Trường ĐH Mở TP.HCM',
+        address: '371 Nguyễn Kiệm, Q.Gò Vấp',
+        note: 'Các ngành đại trà'
+    },
+    {
+        id: 'HOBOI...',
+        location: 'Cung văn hoá lao động',
+        address: '55B Nguyễn Thị Minh Khai, Q.3',
+        note: 'Hồ bơi'
+    },
+    {
+        id: 'SPT...',
+        location: 'Sân vận động Phú Thọ',
+        address: '219 Lý Thường Kiệt, P.15, Q.11',
+        note: ''
+    },
+    {
+        id: 'STTQ1...',
+        location: 'Trung tâm thể dục thể thao Quận 1',
+        address: 'Số 1, Huyền Trân Công Chúa, P.Bến Thành, Q.1',
+        note: ''
+    }
+]
+
+let locationl_list = document.querySelector('#location-study')
+renderLocal = (local) => {
+    local.forEach(function (e) {
+        let prod =
+            `
+                <td>${e.id}</td>
+                <td>${e.location}</td>
+                <td>${e.address}</td>
+                <td>${e.note}</td>
+            `
+        locationl_list.insertAdjacentHTML("beforeend", prod)
+    })
+}
+renderLocal(locatStudy);
+
 /* ============ news ======================*/
 let news = [{
         title: 'Chuyên viên An ninh mạng - Hội Sở Ngân hàng Nam Á (Nam Á Bank)',
@@ -20,74 +92,9 @@ let news = [{
         link: 'http://vieclam.ou.edu.vn/viec-lam/chuyen-vien-qhkh-ca-nhan-ngan-hang-tmcp-phat-trien-tp-ho-chi-minh.35a87c7b.html'
     },
     {
-        title: 'Nhân viên bán thời gian - CÔNG TY TNHH DV TV LIÊN KHÁNH',
-        date: '30/11/2021',
-        link: 'http://vieclam.ou.edu.vn/viec-lam/nhan-vien-ban-thoi-gian-cong-ty-tnhh-dv-tv-lien-khanh.35a89779.html'
-    },
-    {
-        title: 'KẾ TOÁN VIÊN - CÔNG TY TNHH DV TV LIÊN KHÁNH',
-        date: '30/11/2021',
-        link: 'http://vieclam.ou.edu.vn/viec-lam/ke-toan-vien-cong-ty-tnhh-dv-tv-lien-khanh.35a89777.html'
-    },
-    {
-        title: 'NHÂN VIÊN KINH DOANH XUẤT NHẬP KHẨU - CÔNG TY CỔ PHẦN THỰC PHẨM GN',
-        date: '20/12/2021',
-        link: 'http://vieclam.ou.edu.vn/viec-lam/nhan-vien-kinh-doanh-xuat-nhap-khau-cong-ty-co-phan-thuc-pham-gn.35a89763.html'
-    },
-    {
-        title: 'Kế toán nội bộ - CÔNG TY TNHH THASCO INTERNATIONAL',
-        date: '15/12/2021',
-        link: 'http://vieclam.ou.edu.vn/viec-lam/ke-toan-noi-bo-cong-ty-tnhh-thasco-international.35a89762.html'
-    },
-    {
-        title: 'Project Manager Assistant - Công ty cổ phần GIHOT',
-        date: '30/11/2021',
-        link: 'http://vieclam.ou.edu.vn/viec-lam/project-manager-assistant-cong-ty-co-phan-gihot.35a895ab.html'
-    },
-    {
-        title: 'Content Marketing - CTCP NỆM THUẦN VIỆT',
-        date: '30/11/2021',
-        link: 'http://vieclam.ou.edu.vn/viec-lam/content-marketing-ctcp-nem-thuan-viet.35a894ac.html'
-    },
-    {
-        title: 'Kỹ sư công trường - Công Ty TNHH Kết Cấu Thép VIS',
-        date: '30/11/2021',
-        link: 'http://vieclam.ou.edu.vn/viec-lam/ky-su-cong-truong-cong-ty-tnhh-ket-cau-thep-vis.35a89476.html'
-    },
-    {
-        title: 'Kỹ sư quản lý Dự án - Công Ty TNHH Kết Cấu Thép VIS',
-        date: '30/11/2021',
-        link: 'http://vieclam.ou.edu.vn/viec-lam/ky-su-quan-ly-du-an-cong-ty-tnhh-ket-cau-thep-vis.35a89475.html'
-    },
-    {
-        title: 'Account Executive (Health Sales) - Công ty TNHH MTV Pacific Cross Việt Nam',
-        date: '30/11/2021',
-        link: 'http://vieclam.ou.edu.vn/viec-lam/account-executive-health-sales-cong-ty-tnhh-mtv-pacific-cross-viet-nam.35a89455.html'
-    },
-    {
-        title: 'Fresher QC/ Tester - Công ty Cổ phần Phần mềm TPS',
-        date: '03/12/2021',
-        link: 'http://vieclam.ou.edu.vn/viec-lam/fresher-qc-tester-cong-ty-co-phan-phan-mem-tps.35a893fa.html'
-    },
-    {
-        title: 'Fresher PHP Developer - Công ty Cổ phần Phần mềm TPS',
-        date: '03/12/2021',
-        link: 'http://vieclam.ou.edu.vn/viec-lam/fresher-php-developer-cong-ty-co-phan-phan-mem-tps.35a893f9.html'
-    },
-    {
-        title: 'Fresher Javascript Developer - Công ty Cổ phần Phần mềm TPS',
-        date: '03/12/2021',
-        link: 'http://vieclam.ou.edu.vn/viec-lam/fresher-javascript-developer-cong-ty-co-phan-phan-mem-tps.35a893f8.html'
-    },
-    {
         title: 'Nhân viên/ Thực tập sinh Kế toán/ Kiểm toán - CÔNG TY TNHH KẾ TOÁN VÀ TƯ VẤN THUẾ TTL',
         date: '31/12/2021',
         link: 'http://vieclam.ou.edu.vn/viec-lam/nhan-vien-thuc-tap-sinh-ke-toan-kiem-toan-cong-ty-tnhh-ke-toan-va-tu-van-thue-ttl.35a8925c.html'
-    },
-    {
-        title: 'Nhân viên tín dụng Khách hàng sinh viên - Ngân hàng TMCP Tiên Phong',
-        date: '30/11/2021',
-        link: 'http://vieclam.ou.edu.vn/viec-lam/nhan-vien-tin-dung-khach-hang-sinh-vien-ngan-hang-tmcp-tien-phong.35a89150.html'
     },
     {
         title: 'Nhân viên bán hàng (bán thời gian/ toàn thời gian) - Công ty CP & TM KLEVER FRUIT',
@@ -270,6 +277,14 @@ let postUtil = [{
         time_delay: '0.2s',
         time: '13/10/2021',
         title: 'CANVA FOR EDUCATION - XÀI FREE NHỜ CÓ MAIL TRƯỜNG'
+    },
+    {
+        author: 'Thành Nam',
+        image: 'assets/images/postGr/post-10.jpg',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1311843205898951/',
+        time_delay: '0.2s',
+        time: '27/08/2021',
+        title: 'Share template kho tài liệu tiếng anh tự học'
     },
     {
         author: 'Thành Nam',

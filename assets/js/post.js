@@ -209,6 +209,14 @@ let post = [{
     },
     {
         author: 'Thành Nam',
+        image: 'assets/images/postGr/post-10.jpg',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1311843205898951/',
+        time_delay: '0.2s',
+        time: '27/08/2021',
+        title: 'Share template kho tài liệu tiếng anh tự học'
+    },
+    {
+        author: 'Thành Nam',
         image: 'assets/images/postGr/post-6.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1310730402676898/',
         time_delay: '0.5s',
