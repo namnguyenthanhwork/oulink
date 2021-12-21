@@ -100,6 +100,61 @@ let news = [{
         title: 'Nhân viên bán hàng (bán thời gian/ toàn thời gian) - Công ty CP & TM KLEVER FRUIT',
         date: '31/12/2021',
         link: 'http://vieclam.ou.edu.vn/viec-lam/nhan-vien-ban-hang-ban-thoi-gian-toan-thoi-gian-cong-ty-cp-tm-klever-fruit.35a89139.html'
+    },
+    {
+        title: 'Nhân viên Giao hàng - Công ty TNHH Manpower Việt Nam',
+        date: '31/01/2022',
+        link: 'http://vieclam.ou.edu.vn/viec-lam/nhan-vien-giao-hang-cong-ty-tnhh-manpower-viet-nam.35a8a7b9.html'
+    },
+    {
+        title: 'Nhân Viên Kho - Công ty TNHH Manpower Việt Nam',
+        date: '31/01/2022',
+        link: 'http://vieclam.ou.edu.vn/viec-lam/nhan-vien-kho-cong-ty-tnhh-manpower-viet-nam.35a8a7c0.html'
+    },
+    {
+        title: 'Nhân Viên Sản Xuất Đóng Gói - Công ty TNHH Manpower Việt Nam',
+        date: '20/01/2022',
+        link: 'http://vieclam.ou.edu.vn/viec-lam/nhan-vien-san-xuat-dong-goi-cong-ty-tnhh-manpower-viet-nam.35a8a7cb.html'
+    },
+    {
+        title: 'Thực tập sinh Tài năng_Tester/QC - CÔNG TY CỔ PHẦN CÔNG NGHỆ VÀ ĐÀO TẠO YOOT',
+        date: '15/01/2022',
+        link: 'http://vieclam.ou.edu.vn/viec-lam/thuc-tap-sinh-tai-nang-tester-qc-cong-ty-co-phan-cong-nghe-va-dao-tao-yoot.35a8a6f7.html'
+    },
+    {
+        title: 'THỰC TẬP SINH HỖ TRỢ KINH DOANH - CÔNG TY BẢO HIỂM BƯU ĐIỆN SÀI GÒN',
+        date: '20/01/2022',
+        link: 'http://vieclam.ou.edu.vn/viec-lam/thuc-tap-sinh-ho-tro-kinh-doanh-cong-ty-bao-hiem-buu-dien-sai-gon.35a8a6f5.html'
+    },
+    {
+        title: 'Nhân viên Xuất Nhập Khẩu - CÔNG TY TNHH CUNG ỨNG CAD',
+        date: '20/01/2022',
+        link: 'http://vieclam.ou.edu.vn/viec-lam/nhan-vien-xuat-nhap-khau-cong-ty-tnhh-cung-ung-cad.35a8a4cc.html'
+    },
+    {
+        title: 'KẾ TOÁN VIÊN - CÔNG TY TNHH DV TV LIÊN KHÁNH',
+        date: '31/01/2022',
+        link: 'http://vieclam.ou.edu.vn/viec-lam/ke-toan-vien-cong-ty-tnhh-dv-tv-lien-khanh.35a8a495.html'
+    },
+    {
+        title: 'Nhân viên bán thời gian - CÔNG TY TNHH DV TV LIÊN KHÁNH',
+        date: '31/01/2022',
+        link: 'http://vieclam.ou.edu.vn/viec-lam/nhan-vien-ban-thoi-gian-cong-ty-tnhh-dv-tv-lien-khanh.35a8a49c.html'
+    },
+    {
+        title: 'Sale excutive – Nhân viên kinh doanh phần mềm - Công ty cổ phần công nghệ Cloudify',
+        date: '15/01/2022',
+        link: 'http://vieclam.ou.edu.vn/viec-lam/sale-excutive-nhan-vien-kinh-doanh-phan-mem-cong-ty-co-phan-cong-nghe-cloudify.35a8a143.html'
+    },
+    {
+        title: 'Thực tập sinh Marketing - Công ty cổ phần công nghệ Cloudify',
+        date: '15/01/2022',
+        link: 'http://vieclam.ou.edu.vn/viec-lam/thuc-tap-sinh-marketing-cong-ty-co-phan-cong-nghe-cloudify.35a8a142.html'
+    },
+    {
+        title: 'NHÂN VIÊN PART-TIME KHO SHOPEE (bán thời gian) - Công ty TNHH Manpower Việt Nam',
+        date: '15/01/2022',
+        link: 'http://vieclam.ou.edu.vn/viec-lam/nhan-vien-part-time-kho-shopee-ban-thoi-gian-cong-ty-tnhh-manpower-viet-nam.35a8a0ce.html'
     }
 ]
 
