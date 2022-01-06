@@ -1,59 +1,5 @@
 let post = [{
         author: 'Thành Nam',
-        image: 'assets/images/postGr/post-15.jpg',
-        image_hot: 'assets/images/postGr/new.gif',
-        link: 'https://www.facebook.com/groups/oumembers/posts/1382087752207829/',
-        time_delay: '0.2s',
-        time: '09/12/2021',
-        title: 'Kế hoạch Đăng ký môn học trực tuyến - Đại trà - HỌC KỲ 2 – NĂM HỌC 2021/2022'
-    },
-    {
-        author: 'Thành Nam',
-        image: 'assets/images/postGr/post-16.jpg',
-        image_hot: 'assets/images/postGr/new.gif',
-        link: 'https://www.facebook.com/groups/oumembers/posts/1382089232207681/',
-        time_delay: '0.5s',
-        time: '09/12/2021',
-        title: 'Kế hoạch Đăng ký môn học trực tuyến - Khoa Đặc biệt - HỌC KỲ 2 – NĂM HỌC 2021- 2022'
-    },
-    {
-        author: 'Thành Nam',
-        image: 'assets/images/postGr/post-17.jpg',
-        image_hot: 'assets/images/postGr/new.gif',
-        link: 'https://www.facebook.com/groups/oumembers/posts/1382096435540294/',
-        time_delay: '0.8s',
-        time: '09/12/2021',
-        title: 'HƯỚNG DẪN SINH VIÊN ĐĂNG KÝ MÔN HỌC TRỰC TUYẾN TỪ HỌC KỲ 2 NĂM HỌC 2021-2022'
-    },
-    {
-        author: 'Thành Nam',
-        image: 'assets/images/postGr/post-1.jpg',
-        image_hot: '',
-        link: 'https://www.facebook.com/groups/oumembers/posts/1362914554125149/',
-        time_delay: '0.2s',
-        time: '10/11/2021',
-        title: 'Thông báo sửa hệ thống đăng ký ngoại trú'
-    },
-    {
-        author: 'Bích Trâm',
-        image: 'assets/images/postGr/post-2.jpg',
-        image_hot: '',
-        link: 'https://www.facebook.com/groups/oumembers/posts/1358249727924965/',
-        time_delay: '0.5s',
-        time: '03/11/2021',
-        title: 'CÁC LƯU Ý KHI ĐĂNG KÝ DỊCH VỤ SINH VIÊN TRỰC TUYẾN TRÊN HỆ THỐNG SIS'
-    },
-    {
-        author: 'Diệp Huy',
-        image: 'assets/images/postGr/post-3.jpg',
-        image_hot: '',
-        link: 'https://www.facebook.com/groups/oumembers/posts/1351872075229397/',
-        time_delay: '0.8s',
-        time: '24/10/2021',
-        title: 'VẤN ĐỀ ĐƠN ONLINE VÀ VĂN HOÁ GỬI MAIL'
-    },
-    {
-        author: 'Thành Nam',
         image: 'assets/images/postGr/post-4.jpg',
         image_hot: '',
         link: 'https://www.facebook.com/groups/oumembers/posts/1347522502331021/',
@@ -71,35 +17,18 @@ let post = [{
         title: 'Thông báo về việc mua tài liệu học tập'
     },
     {
-        author: 'Minh Long',
-        image: 'assets/images/postGr/post-6.jpg',
-        image_hot: '',
-        link: 'https://www.facebook.com/groups/oumembers/posts/1345650342518237/',
-        time_delay: '0.8s',
-        time: '15/10/2021',
-        title: 'TRUNG TÂM HƯỚNG NGHIỆP - TƯ VẤN VIỆC LÀM TRƯỜNG ĐH MỞ TP.HCM'
-    },
-    {
         author: 'Thảo Vy Ngo',
         image: 'assets/images/postGr/post-7.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1343930692690202/',
-        time_delay: '0.2s',
+        time_delay: '0.8s',
         time: '13/10/2021',
         title: 'CANVA FOR EDUCATION - XÀI FREE NHỜ CÓ MAIL TRƯỜNG'
-    },
-    {
-        author: 'Thành Nam',
-        image: 'assets/images/postGr/post-8.png',
-        link: 'https://www.facebook.com/groups/oumembers/posts/1338495006567104/',
-        time_delay: '0.5s',
-        time: '05/10/2021',
-        title: 'Thông báo mở LMS 211'
     },
     {
         author: 'Thảo Vy Ngo',
         image: 'assets/images/postGr/post-9.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1337789979970940/',
-        time_delay: '0.8s',
+        time_delay: '0.2s',
         time: '04/10/2021',
         title: 'NOTION PERSONAL PRO - XÀI FREE NHỜ CÓ MAIL TRƯỜNG'
     },
@@ -107,7 +36,7 @@ let post = [{
         author: 'Diệu Nhân',
         image: 'assets/images/postGr/post-10.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1335854933497778/',
-        time_delay: '0.2s',
+        time_delay: '0.5s',
         time: '01/10/2021',
         title: 'MỘT SỐ KINH NGHIỆM ĐẠT HỌC BỔNG KHUYẾN KHÍCH HỌC TẬP'
     },
@@ -115,7 +44,7 @@ let post = [{
         author: 'Quang Hà',
         image: 'assets/images/postGr/post-11.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1334417803641491/',
-        time_delay: '0.5s',
+        time_delay: '0.8s',
         time: '29/09/2021',
         title: 'Thông báo Vv tổ chức kiểm tra năng lực đầu vào dành cho Tân sinh viên đã đăng ký kiểm tra theo các phương thức trực tiếp'
     },
@@ -123,7 +52,7 @@ let post = [{
         author: 'Quang Hà',
         image: 'assets/images/postGr/post-12.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1329863790763559/',
-        time_delay: '0.8s',
+        time_delay: '0.2s',
         time: '22/09/2021',
         title: 'Đơn gia hạn đóng học phí k21'
     },
@@ -131,7 +60,7 @@ let post = [{
         author: 'Bích Trâm',
         image: 'assets/images/postGr/post-13.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1329794394103832/',
-        time_delay: '0.2s',
+        time_delay: '0.5s',
         time: '22/09/2021',
         title: 'HƯỚNG DẪN IN GIẤY BÁO TRÚNG TUYỂN TRỰC TUYẾN'
     },
@@ -139,7 +68,7 @@ let post = [{
         author: 'Đình Phương',
         image: 'assets/images/postGr/post-14.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1326181374465134/',
-        time_delay: '0.5s',
+        time_delay: '0.8s',
         time: '17/09/2021',
         title: 'THÔNG BÁO v/v xác nhận NHẬP HỌC thí sinh trúng tuyển PT kết quả thi TN THPT và ĐẶC CÁCH xét tốt nghiệp'
     },
@@ -147,7 +76,7 @@ let post = [{
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-15.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1325308404552431/',
-        time_delay: '0.8s',
+        time_delay: '0.2s',
         time: '16/09/2021',
         title: 'Thông báo điểm chuẩn trúng tuyển kỳ tuyển sinh ĐHCQ năm 2021'
     },
@@ -155,7 +84,7 @@ let post = [{
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-16.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1322102611539677/',
-        time_delay: '0.2s',
+        time_delay: '0.5s',
         time: '11/09/2021',
         title: 'Thông báo (BỔ SUNG) Về việc tổ chức kiểm tra trình độ tiếng Anh - Tin học đầu vào cho Tân sinh viên và vấn đề liên quan đến tài khoản - khóa 2021'
     },
@@ -163,7 +92,7 @@ let post = [{
         author: 'Quang Hà',
         image: 'assets/images/postGr/post-17.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1321268808289724/',
-        time_delay: '0.5s',
+        time_delay: '0.8s',
         time: '10/09/2021',
         title: 'HƯỚNG DẪN Tân sinh viên khóa 2021 sử dụng các tài khoản được cấp và tham gia kiểm tra trình độ đầu vào (Tiếng Anh và Tin học)'
     },
@@ -171,7 +100,7 @@ let post = [{
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-1.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1320830008333604/',
-        time_delay: '0.8s',
+        time_delay: '0.2s',
         time: '09/09/2021',
         title: 'Chatbot ôn luyện tin học và anh văn đầu vào'
     },
@@ -179,7 +108,7 @@ let post = [{
         author: 'Quang Hà',
         image: 'assets/images/postGr/post-2.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1320479661701972/',
-        time_delay: '0.2s',
+        time_delay: '0.5s',
         time: '09/09/2021',
         title: 'Thông báo vv cập nhật học phí và kiểm tra hồ sơ trên web'
     },
@@ -187,7 +116,7 @@ let post = [{
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-3.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1312833805799891/',
-        time_delay: '0.5s',
+        time_delay: '0.8s',
         time: '29/08/2021',
         title: 'THÔNG BÁO VỀ VIỆC TỔ CHỨC KIỂM TRA TRÌNH ĐỘ TIẾNG ANH - TIN HỌC ĐẦU VÀO CHO TÂN SINH VIÊN KHÓA 2021'
     },
@@ -195,7 +124,7 @@ let post = [{
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-4.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1312469992502939/',
-        time_delay: '0.8s',
+        time_delay: '0.2s',
         time: '28/08/2021',
         title: 'Thời khoá biểu khoá k21'
     },
@@ -203,7 +132,7 @@ let post = [{
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-5.jpg',
         link: 'http://tuyensinh.ou.edu.vn/thong-tin-xet-tuyen-phuong-thuc-diem-thi-tn-thpt-2021',
-        time_delay: '0.2s',
+        time_delay: '0.5s',
         time: '28/08/2021',
         title: 'Thông tin xét tuyển phương thức điểm thi TN THPT 2021'
     },
@@ -211,7 +140,7 @@ let post = [{
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-10.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1311843205898951/',
-        time_delay: '0.2s',
+        time_delay: '0.8s',
         time: '27/08/2021',
         title: 'Share template kho tài liệu tiếng anh tự học'
     },
@@ -219,7 +148,7 @@ let post = [{
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-6.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1310730402676898/',
-        time_delay: '0.5s',
+        time_delay: '0.2s',
         time: '26/08/2021',
         title: 'ĐĂNG KÝ XÉT TUYỂN ĐẠI HỌC (dành cho xét đợt 1 và đặc cách, đã đăng ký nhập học bạ trước đó).'
     },
@@ -227,7 +156,7 @@ let post = [{
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-7.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1309858822764056/',
-        time_delay: '0.8s',
+        time_delay: '0.5s',
         time: '25/08/2021',
         title: 'ĐĂNG KÝ XÉT TUYỂN ĐẠI HỌC (dành cho xét đặc cách và chưa đăng ký đợt 1).'
     },
@@ -235,7 +164,7 @@ let post = [{
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-8.png',
         link: 'https://www.facebook.com/groups/oumembers/posts/1309864012763537/',
-        time_delay: '0.2s',
+        time_delay: '0.8s',
         time: '25/08/2021',
         title: 'Hướng dẫn v/v Nộp Giấy CNKQ Tốt nghiệp THPT 2021 trễ hạn.'
     },
@@ -243,7 +172,7 @@ let post = [{
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-9.jpg',
         link: '"https://www.facebook.com/groups/oumembers/posts/1305405273209411/',
-        time_delay: '0.5s',
+        time_delay: '0.2s',
         time: '18/08/2021',
         title: 'Lưu ý khi viết mail và mẫu đơn gửi cho ban tuyển sinh.'
     },
@@ -251,7 +180,7 @@ let post = [{
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-10.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1305343249882280/',
-        time_delay: '0.8s',
+        time_delay: '0.5s',
         time: '18/08/2021',
         title: 'Thông báo gia hạn nộp hồ sơ đợt 1, xét đợt 2 và đặc cách.'
     },
@@ -259,7 +188,7 @@ let post = [{
         author: 'Đình Phương',
         image: 'assets/images/postGr/post-11.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1303907133359225/',
-        time_delay: '0.2s',
+        time_delay: '0.8s',
         time: '16/08/2021',
         title: 'Điểm sàn thi THPTQG Đợt 1 năm 2021'
     },
@@ -267,7 +196,7 @@ let post = [{
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-12.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1303932290023376/',
-        time_delay: '0.5s',
+        time_delay: '0.2s',
         time: '16/08/2021',
         title: 'Thông báo tuyển sinh thí sinh đặc cách xét công nhận tốt nghiệp THPT năm 2021.'
     },
@@ -275,7 +204,7 @@ let post = [{
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-13.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1301559593593979/',
-        time_delay: '0.8s',
+        time_delay: '0.5s',
         time: '12/08/2021',
         title: 'Giới thiệu về Hệ thống điểm tích lũy 4 năm đại học.'
     },
@@ -283,7 +212,7 @@ let post = [{
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-14.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1299457123804226/',
-        time_delay: '0.2s',
+        time_delay: '0.8s',
         time: '09/08/2021',
         title: 'Giới thiệu Hệ thống điểm rèn luyện của trường Đại học Mở.'
     },
@@ -291,7 +220,7 @@ let post = [{
         author: 'Quang Hà',
         image: 'assets/images/postGr/post-15.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1293426214407317/',
-        time_delay: '0.5s',
+        time_delay: '0.2s',
         time: '31/07/2021',
         title: 'Cảm nhận về OU.'
     },
@@ -299,7 +228,7 @@ let post = [{
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-16.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1292582841158321/',
-        time_delay: '0.8s',
+        time_delay: '0.5s',
         time: '30/07/2021',
         title: 'Các giấy tờ đi kèm trong hồ sơ nộp về Trường.'
     },
@@ -307,7 +236,7 @@ let post = [{
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-17.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1291496771266928/',
-        time_delay: '0.2s',
+        time_delay: '0.8s',
         time: '28/07/2021',
         title: 'Làm thế nào để biết được hồ sơ sẽ đến trường '
     },
@@ -315,7 +244,7 @@ let post = [{
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-1.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1290067958076476/',
-        time_delay: '0.5s',
+        time_delay: '0.2s',
         time: '26/07/2021',
         title: 'Timeline xét tuyển thi thptqg đợt 1, công cụ phân tích điểm thi 2021.'
     },
@@ -323,7 +252,7 @@ let post = [{
         author: 'Hieu Q.Nguyen',
         image: 'assets/images/postGr/post-2.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1263937307356208/',
-        time_delay: '0.8s',
+        time_delay: '0.5s',
         time: '17/06/2021',
         title: 'Ngành ngôn ngữ anh tại đại học Mở tp.HCM.'
     },
@@ -331,7 +260,7 @@ let post = [{
         author: 'Quang Hà',
         image: 'assets/images/postGr/post-3.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1291199234630015/',
-        time_delay: '0.2s',
+        time_delay: '0.8s',
         time: '28/07/2021',
         title: 'Góc nhìn về đại học Mở từ 1 sv năm nhất.'
     },
@@ -339,7 +268,7 @@ let post = [{
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-4.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1268234536926485/',
-        time_delay: '0.5s',
+        time_delay: '0.2s',
         time: '23/06/2021',
         title: 'Review cơ sở 371 Nguyễn Kiệm.'
     },
@@ -347,7 +276,7 @@ let post = [{
         author: 'Diệu Nhân',
         image: 'assets/images/postGr/post-5.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1268858743530731/',
-        time_delay: '0.8s',
+        time_delay: '0.5s',
         time: '24/06/2021',
         title: 'Ngôn ngữ Anh năm nhất cần chuẩn bị gì?'
     },
@@ -355,7 +284,7 @@ let post = [{
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-6.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1285563878526884/',
-        time_delay: '0.2s',
+        time_delay: '0.8s',
         time: '10/07/2021',
         title: 'Hướng dẫn đăng ký nhập học (Tham khảo)'
     },
@@ -363,7 +292,7 @@ let post = [{
         author: 'Đình Phương',
         image: 'assets/images/postGr/post-7.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1292592317824040/',
-        time_delay: '0.5s',
+        time_delay: '0.2s',
         time: '30/07/2021',
         title: 'Review cơ sở khoa Quản Trị Kinh Doanh'
     },
@@ -371,7 +300,7 @@ let post = [{
         author: 'Trần ĐạtK',
         image: 'assets/images/postGr/post-8.png',
         link: 'https://www.facebook.com/groups/oumembers/posts/1080016299081644/',
-        time_delay: '0.8s',
+        time_delay: '0.5s',
         time: '27/09/2020',
         title: 'Review kiểm tra anh văn đầu vào.'
     },
@@ -379,7 +308,7 @@ let post = [{
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-10.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1284282711988334/',
-        time_delay: '0.2s',
+        time_delay: '0.8s',
         time: '18/07/2021',
         title: 'Hướng dẫn chụp ảnh 3x4 upload web.'
     },
@@ -387,7 +316,7 @@ let post = [{
         author: 'Đình Phương',
         image: 'assets/images/postGr/post-11.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1283885785361360/',
-        time_delay: '0.5s',
+        time_delay: '0.2s',
         time: '17/07/2021',
         title: 'Xác nhận nhập học là gì ?'
     },
@@ -395,7 +324,7 @@ let post = [{
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-12.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1269464106803528/',
-        time_delay: '0.8s',
+        time_delay: '0.5s',
         time: '25/06/2021',
         title: 'Đơn xin chỉnh sửa thông tin.'
     },
@@ -403,7 +332,7 @@ let post = [{
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-13.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1263059244110681/',
-        time_delay: '0.2s',
+        time_delay: '0.8s',
         time: '16/06/2021',
         title: '1 số câu hỏi thường gặp (QnA).'
     },
@@ -411,7 +340,7 @@ let post = [{
         author: 'Đình Phương',
         image: 'assets/images/postGr/post-14.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1262810120802260/',
-        time_delay: '0.5s',
+        time_delay: '0.2s',
         time: '15/06/2021',
         title: 'Tuyến xe buýt và các địa điểm liên quan.'
     },
@@ -419,7 +348,7 @@ let post = [{
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-15.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1233421343741138/',
-        time_delay: '0.8s',
+        time_delay: '0.5s',
         time: '01/05/2021',
         title: 'Phương thức xét tuyển thi THPTQG 2021.'
     },
@@ -427,7 +356,7 @@ let post = [{
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-16.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1213472462402693/',
-        time_delay: '0.2s',
+        time_delay: '0.8s',
         time: '31/03/2021<',
         title: 'Điểm chuẩn học bạ, thi thptqg từng năm, học phí(2021)....'
     },
@@ -435,7 +364,7 @@ let post = [{
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-17.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1208242736258999/',
-        time_delay: '0.5s',
+        time_delay: '0.2s',
         time: '23/03/2021',
         title: 'Phương thức xét tuyển bằng học bạ.'
     },
@@ -443,7 +372,7 @@ let post = [{
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-1.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1191871581229448/',
-        time_delay: '0.8s',
+        time_delay: '0.5s',
         time: '27/02/2021',
         title: 'Review quân sự.'
     },
@@ -451,7 +380,7 @@ let post = [{
         author: 'NT Diễm',
         image: 'assets/images/postGr/post-9.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1078602749222999/',
-        time_delay: '0.2s',
+        time_delay: '0.8s',
         time: '25/09/2020',
         title: 'Mẹo thuê phòng trọ.'
     }

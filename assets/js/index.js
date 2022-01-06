@@ -72,36 +72,6 @@ renderLocal(locatStudy);
 
 /* ============ news ======================*/
 let news = [{
-        title: 'Chuyên viên An ninh mạng - Hội Sở Ngân hàng Nam Á (Nam Á Bank)',
-        date: '31/12/2021',
-        link: 'http://vieclam.ou.edu.vn/viec-lam/chuyen-vien-an-ninh-mang-hoi-so-ngan-hang-nam-a-nam-a-bank-.35a895fe.html'
-    },
-    {
-        title: 'Chuyên viên lập trình - Hội Sở Ngân hàng Nam Á (Nam Á Bank)',
-        date: '31/12/2021',
-        link: 'http://vieclam.ou.edu.vn/viec-lam/chuyen-vien-lap-trinh-hoi-so-ngan-hang-nam-a-nam-a-bank-.35a89601.html'
-    },
-    {
-        title: 'Chuyên gia CoreBanking - Hội Sở Ngân hàng Nam Á (Nam Á Bank)',
-        date: '31/12/2021',
-        link: 'http://vieclam.ou.edu.vn/viec-lam/chuyen-gia-corebanking-hoi-so-ngan-hang-nam-a-nam-a-bank-.35a89606.html'
-    },
-    {
-        title: 'Chuyên viên QHKH Cá nhân - Ngân hàng TMCP Phát triển TP Hồ Chí Minh',
-        date: '30/12/2021',
-        link: 'http://vieclam.ou.edu.vn/viec-lam/chuyen-vien-qhkh-ca-nhan-ngan-hang-tmcp-phat-trien-tp-ho-chi-minh.35a87c7b.html'
-    },
-    {
-        title: 'Nhân viên/ Thực tập sinh Kế toán/ Kiểm toán - CÔNG TY TNHH KẾ TOÁN VÀ TƯ VẤN THUẾ TTL',
-        date: '31/12/2021',
-        link: 'http://vieclam.ou.edu.vn/viec-lam/nhan-vien-thuc-tap-sinh-ke-toan-kiem-toan-cong-ty-tnhh-ke-toan-va-tu-van-thue-ttl.35a8925c.html'
-    },
-    {
-        title: 'Nhân viên bán hàng (bán thời gian/ toàn thời gian) - Công ty CP & TM KLEVER FRUIT',
-        date: '31/12/2021',
-        link: 'http://vieclam.ou.edu.vn/viec-lam/nhan-vien-ban-hang-ban-thoi-gian-toan-thoi-gian-cong-ty-cp-tm-klever-fruit.35a89139.html'
-    },
-    {
         title: 'Nhân viên Giao hàng - Công ty TNHH Manpower Việt Nam',
         date: '31/01/2022',
         link: 'http://vieclam.ou.edu.vn/viec-lam/nhan-vien-giao-hang-cong-ty-tnhh-manpower-viet-nam.35a8a7b9.html'
@@ -197,55 +167,53 @@ let post = [{
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-15.jpg',
         image_hot: 'assets/images/postGr/new.gif',
-        link: 'https://www.facebook.com/groups/oumembers/posts/1382087752207829/',
-        time_delay: '0.2s',
-        time: '09/12/2021',
-        title: 'Kế hoạch Đăng ký môn học trực tuyến - Đại trà - HỌC KỲ 2 NĂM HỌC 2021/2022'
+        link: 'https://www.facebook.com/groups/oumembers/posts/1325308404552431/',
+        time_delay: '0.8s',
+        time: '16/09/2021',
+        title: 'Thông báo điểm chuẩn trúng tuyển kỳ tuyển sinh ĐHCQ năm 2021'
+    },
+    {
+        author: 'Quang Hà',
+        image: 'assets/images/postGr/post-17.jpg',
+        image_hot: 'assets/images/postGr/new.gif',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1321268808289724/',
+        time_delay: '0.5s',
+        time: '10/09/2021',
+        title: 'HƯỚNG DẪN Tân sinh viên khóa 2021 sử dụng các tài khoản được cấp và tham gia kiểm tra trình độ đầu vào (Tiếng Anh và Tin học)'
     },
     {
         author: 'Thành Nam',
-        image: 'assets/images/postGr/post-16.jpg',
+        image: 'assets/images/postGr/post-3.jpg',
         image_hot: 'assets/images/postGr/new.gif',
-        link: 'https://www.facebook.com/groups/oumembers/posts/1382089232207681/',
+
+        link: 'https://www.facebook.com/groups/oumembers/posts/1312833805799891/',
         time_delay: '0.5s',
-        time: '09/12/2021',
-        title: 'Kế hoạch Đăng ký môn học trực tuyến - Khoa Đặc biệt - HỌC KỲ 2 NĂM HỌC 2021- 2022'
+        time: '29/08/2021',
+        title: 'THÔNG BÁO VỀ VIỆC TỔ CHỨC KIỂM TRA TRÌNH ĐỘ TIẾNG ANH - TIN HỌC ĐẦU VÀO CHO TÂN SINH VIÊN KHÓA 2021'
+    },
+    {
+        author: 'Thành Nam',
+        image: 'assets/images/postGr/post-6.jpg',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1285563878526884/',
+        time_delay: '0.2s',
+        time: '10/07/2021',
+        title: 'Hướng dẫn đăng ký nhập học (Tham khảo)'
+    },
+    {
+        author: 'Thành Nam',
+        image: 'assets/images/postGr/post-5.jpg',
+        link: 'http://tuyensinh.ou.edu.vn/thong-tin-xet-tuyen-phuong-thuc-diem-thi-tn-thpt-2021',
+        time_delay: '0.2s',
+        time: '28/08/2021',
+        title: 'Thông tin xét tuyển phương thức điểm thi TN THPT 2021'
     },
     {
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-17.jpg',
-        image_hot: 'assets/images/postGr/new.gif',
-        link: 'https://www.facebook.com/groups/oumembers/posts/1382096435540294/',
-        time_delay: '0.8s',
-        time: '09/12/2021',
-        title: 'HƯỚNG DẪN SINH VIÊN ĐĂNG KÝ MÔN HỌC TRỰC TUYẾN TỪ HỌC KỲ 2 NĂM HỌC 2021-2022'
-    },
-    {
-        author: 'Thành Nam',
-        image: 'assets/images/postGr/post-1.jpg',
-        image_hot: '',
-        link: 'https://www.facebook.com/groups/oumembers/posts/1362914554125149/',
-        time_delay: '0.2s',
-        time: '10/11/2021',
-        title: 'Thông báo sửa hệ thống đăng ký ngoại trú'
-    },
-    {
-        author: 'Bích Trâm',
-        image: 'assets/images/postGr/post-2.jpg',
-        image_hot: '',
-        link: 'https://www.facebook.com/groups/oumembers/posts/1358249727924965/',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1208242736258999/',
         time_delay: '0.5s',
-        time: '03/11/2021',
-        title: 'CÁC LƯU Ý KHI ĐĂNG KÝ DỊCH VỤ SINH VIÊN TRỰC TUYẾN TRÊN HỆ THỐNG SIS'
-    },
-    {
-        author: 'Diệp Huy',
-        image: 'assets/images/postGr/post-6.jpg',
-        image_hot: '',
-        link: 'https://www.facebook.com/groups/oumembers/posts/1351872075229397/',
-        time_delay: '0.8s',
-        time: '24/10/2021',
-        title: 'VẤN ĐỀ ĐƠN ONLINE VÀ VĂN HOÁ GỬI MAIL'
+        time: '23/03/2021',
+        title: 'Phương thức xét tuyển bằng học bạ.'
     }
 ]
 
