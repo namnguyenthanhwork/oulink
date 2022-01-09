@@ -1,7 +1,6 @@
 $(function () {
 
     "use strict";
-
     //===== Prealoder
     window.addEventListener("load", () => {
         document.body.classList.add("loaded");
@@ -70,7 +69,7 @@ $(function () {
     });
 
 
-    //Animate the scroll to yop
+    //Animate the scroll to top
     $('.back-to-top').on('click', function (event) {
         event.preventDefault();
         $('html, body').animate({
