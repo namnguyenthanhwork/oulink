@@ -762,6 +762,7 @@ var diemthi = [
 
 $(window).on('load', function () {
     $('#basic-datatables').DataTable({
+        stateSave: true,
         data: hocba,
         "lengthMenu": [
             [5, 10, 15, 20, 25, -1],
@@ -785,6 +786,7 @@ $(window).on('load', function () {
     });
 
     $('#basic-datatables-dt').DataTable({
+        stateSave: true,
         data: diemthi,
         "lengthMenu": [
             [5, 10, 15, 20, 25, -1],
