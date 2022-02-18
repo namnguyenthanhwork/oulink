@@ -165,8 +165,16 @@ renderNews(news);
 /* =============== post group =============== */
 let post = [{
         author: 'Thành Nam',
-        image: 'assets/images/postGr/post-15.jpg',
+        image: 'assets/images/postGr/post-14.jpg',
         image_hot: 'assets/images/postGr/new.gif',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1426346964448574/',
+        time_delay: '0.8s',
+        time: '17/02/2022',
+        title: 'Thông tin tuyển sinh Đại học chính quy năm 2022'
+    },
+    {
+        author: 'Thành Nam',
+        image: 'assets/images/postGr/post-15.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1325308404552431/',
         time_delay: '0.8s',
         time: '16/09/2021',
@@ -175,7 +183,6 @@ let post = [{
     {
         author: 'Quang Hà',
         image: 'assets/images/postGr/post-17.jpg',
-        image_hot: 'assets/images/postGr/new.gif',
         link: 'https://www.facebook.com/groups/oumembers/posts/1321268808289724/',
         time_delay: '0.5s',
         time: '10/09/2021',
@@ -184,8 +191,6 @@ let post = [{
     {
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-3.jpg',
-        image_hot: 'assets/images/postGr/new.gif',
-
         link: 'https://www.facebook.com/groups/oumembers/posts/1312833805799891/',
         time_delay: '0.5s',
         time: '29/08/2021',
@@ -206,14 +211,6 @@ let post = [{
         time_delay: '0.2s',
         time: '28/08/2021',
         title: 'Thông tin xét tuyển phương thức điểm thi TN THPT 2021'
-    },
-    {
-        author: 'Thành Nam',
-        image: 'assets/images/postGr/post-17.jpg',
-        link: 'https://www.facebook.com/groups/oumembers/posts/1208242736258999/',
-        time_delay: '0.5s',
-        time: '23/03/2021',
-        title: 'Phương thức xét tuyển bằng học bạ.'
     }
 ]
 

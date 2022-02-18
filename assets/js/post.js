@@ -1,5 +1,14 @@
 let post = [{
         author: 'Thành Nam',
+        image: 'assets/images/postGr/post-14.jpg',
+        image_hot: 'assets/images/postGr/new.gif',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1426346964448574/',
+        time_delay: '0.8s',
+        time: '17/02/2022',
+        title: 'Thông tin tuyển sinh Đại học chính quy năm 2022'
+    },
+    {
+        author: 'Thành Nam',
         image: 'assets/images/postGr/post-4.jpg',
         image_hot: '',
         link: 'https://www.facebook.com/groups/oumembers/posts/1347522502331021/',
