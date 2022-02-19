@@ -202,6 +202,10 @@ table.dataTable thead .sorting_desc_disabled:before {
     border-radius: 5px 0 0 5px;
 }
 
+.hidden {
+    display: none;
+}
+
 .form-control:focus {
     box-shadow: 0 0 0 0.1rem rgb(0 123 255 / 25%);
 }
@@ -211,6 +215,10 @@ table.dataTable thead .sorting_desc_disabled:before {
     box-shadow: 0 0 0 0.1rem rgb(0 123 255 / 25%);
 }
 
+.grade-btn {
+    padding: 10px 15px;
+    line-height: unset;
+}
 @media (max-width: 767px) {
 
     .faculty h4,

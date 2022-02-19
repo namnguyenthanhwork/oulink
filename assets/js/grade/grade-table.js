@@ -25,10 +25,12 @@ function Tinh_TBC(m1, m2, m3) {
 }
 
 function Tinh_Diem() {
+    var kq = $("#ket-qua").val();
+    var kqt = $("#ket-qua-tinh").val();
     var kv = $("#kvut").val();
     var dt = $("#dtut").val();
 
-    //diem lop 10 
+    // Điểm cả năm lớp 10 
     var t_10 = $("#t10").val();
     var v_10 = $("#v10").val();
     var nn_10 = $("#nn10").val();
@@ -39,7 +41,7 @@ function Tinh_Diem() {
     var d_10 = $("#d10").val();
     var cd_10 = $("#cd10").val();
 
-    // diem lop 11 
+    // Điểm cả năm lớp 11 
     var t_11 = $("#t11").val();
     var v_11 = $("#v11").val();
     var nn_11 = $("#nn11").val();
@@ -50,7 +52,7 @@ function Tinh_Diem() {
     var d_11 = $("#d11").val();
     var cd_11 = $("#cd11").val();
 
-    // diem hk1 lop 12 
+    // Điểm hk1 lớp 12 
     var t_12 = $("#t12").val();
     var v_12 = $("#v12").val();
     var nn_12 = $("#nn12").val();
@@ -61,7 +63,7 @@ function Tinh_Diem() {
     var d_12 = $("#d12").val();
     var cd_12 = $("#cd12").val();
 
-    // diem trung binh mon
+    // Điểm trung bình môn
     var t = Tinh_Diem_Mon(t_10, t_11, t_12);
     var v = Tinh_Diem_Mon(v_10, v_11, v_12);
     var nn = Tinh_Diem_Mon(nn_10, nn_11, nn_12);
@@ -72,7 +74,7 @@ function Tinh_Diem() {
     var d = Tinh_Diem_Mon(d_10, d_11, d_12);
     var cd = Tinh_Diem_Mon(cd_10, cd_11, cd_12);
 
-    // diem khu vuc uu tien
+    // Điểm khu vực ưu tiên
     if (kv == "0" || kv == "3") {
         KVUT = 0;
     } else if (kv == "1") {
@@ -81,7 +83,7 @@ function Tinh_Diem() {
         KVUT = 0.25;
     } else KVUT = 0.5;
 
-    // diem doi tuong uu tien
+    // Điểm đối tượng ưu tiên
     if (dt == "1" || dt == "2" || dt == "3" || dt == "4") {
         DTUT = 2;
     } else if (dt == "5" || dt == "6" || dt == "7") {
@@ -105,7 +107,7 @@ function Tinh_Diem() {
     Văn, KHXH, Ngoại Ngữ (D78 - D83, DH8)
     Toán, Văn, Ngoại Ngữ (D01, D03, D05, D06)
     */
-    // diem to hop
+    // Điểm tổ hợp môn
     var a00 = Tinh_Diem_TH(t, vl, h) + KVUT + DTUT;
     var a00hs2t = Tinh_Diem_TH_HS2(t, vl, h) + KVUT + DTUT;
     var a01 = Tinh_Diem_TH(t, vl, nn) + KVUT + DTUT;
@@ -114,6 +116,8 @@ function Tinh_Diem() {
     var a02 = Tinh_Diem_TH(t, vl, s) + KVUT + DTUT;
     var b00 = Tinh_Diem_TH(t, h, s) + KVUT + DTUT;
     var c00 = Tinh_Diem_TH(v, ls, d) + KVUT + DTUT;
+    var c01 = Tinh_Diem_TH(t, v, vl) + KVUT + DTUT;
+    var c02 = Tinh_Diem_TH(t, v, h) + KVUT + DTUT;
     var c03 = Tinh_Diem_TH(t, ls, v) + KVUT + DTUT;
     var d01 = Tinh_Diem_TH(t, v, nn) + KVUT + DTUT;
     var d01hs2nn = Tinh_Diem_TH_HS2(nn, v, t) + KVUT + DTUT;
@@ -124,10 +128,63 @@ function Tinh_Diem() {
     var d08 = Tinh_Diem_TH(t, s, nn) + KVUT + DTUT;
     var d14 = Tinh_Diem_TH(v, nn, ls) + KVUT + DTUT;
     var d14hs2nn = Tinh_Diem_TH_HS2(nn, v, ls) + KVUT + DTUT;
+    var d15 = Tinh_Diem_TH(v, nn, d) + KVUT + DTUT;
     var d78 = Tinh_Diem_TH(v, nn, Tinh_TBC(ls, d, cd)) + KVUT + DTUT;
     var d78hs2nn = Tinh_Diem_TH_HS2(nn, v, Tinh_TBC(ls, d, cd)) + KVUT + DTUT;
+    var d90 = Tinh_Diem_TH(t, nn, Tinh_TBC(vl, h, s)) + KVUT + DTUT;
     var d96 = Tinh_Diem_TH(t, nn, Tinh_TBC(ls, d, cd)) + KVUT + DTUT;
     var d96hs2nn = Tinh_Diem_TH_HS2(nn, v, Tinh_TBC(ls, d, cd)) + KVUT + DTUT;
+
+    // Chọn trường
+    if (kq == 'ou' && kqt == '0') {
+        $("#kq-mon").removeClass("hidden");
+        $("#kq-to-hop").addClass("hidden");
+        $("#kq-dxtou").addClass("hidden");
+    } else if (kq == 'ou' && kqt == '1') {
+        $("#kq-to-hop").addClass("hidden");
+        $("#kq-dxtou").removeClass("hidden");
+        $("#kq-mon").addClass("hidden");
+    } else if (kq == 'ou' && kqt == '2') {
+        $("#kq-to-hop").addClass("hidden");
+        $("#kq-dxtou").removeClass("hidden");
+        $("#kq-mon").removeClass("hidden");
+    } else if (kq == 'another' && kqt == '0') {
+        $("#kq-to-hop").addClass("hidden");
+        $("#kq-dxtou").addClass("hidden");
+        $("#kq-mon").removeClass("hidden");
+    } else if (kq == 'another' && kqt == '1') {
+        $("#kq-to-hop").removeClass("hidden");
+        $("#kq-dxtou").addClass("hidden");
+        $("#kq-mon").addClass("hidden");
+        $("#a00").val(a00.toFixed(2));
+        $("#a01").val(a01.toFixed(2));
+        $("#b00").val(b00.toFixed(2));
+        $("#d01").val(d01.toFixed(2));
+        $("#d07").val(d07.toFixed(2));
+        $("#c00").val(c00.toFixed(2));
+        $("#c01").val(c01.toFixed(2));
+        $("#c02").val(c02.toFixed(2));
+        $("#d14").val(d14.toFixed(2));
+        $("#d15").val(d15.toFixed(2));
+        $("#d90").val(d90.toFixed(2));
+        $("#d96").val(d96.toFixed(2));
+    } else if (kq == 'another' && kqt == '2') {
+        $("#kq-to-hop").removeClass("hidden");
+        $("#kq-dxtou").addClass("hidden");
+        $("#kq-mon").removeClass("hidden");
+        $("#a00").val(a00.toFixed(2));
+        $("#a01").val(a01.toFixed(2));
+        $("#b00").val(b00.toFixed(2));
+        $("#d01").val(d01.toFixed(2));
+        $("#d07").val(d07.toFixed(2));
+        $("#c00").val(c00.toFixed(2));
+        $("#c01").val(c01.toFixed(2));
+        $("#c02").val(c02.toFixed(2));
+        $("#d14").val(d14.toFixed(2));
+        $("#d15").val(d15.toFixed(2));
+        $("#d90").val(d90.toFixed(2));
+        $("#d96").val(d96.toFixed(2));
+    }
 
     // show result
     $("#kq-t").val(t.toFixed(2));
@@ -636,6 +693,722 @@ function Tinh_Diem() {
             `${d07.toFixed(2)}`,
             'Toán, Hóa, Anh (D07)',
             'Không có môn hệ số 2'
+        ],
+
+        // Đại trà - Luật
+        [
+            'Đại trà',
+            '7380101',
+            'Luật',
+            `${a00.toFixed(2)}`,
+            'Toán, Lý, Hóa (A00)',
+            'Không có môn hệ số 2'
+        ],
+        [
+            'Đại trà',
+            '7380101',
+            'Luật',
+            `${a01.toFixed(2)}`,
+            'Toán, Lý, Anh (A01)',
+            'Không có môn hệ số 2'
+        ],
+        [
+            'Đại trà',
+            '7380101',
+            'Luật',
+            `${c00.toFixed(2) - 1.5}`,
+            'Văn, Sử, Địa (C00)',
+            'Điểm trúng tuyển phải cao hơn điểm chuẩn 1.5'
+        ],
+        [
+            'Đại trà',
+            '7380101',
+            'Luật',
+            `${d01.toFixed(2)}`,
+            'Toán, Văn, Ngoại Ngữ (D01, D03, D05, D06)',
+            'Không có môn hệ số 2'
+        ],
+
+        // Đại trà - Luật Kinh Tế
+        [
+            'Đại trà',
+            '7380107',
+            'Luật Kinh Tế',
+            `${a00.toFixed(2)}`,
+            'Toán, Lý, Hóa (A00)',
+            'Không có môn hệ số 2'
+        ],
+        [
+            'Đại trà',
+            '7380107',
+            'Luật Kinh Tế',
+            `${a01.toFixed(2)}`,
+            'Toán, Lý, Anh (A01)',
+            'Không có môn hệ số 2'
+        ],
+        [
+            'Đại trà',
+            '7380107',
+            'Luật Kinh Tế',
+            `${c00.toFixed(2) - 1.5}`,
+            'Văn, Sử, Địa (C00)',
+            'Điểm trúng tuyển phải cao hơn điểm chuẩn 1.5'
+        ],
+        [
+            'Đại trà',
+            '7380107',
+            'Luật Kinh Tế',
+            `${d01.toFixed(2)}`,
+            'Toán, Văn, Ngoại Ngữ (D01, D03, D05, D06)',
+            'Không có môn hệ số 2'
+        ],
+
+        // Đại trà - Công Nghệ Sinh Học
+        [
+            'Đại trà',
+            '7420201',
+            'Công Nghệ Sinh Học',
+            `${a00.toFixed(2)}`,
+            'Toán, Lý, Hóa (A00)',
+            'Không có môn hệ số 2'
+        ],
+        [
+            'Đại trà',
+            '7420201',
+            'Công Nghệ Sinh Học',
+            `${d07.toFixed(2)}`,
+            'Toán, Hóa, Anh (D07)',
+            'Không có môn hệ số 2'
+        ],
+        [
+            'Đại trà',
+            '7420201',
+            'Công Nghệ Sinh Học',
+            `${a02.toFixed(2)}`,
+            'Toán, Lý, Sinh (A02)',
+            'Không có môn hệ số 2'
+        ],
+        [
+            'Đại trà',
+            '7420201',
+            'Công Nghệ Sinh Học',
+            `${b00.toFixed(2)}`,
+            'Toán, Hóa, Sinh (B00)',
+            'Không có môn hệ số 2'
+        ],
+
+        // Đại trà - Khoa Học Máy Tính
+        [
+            'Đại trà',
+            '7480101',
+            'Khoa Học Máy Tính',
+            `${a00hs2t.toFixed(2)}`,
+            'Toán, Lý, Hóa (A00)',
+            'Môn Toán hệ số 2'
+        ],
+        [
+            'Đại trà',
+            '7480101',
+            'Khoa Học Máy Tính',
+            `${a01hs2t.toFixed(2)}`,
+            'Toán, Lý, Anh (A01)',
+            'Môn Toán hệ số 2'
+        ],
+        [
+            'Đại trà',
+            '7480101',
+            'Khoa Học Máy Tính',
+            `${d01hs2t.toFixed(2)}`,
+            'Toán, Văn, Anh (D01)',
+            'Môn Toán hệ số 2'
+        ],
+        [
+            'Đại trà',
+            '7480101',
+            'Khoa Học Máy Tính',
+            `${d07hs2t.toFixed(2)}`,
+            'Toán, Hóa, Anh (D07)',
+            'Môn Toán hệ số 2'
+        ],
+
+        // Đại trà - Công Nghệ Thông Tin
+        [
+            'Đại trà',
+            '7480201',
+            'Công Nghệ Thông Tin',
+            `${a00hs2t.toFixed(2)}`,
+            'Toán, Lý, Hóa (A00)',
+            'Môn Toán hệ số 2'
+        ],
+        [
+            'Đại trà',
+            '7480201',
+            'Công Nghệ Thông Tin',
+            `${a01hs2t.toFixed(2)}`,
+            'Toán, Lý, Anh (A01)',
+            'Môn Toán hệ số 2'
+        ],
+        [
+            'Đại trà',
+            '7480201',
+            'Công Nghệ Thông Tin',
+            `${d01hs2t.toFixed(2)}`,
+            'Toán, Văn, Anh (D01)',
+            'Môn Toán hệ số 2'
+        ],
+        [
+            'Đại trà',
+            '7480201',
+            'Công Nghệ Thông Tin',
+            `${d07hs2t.toFixed(2)}`,
+            'Toán, Hóa, Anh (D07)',
+            'Môn Toán hệ số 2'
+        ],
+
+        // Đại trà - CNKT Công Trình Xây Dựng
+        [
+            'Đại trà',
+            '7510102',
+            'CNKT Công Trình Xây Dựng',
+            `${a00hs2t.toFixed(2)}`,
+            'Toán, Lý, Hóa (A00)',
+            'Môn Toán hệ số 2'
+        ],
+        [
+            'Đại trà',
+            '7510102',
+            'CNKT Công Trình Xây Dựng',
+            `${a01hs2t.toFixed(2)}`,
+            'Toán, Lý, Anh (A01)',
+            'Môn Toán hệ số 2'
+        ],
+        [
+            'Đại trà',
+            '7510102',
+            'CNKT Công Trình Xây Dựng',
+            `${d01hs2t.toFixed(2)}`,
+            'Toán, Văn, Anh (D01)',
+            'Môn Toán hệ số 2'
+        ],
+        [
+            'Đại trà',
+            '7510102',
+            'CNKT Công Trình Xây Dựng',
+            `${d07hs2t.toFixed(2)}`,
+            'Toán, Hóa, Anh (D07)',
+            'Môn Toán hệ số 2'
+        ],
+
+        // Đại trà - Logistics và Quản lý chuỗi cung ứng
+        [
+            'Đại trà',
+            '7510605',
+            'Logistics và Quản lý chuỗi cung ứng',
+            `${a00.toFixed(2)}`,
+            'Toán, Lý, Hóa (A00)',
+            'Không có môn hệ số 2'
+        ],
+        [
+            'Đại trà',
+            '7510605',
+            'Logistics và Quản lý chuỗi cung ứng',
+            `${a01.toFixed(2)}`,
+            'Toán, Lý, Anh (A01)',
+            'Không có môn hệ số 2'
+        ],
+        [
+            'Đại trà',
+            '7510605',
+            'Logistics và Quản lý chuỗi cung ứng',
+            `${d01.toFixed(2)}`,
+            'Toán, Văn, Anh (D01)',
+            'Không có môn hệ số 2'
+        ],
+        [
+            'Đại trà',
+            '7510605',
+            'Logistics và Quản lý chuỗi cung ứng',
+            `${d07.toFixed(2)}`,
+            'Toán, Hóa, Anh (D07)',
+            'Không có môn hệ số 2'
+        ],
+
+        // Đại trà - Công Nghệ Thực Phẩm
+        [
+            'Đại trà',
+            '7540101',
+            'Công Nghệ Thực Phẩm',
+            `${a00.toFixed(2)}`,
+            'Toán, Lý, Hóa (A00)',
+            'Không có môn hệ số 2'
+        ],
+        [
+            'Đại trà',
+            '7540101',
+            'Công Nghệ Thực Phẩm',
+            `${a01.toFixed(2)}`,
+            'Toán, Lý, Anh (A01)',
+            'Không có môn hệ số 2'
+        ],
+        [
+            'Đại trà',
+            '7540101',
+            'Công Nghệ Thực Phẩm',
+            `${b00.toFixed(2)}`,
+            'Toán, Hóa, Sinh (B00)',
+            'Không có môn hệ số 2'
+        ],
+        [
+            'Đại trà',
+            '7540101',
+            'Công Nghệ Thực Phẩm',
+            `${d07.toFixed(2)}`,
+            'Toán, Hóa, Anh (D07)',
+            'Không có môn hệ số 2'
+        ],
+
+        // Đại trà - Quản Lý Xây Dựng
+        [
+            'Đại trà',
+            '7580302',
+            'Quản Lý Xây Dựng',
+            `${a00hs2t.toFixed(2)}`,
+            'Toán, Lý, Hóa (A00)',
+            'Môn Toán hệ số 2'
+        ],
+        [
+            'Đại trà',
+            '7580302',
+            'Quản Lý Xây Dựng',
+            `${a01hs2t.toFixed(2)}`,
+            'Toán, Lý, Anh (A01)',
+            'Môn Toán hệ số 2'
+        ],
+        [
+            'Đại trà',
+            '7580302',
+            'Quản Lý Xây Dựng',
+            `${d01hs2t.toFixed(2)}`,
+            'Toán, Văn, Anh (D01)',
+            'Môn Toán hệ số 2'
+        ],
+        [
+            'Đại trà',
+            '7580302',
+            'Quản Lý Xây Dựng',
+            `${d07hs2t.toFixed(2)}`,
+            'Toán, Hóa, Anh (D07)',
+            'Môn Toán hệ số 2'
+        ],
+
+        // Đại trà - Công Tác Xã Hội
+        [
+            'Đại trà',
+            '7760101',
+            'Công Tác Xã Hội',
+            `${c00.toFixed(2)}`,
+            'Văn, Sử, Địa (C00)',
+            'Không có môn hệ số 2'
+        ],
+        [
+            'Đại trà',
+            '7760101',
+            'Công Tác Xã Hội',
+            `${a01.toFixed(2)}`,
+            'Toán, Lý, Anh (A01)',
+            'Không có môn hệ số 2'
+        ],
+        [
+            'Đại trà',
+            '7760101',
+            'Công Tác Xã Hội',
+            `${d01.toFixed(2)}`,
+            'Toán, Văn, Ngoại Ngữ (D01-D06, DD2)',
+            'Không có môn hệ số 2'
+        ],
+        [
+            'Đại trà',
+            '7760101',
+            'Công Tác Xã Hội',
+            `${d78.toFixed(2)}`,
+            'Văn, KHXH, Ngoại Ngữ (D78-D83, DH8)',
+            'Không có môn hệ số 2'
+        ],
+
+        // Đại trà - Du Lịch
+        [
+            'Đại trà',
+            '7810101',
+            'Du Lịch',
+            `${a00.toFixed(2)}`,
+            'Toán, Lý, Hóa (A00)',
+            'Không có môn hệ số 2'
+        ],
+        [
+            'Đại trà',
+            '7810101',
+            'Du Lịch',
+            `${a01.toFixed(2)}`,
+            'Toán, Lý, Anh (A01)',
+            'Không có môn hệ số 2'
+        ],
+        [
+            'Đại trà',
+            '7810101',
+            'Du Lịch',
+            `${c03.toFixed(2)}`,
+            'Toán, Sử, Văn (C03)',
+            'Không có môn hệ số 2'
+        ],
+        [
+            'Đại trà',
+            '7810101',
+            'Du Lịch',
+            `${d01.toFixed(2)}`,
+            'Toán, Văn, Anh (D01)',
+            'Không có môn hệ số 2'
+        ],
+
+        // CLC - Ngôn ngữ anh
+        [
+            'CLC',
+            '7220201C',
+            'Ngôn ngữ Anh CLC',
+            `${a01hs2nn.toFixed(2)}`,
+            'Toán, Lý, Anh (A01)',
+            'Môn Ngoại ngữ hệ số 2'
+        ],
+        [
+            'CLC',
+            '7220201C',
+            'Ngôn ngữ Anh CLC',
+            `${d01hs2nn.toFixed(2)}`,
+            'Toán, Văn, Anh (D01)',
+            'Môn Ngoại ngữ hệ số 2'
+        ],
+        [
+            'CLC',
+            '7220201C',
+            'Ngôn ngữ Anh CLC',
+            `${d14hs2nn.toFixed(2)}`,
+            'Văn, Sử, Anh (D14)',
+            'Môn Ngoại ngữ hệ số 2'
+        ],
+        [
+            'CLC',
+            '7220201C',
+            'Ngôn ngữ Anh CLC',
+            `${d78hs2nn.toFixed(2)}`,
+            'Văn, KHXH, Anh (D78)',
+            'Môn Ngoại ngữ hệ số 2'
+        ],
+
+        // CLC - Ngôn ngữ Trung Quốc
+        [
+            'CLC',
+            '7220204C',
+            'Ngôn ngữ Trung Quốc CLC',
+            `${d01hs2nn.toFixed(2)}`,
+            'Văn, Toán, Ngoại Ngữ (D01-D06, DD2)',
+            'Môn Ngoại ngữ hệ số 2'
+        ],
+        [
+            'CLC',
+            '7220204C',
+            'Ngôn ngữ Trung Quốc CLC',
+            `${d78hs2nn.toFixed(2)}`,
+            'Văn, KHXH, Ngoại Ngữ (D78-D83, DH8)',
+            'Môn Ngoại ngữ hệ số 2'
+        ],
+
+        // CLC - Ngôn ngữ Nhật
+        [
+            'CLC',
+            '7220209C',
+            'Ngôn ngữ Nhật CLC',
+            `${d01hs2nn.toFixed(2)}`,
+            'Văn, Toán, Ngoại Ngữ (D01-D06, DD2)',
+            'Môn Ngoại ngữ hệ số 2'
+        ],
+        [
+            'CLC',
+            '7220209C',
+            'Ngôn ngữ Nhật CLC',
+            `${d78hs2nn.toFixed(2)}`,
+            'Văn, KHXH, Ngoại Ngữ (D78-D83, DH8)',
+            'Môn Ngoại ngữ hệ số 2'
+        ],
+
+        // CLC - Kinh tế (Ngành mới)   
+        [
+            'CLC',
+            '7310101C',
+            'Kinh tế CLC (Ngành mới)',
+            `${d07hs2nn.toFixed(2)}`,
+            'Toán, Hóa, Anh (D07)',
+            'Môn Ngoại ngữ hệ số 2'
+        ],
+        [
+            'CLC',
+            '7310101C',
+            'Kinh tế CLC (Ngành mới)',
+            `${a01hs2nn.toFixed(2)}`,
+            'Toán, Lý, Anh (A01)',
+            'Môn Ngoại ngữ hệ số 2'
+        ],
+        [
+            'CLC',
+            '7310101C',
+            'Kinh tế CLC (Ngành mới)',
+            `${d01hs2nn.toFixed(2)}`,
+            'Toán, Văn, Anh (D01)',
+            'Môn Ngoại ngữ hệ số 2'
+        ],
+        [
+            'CLC',
+            '7310101C',
+            'Kinh tế CLC (Ngành mới)',
+            `${d96hs2nn.toFixed(2)}`,
+            'Toán, KHXH, Anh (D96)',
+            'Môn Ngoại ngữ hệ số 2'
+        ],
+
+        // CLC - Quản Trị Kinh Doanh   
+        [
+            'CLC',
+            '7340101C',
+            'Quản Trị Kinh Doanh CLC',
+            `${d07hs2nn.toFixed(2)}`,
+            'Toán, Hóa, Anh (D07)',
+            'Môn Ngoại ngữ hệ số 2'
+        ],
+        [
+            'CLC',
+            '7340101C',
+            'Quản Trị Kinh Doanh CLC',
+            `${a01hs2nn.toFixed(2)}`,
+            'Toán, Lý, Anh (A01)',
+            'Môn Ngoại ngữ hệ số 2'
+        ],
+        [
+            'CLC',
+            '7340101C',
+            'Quản Trị Kinh Doanh CLC',
+            `${d01hs2nn.toFixed(2)}`,
+            'Toán, Văn, Anh (D01)',
+            'Môn Ngoại ngữ hệ số 2'
+        ],
+        [
+            'CLC',
+            '7340101C',
+            'Quản Trị Kinh Doanh CLC',
+            `${d96hs2nn.toFixed(2)}`,
+            'Toán, KHXH, Anh (D96)',
+            'Môn Ngoại ngữ hệ số 2'
+        ],
+
+        // CLC - Tài Chính Ngân Hàng   
+        [
+            'CLC',
+            '7340201C',
+            'Tài Chính Ngân Hàng CLC',
+            `${d07hs2nn.toFixed(2)}`,
+            'Toán, Hóa, Anh (D07)',
+            'Môn Ngoại ngữ hệ số 2'
+        ],
+        [
+            'CLC',
+            '7340201C',
+            'Tài Chính Ngân Hàng CLC',
+            `${a01hs2nn.toFixed(2)}`,
+            'Toán, Lý, Anh (A01)',
+            'Môn Ngoại ngữ hệ số 2'
+        ],
+        [
+            'CLC',
+            '7340201C',
+            'Tài Chính Ngân Hàng CLC',
+            `${d01hs2nn.toFixed(2)}`,
+            'Toán, Văn, Anh (D01)',
+            'Môn Ngoại ngữ hệ số 2'
+        ],
+        [
+            'CLC',
+            '7340201C',
+            'Tài Chính Ngân Hàng CLC',
+            `${d96hs2nn.toFixed(2)}`,
+            'Toán, KHXH, Anh (D96)',
+            'Môn Ngoại ngữ hệ số 2'
+        ],
+
+        // CLC - Kế Toán   
+        [
+            'CLC',
+            '7340301C',
+            'Kế Toán CLC',
+            `${d07hs2nn.toFixed(2)}`,
+            'Toán, Hóa, Anh (D07)',
+            'Môn Ngoại ngữ hệ số 2'
+        ],
+        [
+            'CLC',
+            '7340301C',
+            'Kế Toán CLC',
+            `${a01hs2nn.toFixed(2)}`,
+            'Toán, Lý, Anh (A01)',
+            'Môn Ngoại ngữ hệ số 2'
+        ],
+        [
+            'CLC',
+            '7340301C',
+            'Kế Toán CLC',
+            `${d01hs2nn.toFixed(2)}`,
+            'Toán, Văn, Anh (D01)',
+            'Môn Ngoại ngữ hệ số 2'
+        ],
+        [
+            'CLC',
+            '7340301C',
+            'Kế Toán CLC',
+            `${d96hs2nn.toFixed(2)}`,
+            'Toán, KHXH, Anh (D96)',
+            'Môn Ngoại ngữ hệ số 2'
+        ],
+
+        // CLC - Luật Kinh Tế   
+        [
+            'CLC',
+            '7380107C',
+            'Luật Kinh Tế CLC',
+            `${d07hs2nn.toFixed(2)}`,
+            'Toán, Hóa, Anh (D07)',
+            'Môn Ngoại ngữ hệ số 2'
+        ],
+        [
+            'CLC',
+            '7380107C',
+            'Luật Kinh Tế CLC',
+            `${a01hs2nn.toFixed(2)}`,
+            'Toán, Lý, Anh (A01)',
+            'Môn Ngoại ngữ hệ số 2'
+        ],
+        [
+            'CLC',
+            '7380107C',
+            'Luật Kinh Tế CLC',
+            `${d01hs2nn.toFixed(2)}`,
+            'Toán, Văn, Anh (D01)',
+            'Môn Ngoại ngữ hệ số 2'
+        ],
+        [
+            'CLC',
+            '7380107C',
+            'Luật Kinh Tế CLC',
+            `${d14hs2nn.toFixed(2)}`,
+            'Văn, Sử, Anh (D14)',
+            'Môn Ngoại ngữ hệ số 2'
+        ],
+
+        // CLC - Công Nghệ Sinh Học   
+        [
+            'CLC',
+            '7420201C',
+            'Công Nghệ Sinh Học CLC',
+            `${d08.toFixed(2)}`,
+            'Toán, Sinh, Anh (D08)',
+            'Không có môn hệ số 2'
+        ],
+        [
+            'CLC',
+            '7420201C',
+            'Công Nghệ Sinh Học CLC',
+            `${a01.toFixed(2)}`,
+            'Toán, Lý, Anh (A01)',
+            'Không có môn hệ số 2'
+        ],
+        [
+            'CLC',
+            '7420201C',
+            'Công Nghệ Sinh Học CLC',
+            `${b00.toFixed(2)}`,
+            'Toán, Hóa, Sinh (B00)',
+            'Không có môn hệ số 2'
+        ],
+        [
+            'CLC',
+            '7420201C',
+            'Công Nghệ Sinh Học CLC',
+            `${d07.toFixed(2)}`,
+            'Toán, Hoá, Anh (D07)',
+            'Không có môn hệ số 2'
+        ],
+
+        // CLC - Khoa Học Máy Tính   
+        [
+            'CLC',
+            '7480101C',
+            'Khoa Học Máy Tính CLC',
+            `${a00hs2t.toFixed(2)}`,
+            'Toán, Lý, Hóa (A00)',
+            'Môn Toán hệ số 2'
+        ],
+        [
+            'CLC',
+            '7480101C',
+            'Khoa Học Máy Tính CLC',
+            `${a01hs2t.toFixed(2)}`,
+            'Toán, Lý, Anh (A01)',
+            'Môn Toán hệ số 2'
+        ],
+        [
+            'CLC',
+            '7480101C',
+            'Khoa Học Máy Tính CLC',
+            `${d01hs2t.toFixed(2)}`,
+            'Toán, Văn, Anh (D01)',
+            'Môn Toán hệ số 2'
+        ],
+        [
+            'CLC',
+            '7480101C',
+            'Khoa Học Máy Tính CLC',
+            `${d07hs2t.toFixed(2)}`,
+            'Toán, Hoá, Anh (D07)',
+            'Môn Toán hệ số 2'
+        ],
+
+        // CLC - CNKT Công Trình Xây Dựng   
+        [
+            'CLC',
+            '7510102C',
+            'CNKT Công Trình Xây Dựng CLC',
+            `${a00hs2t.toFixed(2)}`,
+            'Toán, Lý, Hóa (A00)',
+            'Môn Toán hệ số 2'
+        ],
+        [
+            'CLC',
+            '7510102C',
+            'CNKT Công Trình Xây Dựng CLC',
+            `${a01hs2t.toFixed(2)}`,
+            'Toán, Lý, Anh (A01)',
+            'Môn Toán hệ số 2'
+        ],
+        [
+            'CLC',
+            '7510102C',
+            'CNKT Công Trình Xây Dựng CLC',
+            `${d01hs2t.toFixed(2)}`,
+            'Toán, Văn, Anh (D01)',
+            'Môn Toán hệ số 2'
+        ],
+        [
+            'CLC',
+            '7510102C',
+            'CNKT Công Trình Xây Dựng CLC',
+            `${d07hs2t.toFixed(2)}`,
+            'Toán, Hoá, Anh (D07)',
+            'Môn Toán hệ số 2'
         ],
     ]
 
