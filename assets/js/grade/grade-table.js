@@ -156,37 +156,13 @@ function Tinh_Diem() {
         $("#kq-to-hop").removeClass("hidden");
         $("#kq-dxtou").addClass("hidden");
         $("#kq-mon").addClass("hidden");
-        $("#a00").val(a00.toFixed(2));
-        $("#a01").val(a01.toFixed(2));
-        $("#b00").val(b00.toFixed(2));
-        $("#d01").val(d01.toFixed(2));
-        $("#d07").val(d07.toFixed(2));
-        $("#c00").val(c00.toFixed(2));
-        $("#c01").val(c01.toFixed(2));
-        $("#c02").val(c02.toFixed(2));
-        $("#d14").val(d14.toFixed(2));
-        $("#d15").val(d15.toFixed(2));
-        $("#d90").val(d90.toFixed(2));
-        $("#d96").val(d96.toFixed(2));
     } else if (kq == 'another' && kqt == '2') {
         $("#kq-to-hop").removeClass("hidden");
         $("#kq-dxtou").addClass("hidden");
         $("#kq-mon").removeClass("hidden");
-        $("#a00").val(a00.toFixed(2));
-        $("#a01").val(a01.toFixed(2));
-        $("#b00").val(b00.toFixed(2));
-        $("#d01").val(d01.toFixed(2));
-        $("#d07").val(d07.toFixed(2));
-        $("#c00").val(c00.toFixed(2));
-        $("#c01").val(c01.toFixed(2));
-        $("#c02").val(c02.toFixed(2));
-        $("#d14").val(d14.toFixed(2));
-        $("#d15").val(d15.toFixed(2));
-        $("#d90").val(d90.toFixed(2));
-        $("#d96").val(d96.toFixed(2));
     }
 
-    // show result
+    // hiển thị điểm trung bình môn
     $("#kq-t").val(t.toFixed(2));
     $("#kq-v").val(v.toFixed(2));
     $("#kq-nn").val(nn.toFixed(2));
@@ -196,6 +172,24 @@ function Tinh_Diem() {
     $("#kq-ls").val(ls.toFixed(2));
     $("#kq-d").val(d.toFixed(2));
     $("#kq-cd").val(cd.toFixed(2));
+
+    // hiện thị điểm tổ hợp môn
+    $("#a00").val(a00.toFixed(2));
+    $("#a01").val(a01.toFixed(2));
+    $("#a02").val(a02.toFixed(2));
+    $("#b00").val(b00.toFixed(2));
+    $("#c00").val(c00.toFixed(2));
+    $("#c01").val(c01.toFixed(2));
+    $("#c02").val(c02.toFixed(2));
+    $("#c03").val(c03.toFixed(2));
+    $("#d01").val(d01.toFixed(2));
+    $("#d07").val(d07.toFixed(2));
+    $("#d08").val(d08.toFixed(2));
+    $("#d14").val(d14.toFixed(2));
+    $("#d15").val(d15.toFixed(2));
+    $("#d78").val(d78.toFixed(2));
+    $("#d90").val(d90.toFixed(2));
+    $("#d96").val(d96.toFixed(2));
 
     // data table
     dxt = [
