@@ -91,6 +91,7 @@
 .study tbody tr td:nth-child(4) {
     text-align-last: left;
 }
+
 .table th {
     padding: 10px 25px;
 }
@@ -186,6 +187,28 @@ table.dataTable thead .sorting_desc_disabled:before {
     bottom: 0.9em;
     display: block;
     opacity: .5;
+}
+
+.input-group-addon {
+    min-width: 100px;
+    padding: 11px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.1rem rgb(0 123 255 / 25%);
+}
+
+.form-control:hover {
+    border-color: #518ce4;
+    box-shadow: 0 0 0 0.1rem rgb(0 123 255 / 25%);
 }
 
 @media (max-width: 767px) {
