@@ -190,7 +190,7 @@ table.dataTable thead .sorting_desc_disabled:before {
 }
 
 .input-group-addon {
-    min-width: 100px;
+    min-width: 90px;
     padding: 11px;
     font-size: 14px;
     font-weight: 400;
@@ -219,6 +219,7 @@ table.dataTable thead .sorting_desc_disabled:before {
     padding: 10px 15px;
     line-height: unset;
 }
+
 @media (max-width: 767px) {
 
     .faculty h4,
