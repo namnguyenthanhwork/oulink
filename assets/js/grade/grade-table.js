@@ -2,6 +2,18 @@
 var KVUT = 0;
 var DTUT = 0;
 
+$(document).ready(function () {
+    $('#my-grade input').keypress(function (event) {
+        if ((event.which != 46 || $(this).val().indexOf('.') !=
+                -1) && (event.which < 48 || event.which > 57)) {
+            event.preventDefault();
+        }
+    });
+
+    $("#check").click(function () {
+        Tinh_Diem()
+    });
+});
 
 /* ============ fn =============== */
 function Tinh_Diem_Mon(l10, l11, hk1l12) {
@@ -135,31 +147,61 @@ function Tinh_Diem() {
     var d96 = Tinh_Diem_TH(t, nn, Tinh_TBC(ls, d, cd)) + KVUT + DTUT;
     var d96hs2nn = Tinh_Diem_TH_HS2(nn, v, Tinh_TBC(ls, d, cd)) + KVUT + DTUT;
 
+    if (!a00 != 0) a00 = 0
+    if (!a00hs2t != 0) a00hs2t = 0
+    if (!a01 != 0) a01 = 0
+    if (!a01hs2nn != 0) a01hs2nn = 0
+    if (!a01hs2t != 0) a01hs2t = 0
+    if (!a02 != 0) a02 = 0
+    if (!b00 != 0) b00 = 0
+    if (!c00 != 0) c00 = 0
+    if (!c01 != 0) c01 = 0
+    if (!c02 != 0) c02 = 0
+    if (!c03 != 0) c03 = 0
+    if (!d01 != 0) d01 = 0
+    if (!d01hs2nn != 0) d01hs2nn = 0
+    if (!d01hs2t != 0) d01hs2t = 0
+    if (!d07 != 0) d07 = 0
+    if (!d07hs2t != 0) d07hs2t = 0
+    if (!d07hs2nn != 0) d07hs2nn = 0
+    if (!d08 != 0) d08 = 0
+    if (!d14 != 0) d14 = 0
+    if (!d14hs2nn != 0) d14hs2nn = 0
+    if (!d15 != 0) d15 = 0
+    if (!d78 != 0) d78 = 0
+    if (!d78hs2nn != 0) d78hs2nn = 0
+    if (!d90 != 0) d90 = 0
+    if (!d96 != 0) d96 = 0
+    if (!d96hs2nn != 0) d96hs2nn = 0
+
     // Chọn trường
+    var kq_mon = $("#kq-mon");
+    var kq_to_hop = $("#kq-to-hop");
+    var kq_dxtou = $("#kq-dxtou");
     if (kq == 'ou' && kqt == '0') {
-        $("#kq-mon").removeClass("hidden");
-        $("#kq-to-hop").addClass("hidden");
-        $("#kq-dxtou").addClass("hidden");
+        kq_mon.removeClass("hidden");
+        kq_to_hop.addClass("hidden");
+        kq_dxtou.addClass("hidden");
     } else if (kq == 'ou' && kqt == '1') {
-        $("#kq-to-hop").addClass("hidden");
-        $("#kq-dxtou").removeClass("hidden");
-        $("#kq-mon").addClass("hidden");
+        kq_to_hop.addClass("hidden");
+        kq_dxtou.removeClass("hidden");
+        kq_mon.addClass("hidden");
     } else if (kq == 'ou' && kqt == '2') {
-        $("#kq-to-hop").addClass("hidden");
-        $("#kq-dxtou").removeClass("hidden");
-        $("#kq-mon").removeClass("hidden");
+        kq_to_hop.addClass("hidden");
+        kq_dxtou.removeClass("hidden");
+        kq_mon.removeClass("hidden");
     } else if (kq == 'another' && kqt == '0') {
-        $("#kq-to-hop").addClass("hidden");
-        $("#kq-dxtou").addClass("hidden");
-        $("#kq-mon").removeClass("hidden");
+        kq_to_hop.addClass("hidden");
+        kq_dxtou.addClass("hidden");
+        kq_mon.removeClass("hidden");
     } else if (kq == 'another' && kqt == '1') {
-        $("#kq-to-hop").removeClass("hidden");
-        $("#kq-dxtou").addClass("hidden");
-        $("#kq-mon").addClass("hidden");
+        kq_to_hop.removeClass("hidden");
+        kq_dxtou.addClass("hidden");
+        kq_mon.addClass("hidden");
     } else if (kq == 'another' && kqt == '2') {
-        $("#kq-to-hop").removeClass("hidden");
-        $("#kq-dxtou").addClass("hidden");
-        $("#kq-mon").removeClass("hidden");
+        kq_to_hop.removeClass("hidden");
+        kq_dxtou.addClass("hidden");
+        kq_mon.removeClass("hidden");
     }
 
     // hiển thị điểm trung bình môn
@@ -172,6 +214,10 @@ function Tinh_Diem() {
     $("#kq-ls").val(ls.toFixed(2));
     $("#kq-d").val(d.toFixed(2));
     $("#kq-cd").val(cd.toFixed(2));
+    var kq_mon_value = $("#kq-mon input");
+    for (i = 0; i < kq_mon_value.length; i++)
+        if (kq_mon_value[i].value == 'NaN')
+            kq_mon_value[i].value = '0';
 
     // hiện thị điểm tổ hợp môn
     $("#a00").val(a00.toFixed(2));
@@ -1406,6 +1452,8 @@ function Tinh_Diem() {
         ],
     ]
 
+
+
     $('#grade-table').DataTable({
         destroy: true,
         data: dxt,
@@ -1430,15 +1478,3 @@ function Tinh_Diem() {
         }
     });
 }
-$(document).ready(function () {
-    $('#my-grade input').keypress(function (event) {
-        if ((event.which != 46 || $(this).val().indexOf('.') !=
-                -1) && (event.which < 48 || event.which > 57)) {
-            event.preventDefault();
-        }
-    });
-
-    $("#check").click(function () {
-        Tinh_Diem()
-    });
-});
