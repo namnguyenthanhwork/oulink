@@ -189,9 +189,13 @@ table.dataTable thead .sorting_desc_disabled:before {
     opacity: .5;
 }
 
+label {
+    margin-bottom: .7rem;
+}
+
 .input-group-addon {
-    min-width: 90px;
-    padding: 11px;
+    min-width: 85px;
+    padding: 11px 8px;
     font-size: 14px;
     font-weight: 400;
     line-height: 1;
