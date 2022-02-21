@@ -1,8 +1,48 @@
 /* ============ Global variable =============*/
 var KVUT = 0;
 var DTUT = 0;
+var t_10, v_10, nn_10, vl_10, s_10, h_10, ls_10, d_10, cd_10;
+var t_11, v_11, nn_11, vl_11, s_11, h_11, ls_11, d_11, cd_11;
+var t_12, v_12, nn_12, vl_12, s_12, h_12, ls_12, d_12, cd_12;
+var lop10, lop11, lop12;
 
 $(document).ready(function () {
+    lop10 = JSON.parse(localStorage.getItem("lop10"));
+    lop11 = JSON.parse(localStorage.getItem("lop11"));
+    lop12 = JSON.parse(localStorage.getItem("lop12"));
+    // dữ liệu điểm lớp 10
+    $("#t10").val(lop10[0]);
+    $("#v10").val(lop10[1]);
+    $("#nn10").val(lop10[2]);
+    $("#vl10").val(lop10[3]);
+    $("#s10").val(lop10[4]);
+    $("#h10").val(lop10[5]);
+    $("#ls10").val(lop10[6]);
+    $("#d10").val(lop10[7]);
+    $("#cd10").val(lop10[8]);
+
+    // dữ liệu điểm lớp 11
+    $("#t11").val(lop11[0]);
+    $("#v11").val(lop11[1]);
+    $("#nn11").val(lop11[2]);
+    $("#vl11").val(lop11[3]);
+    $("#s11").val(lop11[4]);
+    $("#h11").val(lop11[5]);
+    $("#ls11").val(lop11[6]);
+    $("#d11").val(lop11[7]);
+    $("#cd11").val(lop11[8]);
+
+    // dữ liệu điểm lớp 12
+    $("#t12").val(lop12[0]);
+    $("#v12").val(lop12[1]);
+    $("#nn12").val(lop12[2]);
+    $("#vl12").val(lop12[3]);
+    $("#s12").val(lop12[4]);
+    $("#h12").val(lop12[5]);
+    $("#ls12").val(lop12[6]);
+    $("#d12").val(lop12[7]);
+    $("#cd12").val(lop12[8]);
+
     $('#my-grade input').keypress(function (event) {
         if ((event.which != 46 || $(this).val().indexOf('.') !=
                 -1) && (event.which < 48 || event.which > 57)) {
@@ -43,37 +83,38 @@ function Tinh_Diem() {
     var dt = $("#dtut").val();
 
     // Điểm cả năm lớp 10 
-    var t_10 = $("#t10").val();
-    var v_10 = $("#v10").val();
-    var nn_10 = $("#nn10").val();
-    var vl_10 = $("#vl10").val();
-    var s_10 = $("#s10").val();
-    var h_10 = $("#h10").val();
-    var ls_10 = $("#ls10").val();
-    var d_10 = $("#d10").val();
-    var cd_10 = $("#cd10").val();
+    t_10 = $("#t10").val();
+    v_10 = $("#v10").val();
+    nn_10 = $("#nn10").val();
+    vl_10 = $("#vl10").val();
+    s_10 = $("#s10").val();
+    h_10 = $("#h10").val();
+    ls_10 = $("#ls10").val();
+    d_10 = $("#d10").val();
+    cd_10 = $("#cd10").val();
 
     // Điểm cả năm lớp 11 
-    var t_11 = $("#t11").val();
-    var v_11 = $("#v11").val();
-    var nn_11 = $("#nn11").val();
-    var vl_11 = $("#vl11").val();
-    var s_11 = $("#s11").val();
-    var h_11 = $("#h11").val();
-    var ls_11 = $("#ls11").val();
-    var d_11 = $("#d11").val();
-    var cd_11 = $("#cd11").val();
+    t_11 = $("#t11").val();
+    v_11 = $("#v11").val();
+    nn_11 = $("#nn11").val();
+    vl_11 = $("#vl11").val();
+    s_11 = $("#s11").val();
+    h_11 = $("#h11").val();
+    ls_11 = $("#ls11").val();
+    d_11 = $("#d11").val();
+    cd_11 = $("#cd11").val();
 
     // Điểm hk1 lớp 12 
-    var t_12 = $("#t12").val();
-    var v_12 = $("#v12").val();
-    var nn_12 = $("#nn12").val();
-    var vl_12 = $("#vl12").val();
-    var s_12 = $("#s12").val();
-    var h_12 = $("#h12").val();
-    var ls_12 = $("#ls12").val();
-    var d_12 = $("#d12").val();
-    var cd_12 = $("#cd12").val();
+    t_12 = $("#t12").val();
+    v_12 = $("#v12").val();
+    nn_12 = $("#nn12").val();
+    vl_12 = $("#vl12").val();
+    s_12 = $("#s12").val();
+    h_12 = $("#h12").val();
+    ls_12 = $("#ls12").val();
+    d_12 = $("#d12").val();
+    cd_12 = $("#cd12").val();
+
 
     // alert tính điểm btn
     if (t_10 == '' && v_10 == '' && nn_10 == '' && vl_10 == '' && s_10 == '' && h_10 == '' &&
@@ -95,6 +136,13 @@ function Tinh_Diem() {
             footer: '<a href="https://www.facebook.com/groups/oumembers" target="_blank">Vào group OU để biết nhiều thông tin hơn 🥰</a>'
         })
 
+        // lưu vào local storage
+        lop10 = [t_10, v_10, nn_10, vl_10, s_10, h_10, ls_10, d_10, cd_10];
+        lop11 = [t_11, v_11, nn_11, vl_11, s_11, h_11, ls_11, d_11, cd_11];
+        lop12 = [t_12, v_12, nn_12, vl_12, s_12, h_12, ls_12, d_12, cd_12];
+        localStorage.setItem("lop10", JSON.stringify(lop10));
+        localStorage.setItem("lop11", JSON.stringify(lop11));
+        localStorage.setItem("lop12", JSON.stringify(lop12));
 
         // Điểm trung bình môn
         var t = Tinh_Diem_Mon(t_10, t_11, t_12);
