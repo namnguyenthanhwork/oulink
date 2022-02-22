@@ -126,14 +126,14 @@ function Tinh_Diem() {
             icon: 'error',
             title: 'Tính điểm thất bại !',
             text: 'Không nhập điểm lấy gì mà tính 🤬🤬🤬',
-            footer: '<a href="https://www.facebook.com/groups/oumembers" target="_blank">Vào group OU để biết nhiều thông tin hơn 🥰</a>'
+            footer: '<a href="https://www.facebook.com/groups/oumembers" target="_blank" class="text-center">Vào group <span class="text-danger">"Sinh Viên Đại Học Mở TP.HCM- HCMCOU"</span> để biết nhiều thông tin hơn. Nhấn vào đây!</a>'
         })
     } else {
         Swal.fire({
             icon: 'success',
             title: 'Tính điểm thành công !',
             text: 'Lưu ý: có thay đổi gì thì nhớ ấn lại tui nhé 🥰🥰🥰',
-            footer: '<a href="https://www.facebook.com/groups/oumembers" target="_blank">Vào group OU để biết nhiều thông tin hơn 🥰</a>'
+            footer: '<a href="https://www.facebook.com/groups/oumembers" target="_blank" class="text-center">Vào group <span class="text-danger">"Sinh Viên Đại Học Mở TP.HCM- HCMCOU"</span> để biết nhiều thông tin hơn. Nhấn vào đây!</a>'
         })
 
         // lưu vào local storage
@@ -1531,7 +1531,7 @@ function Tinh_Diem() {
                 [5, 10, 15, 20, 25, "Tất cả"]
             ],
             "oLanguage": {
-                "sSearch": "Tìm kiếm",
+                "sSearch": "Tìm kiếm ngành",
                 "sLengthMenu": "Hiển thị _MENU_ dòng",
                 "sInfo": "Đang hiện thị dòng _START_ đến _END_ trong _TOTAL_ dòng",
                 "sInfoFiltered": " - lọc từ _MAX_ dòng",

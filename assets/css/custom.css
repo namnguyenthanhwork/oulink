@@ -83,7 +83,8 @@
     white-space: nowrap;
 }
 
-.table-responsive tbody tr td:nth-child(2) {
+#basic-datatables tbody tr td:nth-child(2),
+#basic-datatables-dt tbody tr td:nth-child(2) {
     text-align-last: left;
 }
 

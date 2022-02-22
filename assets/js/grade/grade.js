@@ -769,7 +769,7 @@ $(window).on('load', function () {
             [5, 10, 15, 20, 25, "Tất cả"]
         ],
         "oLanguage": {
-            "sSearch": "Tìm kiếm",
+            "sSearch": "Tìm kiếm ngành",
             "sLengthMenu": "Hiển thị _MENU_ dòng",
             "sInfo": "Đang hiện thị dòng _START_ đến _END_ trong _TOTAL_ dòng",
             "sInfoFiltered": " - lọc từ _MAX_ dòng",
@@ -793,7 +793,7 @@ $(window).on('load', function () {
             [5, 10, 15, 20, 25, "Tất cả"]
         ],
         "oLanguage": {
-            "sSearch": "Tìm kiếm",
+            "sSearch": "Tìm kiếm ngành",
             "sLengthMenu": "Hiển thị _MENU_ dòng",
             "sInfo": "Đang hiện thị dòng _START_ đến _END_ trong _TOTAL_ dòng",
             "sInfoFiltered": " - lọc từ _MAX_ dòng",

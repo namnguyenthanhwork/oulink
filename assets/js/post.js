@@ -1,5 +1,14 @@
 let post = [{
         author: 'Thành Nam',
+        image: 'assets/images/postGr/post-13.jpg',
+        image_hot: 'assets/images/postGr/new.gif',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1428577757558828/',
+        time_delay: '0.5s',
+        time: '20/02/2022',
+        title: 'Công cụ tính điểm xét tuyển (Xét học bạ & xét thi THPT)'
+    },
+    {
+        author: 'Thành Nam',
         image: 'assets/images/postGr/post-14.jpg',
         image_hot: 'assets/images/postGr/new.gif',
         link: 'https://www.facebook.com/groups/oumembers/posts/1426346964448574/',

@@ -165,10 +165,19 @@ renderNews(news);
 /* =============== post group =============== */
 let post = [{
         author: 'Thành Nam',
+        image: 'assets/images/postGr/post-13.jpg',
+        image_hot: 'assets/images/postGr/new.gif',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1428577757558828/',
+        time_delay: '0.2s',
+        time: '20/02/2022',
+        title: 'Công cụ tính điểm xét tuyển (Xét học bạ & xét thi THPT)'
+    },
+    {
+        author: 'Thành Nam',
         image: 'assets/images/postGr/post-14.jpg',
         image_hot: 'assets/images/postGr/new.gif',
         link: 'https://www.facebook.com/groups/oumembers/posts/1426346964448574/',
-        time_delay: '0.8s',
+        time_delay: '0.5s',
         time: '17/02/2022',
         title: 'Thông tin tuyển sinh Đại học chính quy năm 2022'
     },
@@ -184,7 +193,7 @@ let post = [{
         author: 'Quang Hà',
         image: 'assets/images/postGr/post-17.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1321268808289724/',
-        time_delay: '0.5s',
+        time_delay: '0.2s',
         time: '10/09/2021',
         title: 'HƯỚNG DẪN Tân sinh viên khóa 2021 sử dụng các tài khoản được cấp và tham gia kiểm tra trình độ đầu vào (Tiếng Anh và Tin học)'
     },
@@ -200,17 +209,9 @@ let post = [{
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-6.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1285563878526884/',
-        time_delay: '0.2s',
+        time_delay: '0.8s',
         time: '10/07/2021',
         title: 'Hướng dẫn đăng ký nhập học (Tham khảo)'
-    },
-    {
-        author: 'Thành Nam',
-        image: 'assets/images/postGr/post-5.jpg',
-        link: 'http://tuyensinh.ou.edu.vn/thong-tin-xet-tuyen-phuong-thuc-diem-thi-tn-thpt-2021',
-        time_delay: '0.2s',
-        time: '28/08/2021',
-        title: 'Thông tin xét tuyển phương thức điểm thi TN THPT 2021'
     }
 ]
 
