@@ -10,6 +10,12 @@ $(document).ready(function () {
     lop10 = JSON.parse(localStorage.getItem("lop10"));
     lop11 = JSON.parse(localStorage.getItem("lop11"));
     lop12 = JSON.parse(localStorage.getItem("lop12"));
+    if (localStorage.getItem('kvut')) {
+        $('#kvut').val(localStorage.getItem('kvut'))
+    };
+    if (localStorage.getItem('dtut')) {
+        $('#dtut').val(localStorage.getItem('dtut'))
+    };
     // dữ liệu điểm lớp 10
     $("#t10").val(lop10[0]);
     $("#v10").val(lop10[1]);
@@ -143,6 +149,8 @@ function Tinh_Diem() {
         localStorage.setItem("lop10", JSON.stringify(lop10));
         localStorage.setItem("lop11", JSON.stringify(lop11));
         localStorage.setItem("lop12", JSON.stringify(lop12));
+        localStorage.setItem("kvut", kv);
+        localStorage.setItem("dtut", dt);
 
         // Điểm trung bình môn
         var t = Tinh_Diem_Mon(t_10, t_11, t_12);
