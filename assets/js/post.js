@@ -1,5 +1,14 @@
 let post = [{
         author: 'Thành Nam',
+        image: 'assets/images/postGr/post-12.jpg',
+        image_hot: 'assets/images/postGr/new.gif',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1435431036873500/',
+        time_delay: '0.2s',
+        time: '02/03/2022',
+        title: 'Chỉ tiêu tuyển sinh - Học phí năm 2022 - 2023 & Điểm chuẩn các năm'
+    },
+    {
+        author: 'Thành Nam',
         image: 'assets/images/postGr/post-13.jpg',
         image_hot: 'assets/images/postGr/new.gif',
         link: 'https://www.facebook.com/groups/oumembers/posts/1428577757558828/',

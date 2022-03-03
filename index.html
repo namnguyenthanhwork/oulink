@@ -344,13 +344,16 @@
                         <h3 class="title">Thông tin điểm <span>học bạ</span> từng năm</h3>
                         <div>
                             <p class="font-weight-bold">Lưu ý:</p>
-                            <p>1. Chỉ có cột điểm học bạ là <span class="font-weight-bold text-danger d-inline">học sinh giỏi &
+                            <p>1. Chỉ có cột điểm học bạ là <span class="font-weight-bold text-danger d-inline">học sinh
+                                    giỏi &
                                     học sinh khá có thể xét</span></p>
-                            <p>2. Chỉ có cột điểm học sinh giỏi là <span class="font-weight-bold text-danger d-inline">học sinh
+                            <p>2. Chỉ có cột điểm học sinh giỏi là <span
+                                    class="font-weight-bold text-danger d-inline">học sinh
                                     giỏi mới được xét, học sinh khá không được
                                     xét</span></p>
                             <p>3. Nếu cột học sinh giỏi không có ghi, cột học bạ điền dấu "x" hoặc không điền gì, nghĩa
-                                là <span class="font-weight-bold text-danger d-inline">tuyển thẳng học sinh giỏi</span></p>
+                                là <span class="font-weight-bold text-danger d-inline">tuyển thẳng học sinh giỏi</span>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -1340,7 +1343,7 @@
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
 
     <!--====== Scrolling Nav js ======-->
-    <script src="assets/js/jquery.easing.min.js"></script>
+    <!-- <script src="assets/js/jquery.easing.min.js"></script> -->
     <script src="assets/js/scrolling-nav.js"></script>
 
     <!--====== wow js ======-->
@@ -1372,15 +1375,16 @@
     <script src="assets/js/club/tinh-nguyen.js"></script>
 
     <script>
+        document.querySelector('.page-scroll').scrollIntoView({
+            behavior: 'smooth'
+        });
         // Section Menu Active
         var scrollLink = $(".page-scroll");
         // Active link switching
         $(window).scroll(function () {
             var scrollbarLocation = $(this).scrollTop();
-
             scrollLink.each(function () {
                 var sectionOffset = $(this.hash).offset().top - 73;
-
                 if (sectionOffset <= scrollbarLocation) {
                     $(this).parent().addClass("active");
                     $(this).parent().siblings().removeClass("active");

@@ -54,6 +54,9 @@ $(document).ready(function () {
                 -1) && (event.which < 48 || event.which > 57)) {
             event.preventDefault();
         }
+        if ($(this).val() < 0 || $(this).val() > 10) {
+            
+        }
     });
 
     $("#check").click(function () {

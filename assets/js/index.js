@@ -165,10 +165,18 @@ renderNews(news);
 /* =============== post group =============== */
 let post = [{
         author: 'Thành Nam',
+        image: 'assets/images/postGr/post-12.jpg',
+        image_hot: 'assets/images/postGr/new.gif',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1435431036873500/',
+        time_delay: '0.2s',
+        time: '02/03/2022',
+        title: 'Chỉ tiêu tuyển sinh - Học phí năm 2022 - 2023 & Điểm chuẩn các năm'
+    }, {
+        author: 'Thành Nam',
         image: 'assets/images/postGr/post-13.jpg',
         image_hot: 'assets/images/postGr/new.gif',
         link: 'https://www.facebook.com/groups/oumembers/posts/1428577757558828/',
-        time_delay: '0.2s',
+        time_delay: '0.5s',
         time: '20/02/2022',
         title: 'Công cụ tính điểm xét tuyển (Xét học bạ & xét thi THPT)'
     },
@@ -177,7 +185,7 @@ let post = [{
         image: 'assets/images/postGr/post-14.jpg',
         image_hot: 'assets/images/postGr/new.gif',
         link: 'https://www.facebook.com/groups/oumembers/posts/1426346964448574/',
-        time_delay: '0.5s',
+        time_delay: '0.8s',
         time: '17/02/2022',
         title: 'Thông tin tuyển sinh Đại học chính quy năm 2022'
     },
@@ -185,7 +193,7 @@ let post = [{
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-15.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1325308404552431/',
-        time_delay: '0.8s',
+        time_delay: '0.2s',
         time: '16/09/2021',
         title: 'Thông báo điểm chuẩn trúng tuyển kỳ tuyển sinh ĐHCQ năm 2021'
     },
@@ -193,7 +201,7 @@ let post = [{
         author: 'Quang Hà',
         image: 'assets/images/postGr/post-17.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1321268808289724/',
-        time_delay: '0.2s',
+        time_delay: '0.5s',
         time: '10/09/2021',
         title: 'HƯỚNG DẪN Tân sinh viên khóa 2021 sử dụng các tài khoản được cấp và tham gia kiểm tra trình độ đầu vào (Tiếng Anh và Tin học)'
     },
@@ -201,17 +209,9 @@ let post = [{
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-3.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1312833805799891/',
-        time_delay: '0.5s',
+        time_delay: '0.8s',
         time: '29/08/2021',
         title: 'THÔNG BÁO VỀ VIỆC TỔ CHỨC KIỂM TRA TRÌNH ĐỘ TIẾNG ANH - TIN HỌC ĐẦU VÀO CHO TÂN SINH VIÊN KHÓA 2021'
-    },
-    {
-        author: 'Thành Nam',
-        image: 'assets/images/postGr/post-6.jpg',
-        link: 'https://www.facebook.com/groups/oumembers/posts/1285563878526884/',
-        time_delay: '0.8s',
-        time: '10/07/2021',
-        title: 'Hướng dẫn đăng ký nhập học (Tham khảo)'
     }
 ]
 
