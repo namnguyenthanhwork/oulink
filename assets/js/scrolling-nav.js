@@ -8,7 +8,7 @@
 //             if (target.length) {
 //                 $('html, body').animate({
 //                     scrollTop: (target.offset().top - 60)
-//                 }, 800, "easeInOutExpo");
+//                 }, 600, "easeInOutExpo");
 //                 return false;
 //             }
 //         }
@@ -16,6 +16,26 @@
 
 // });
 
+const links = document.querySelectorAll(".page-scroll");
+
+for (const link of links) {
+    link.addEventListener("click", clickHandler);
+}
+
+function clickHandler(e) {
+    e.preventDefault();
+    const href = this.getAttribute("href");
+    const offsetTop = document.querySelector(href).offsetTop;
+
+    scroll({
+        top: offsetTop,
+        behavior: "smooth"
+    });
+
+
+}
+
+/* 
 ! function () {
     var s, i, c, a, o = {
             frameRate: 150,
@@ -339,3 +359,4 @@
         return ne
     }) : "object" == typeof exports ? module.exports = ne : window.SmoothScroll = ne
 }();
+*/

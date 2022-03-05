@@ -168,7 +168,6 @@ let post = [{
         image: 'assets/images/postGr/post-12.jpg',
         image_hot: 'assets/images/postGr/new.gif',
         link: 'https://www.facebook.com/groups/oumembers/posts/1435431036873500/',
-        time_delay: '0.2s',
         time: '02/03/2022',
         title: 'Chỉ tiêu tuyển sinh - Học phí năm 2022 - 2023 & Điểm chuẩn các năm'
     }, {
@@ -176,7 +175,6 @@ let post = [{
         image: 'assets/images/postGr/post-13.jpg',
         image_hot: 'assets/images/postGr/new.gif',
         link: 'https://www.facebook.com/groups/oumembers/posts/1428577757558828/',
-        time_delay: '0.5s',
         time: '20/02/2022',
         title: 'Công cụ tính điểm xét tuyển (Xét học bạ & xét thi THPT)'
     },
@@ -185,7 +183,6 @@ let post = [{
         image: 'assets/images/postGr/post-14.jpg',
         image_hot: 'assets/images/postGr/new.gif',
         link: 'https://www.facebook.com/groups/oumembers/posts/1426346964448574/',
-        time_delay: '0.8s',
         time: '17/02/2022',
         title: 'Thông tin tuyển sinh Đại học chính quy năm 2022'
     },
@@ -193,7 +190,6 @@ let post = [{
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-15.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1325308404552431/',
-        time_delay: '0.2s',
         time: '16/09/2021',
         title: 'Thông báo điểm chuẩn trúng tuyển kỳ tuyển sinh ĐHCQ năm 2021'
     },
@@ -201,7 +197,6 @@ let post = [{
         author: 'Quang Hà',
         image: 'assets/images/postGr/post-17.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1321268808289724/',
-        time_delay: '0.5s',
         time: '10/09/2021',
         title: 'HƯỚNG DẪN Tân sinh viên khóa 2021 sử dụng các tài khoản được cấp và tham gia kiểm tra trình độ đầu vào (Tiếng Anh và Tin học)'
     },
@@ -209,7 +204,6 @@ let post = [{
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-3.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1312833805799891/',
-        time_delay: '0.8s',
         time: '29/08/2021',
         title: 'THÔNG BÁO VỀ VIỆC TỔ CHỨC KIỂM TRA TRÌNH ĐỘ TIẾNG ANH - TIN HỌC ĐẦU VÀO CHO TÂN SINH VIÊN KHÓA 2021'
     }
@@ -217,28 +211,11 @@ let post = [{
 
 let post_list = document.querySelector('#group-post')
 renderPost = (post) => {
-    post.forEach(function (e, i) {
-        switch (i) {
-            case 0:
-            case 3: {
-                e.time_delay = "0.2s"
-                break
-            }
-            case 1:
-            case 4: {
-                e.time_delay = "0.5s"
-                break
-            }
-            case 2:
-            case 5: {
-                e.time_delay = "0.8s"
-                break
-            }
-        }
+    post.forEach(function (e) {
         let prod =
             `
             <div class="df col-lg-4 col-md-6 col-sm-6">
-                <div class="single-blog mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="${e.time_delay}">
+                <div class="single-blog mt-30">
                     <div class="blog-image">
                         <img src="${e.image}" alt="blog">       
             `
@@ -271,7 +248,6 @@ let postUtil = [{
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-16.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1347522502331021/',
-        time_delay: '0.8s',
         time: '18/10/2021',
         title: 'Hướng dẫn sửa lỗi font slide của giảng viên'
     },
@@ -279,7 +255,6 @@ let postUtil = [{
         author: 'Thảo Vy Ngo ',
         image: 'assets/images/postGr/post-15.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1337789979970940/',
-        time_delay: '0.2s',
         time: '04/10/2021',
         title: 'NOTION PERSONAL PRO - XÀI FREE NHỜ CÓ MAIL TRƯỜNG'
     },
@@ -287,7 +262,6 @@ let postUtil = [{
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-14.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1320830008333604/',
-        time_delay: '0.2s',
         time: '09/09/2021',
         title: 'Chatbot ôn luyện tin học và anh văn đầu vào'
     },
@@ -295,7 +269,6 @@ let postUtil = [{
         author: 'Thảo Vy Ngo',
         image: 'assets/images/postGr/post-13.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1343930692690202/',
-        time_delay: '0.2s',
         time: '13/10/2021',
         title: 'CANVA FOR EDUCATION - XÀI FREE NHỜ CÓ MAIL TRƯỜNG'
     },
@@ -303,7 +276,6 @@ let postUtil = [{
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-10.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1311843205898951/',
-        time_delay: '0.2s',
         time: '27/08/2021',
         title: 'Share template kho tài liệu tiếng anh tự học'
     },
@@ -311,7 +283,6 @@ let postUtil = [{
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-12.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1284282711988334/',
-        time_delay: '0.2s',
         time: '18/07/2021',
         title: 'Hướng dẫn chụp ảnh 3x4 upload web.'
     }
@@ -319,28 +290,11 @@ let postUtil = [{
 
 let post_util_list = document.querySelector('#group-post-util')
 renderPostUtil = (post) => {
-    post.forEach(function (e, i) {
-        switch (i) {
-            case 0:
-            case 3: {
-                e.time_delay = "0.2s"
-                break
-            }
-            case 1:
-            case 4: {
-                e.time_delay = "0.5s"
-                break
-            }
-            case 2:
-            case 5: {
-                e.time_delay = "0.8s"
-                break
-            }
-        }
+    post.forEach(function (e) {
         let prod =
             `
         <div class="df col-lg-4 col-md-6 col-sm-6">
-            <div class="trick-box wow fadeIn" data-wow-duration="1s" data-wow-delay="${e.time_delay}">
+            <div class="trick-box">
                 <div class="trick-img">
                     <img src="${e.image}" alt="blog" />
                 </div>
@@ -365,7 +319,6 @@ let postReview = [{
         author: 'Diệu Nhân',
         image: 'assets/images/postGr/post-3.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1335854933497778/',
-        time_delay: '0.8s',
         time: '01/10/2021',
         title: 'MỘT SỐ KINH NGHIỆM ĐẠT HỌC BỔNG KHUYẾN KHÍCH HỌC TẬP'
     },
@@ -373,7 +326,6 @@ let postReview = [{
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-4.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1301559593593979/',
-        time_delay: '0.2s',
         time: '12/08/2021',
         title: 'Giới thiệu về Hệ thống điểm tích lũy 4 năm đại học.'
     },
@@ -381,7 +333,6 @@ let postReview = [{
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-1.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1299457123804226/',
-        time_delay: '0.2s',
         time: '09/08/2021',
         title: 'Giới thiệu Hệ thống điểm rèn luyện của trường Đại học Mở'
     },
@@ -389,7 +340,6 @@ let postReview = [{
         author: 'Quang Hà',
         image: 'assets/images/postGr/post-2.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1293426214407317/',
-        time_delay: '0.2s',
         time: '31/07/2021',
         title: 'Cảm nhận về OU.'
     },
@@ -397,7 +347,6 @@ let postReview = [{
         author: 'Hieu Q.Nguyen',
         image: 'assets/images/postGr/post-12.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1263937307356208/',
-        time_delay: '0.2s',
         time: '17/06/2021',
         title: 'NGÀNH NGÔN NGỮ ANH TẠI ĐẠI HỌC MỞ TP. HCM'
     },
@@ -405,7 +354,6 @@ let postReview = [{
         author: 'Quang Hà',
         image: 'assets/images/postGr/post-6.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1291199234630015/',
-        time_delay: '0.2s',
         time: '28/07/2021',
         title: 'Góc nhìn về đại học Mở từ 1 sv năm nhất..'
     },
@@ -413,7 +361,6 @@ let postReview = [{
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-7.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1268234536926485/',
-        time_delay: '0.2s',
         time: '23/06/2021',
         title: 'Review cơ sở 371 Nguyễn Kiệm'
     },
@@ -421,7 +368,6 @@ let postReview = [{
         author: 'Diệu Nhân',
         image: 'assets/images/postGr/post-17.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1268858743530731/',
-        time_delay: '0.2s',
         time: '24/06/2021',
         title: 'Ngôn ngữ Anh năm nhất cần chuẩn bị gì?'
     },
@@ -429,7 +375,6 @@ let postReview = [{
         author: 'Trần ĐạtK',
         image: 'assets/images/postGr/post-16.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1080016299081644/',
-        time_delay: '0.2s',
         time: '27/09/2020',
         title: 'Review kiểm tra anh văn đầu vào.'
     },
@@ -437,7 +382,6 @@ let postReview = [{
         author: 'NT Diễm',
         image: 'assets/images/postGr/post-15.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1078602749222999/',
-        time_delay: '0.2s',
         time: '25/09/2020',
         title: 'Mẹo thuê phòng trọ.'
     },
@@ -445,7 +389,6 @@ let postReview = [{
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-14.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1191871581229448/',
-        time_delay: '0.2s',
         time: '27/02/2021',
         title: 'Review quân sự.'
     }
@@ -457,7 +400,7 @@ renderPostReview = (post) => {
         let prod =
             `
     <div class="df review-post">
-        <div class="single-blog mt-30 wow fadeIn" data-wow-duration="1s">
+        <div class="single-blog mt-30">
             <div class="blog-image">
                 <img src="${e.image}" alt="blog">       
             </div>
@@ -506,94 +449,64 @@ let system = [{
         link: 'http://dkmh.ou.edu.vn/',
         title: 'Hệ thống đăng ký môn học trực tuyến',
         content: 'là hệ thống dùng để đăng ký môn học trực tuyến, bắt đầu từ học kỳ 2 năm 1',
-        time_delay: ""
     },
     {
         image: 'assets/images/postGr/post-10.jpg',
         link: 'http://sis.ou.edu.vn/',
         title: 'Hệ thống dịch vụ sinh viên',
         content: 'là hệ thống dùng để đăng ký cấp giấy chứng nhận, cấp bản sao bằng tốt nghiệp, giấy chứng nhận tạm thời , cấp thẻ sinh viên...',
-        time_delay: ""
     },
     {
         image: 'assets/images/postGr/post-11.jpg',
         link: 'https://tienichsv.ou.edu.vn/',
         title: 'Hệ thống tiện ích sinh viên',
         content: 'là hệ thống dùng để xem thời khoá biểu, xem điểm thi, lịch thi, xem chương trình đào tạo...',
-        time_delay: ""
     },
     {
         image: 'assets/images/postGr/post-12.jpg',
         link: 'javascript:;',
         title: 'Hệ thống mail',
         content: 'là hệ thống dùng để nhận thông báo từ phòng quản lý đào tạo, phòng y tế, thư quán... ngoài ra có thể sử dụng tài khoản này truy cập google drive unlimited',
-        time_delay: ""
     },
     {
         image: 'assets/images/postGr/post-13.jpg',
         link: 'http://lms.ou.edu.vn/',
         title: 'Hệ thống hỗ trợ học tập online',
         content: 'là hệ thống dùng để liên lạc giữa giảng viên và sinh viên, nơi upload bài tập chạy deadline...',
-        time_delay: ""
     },
     {
         image: 'assets/images/postGr/post-14.jpg',
         link: 'http://thuquan.ou.edu.vn/',
         title: 'Hệ thống hỗ trợ đặt sách online',
         content: 'là hệ thống dùng để đặt mua sách từ thư viện',
-        time_delay: ""
     },
     {
         image: 'assets/images/postGr/post-15.jpg',
         link: 'http://vieclam.ou.edu.vn/',
         title: 'Cổng thông tin việc làm',
         content: 'là hệ thống dùng để tìm việc, liên kết doanh nghiệp với sinh viên',
-        time_delay: ""
     },
     {
         image: 'assets/images/postGr/post-16.jpg',
         link: 'http://xdg.ou.edu.vn/',
         title: 'Hệ thống tra cứu điểm thi',
         content: 'là hệ thống dùng để tra cứu điểm thi sau mỗi học kỳ',
-        time_delay: ""
     },
     {
         image: 'assets/images/postGr/post-17.jpg',
         link: 'http://nhatro.ou.edu.vn/',
         title: 'Nhà trọ OU',
         content: 'là hệ thống dùng để tra cứu nhà trọ, giúp sinh viên tìm dễ dàng và nhanh chóng hơn.',
-        time_delay: ""
     }
 ]
 
 let system_list = document.querySelector('#system-content')
 
 renderSystem = (system) => {
-    system.forEach(function (e, i) {
-        switch (i) {
-            case 0:
-            case 3:
-            case 6: {
-                e.time_delay = "0.2s"
-                break
-            }
-            case 1:
-            case 4:
-            case 7: {
-                e.time_delay = "0.5s"
-                break
-            }
-            case 2:
-            case 5:
-            case 8: {
-                e.time_delay = "0.8s"
-                break
-            }
-        }
-
+    system.forEach(function (e) {
         let prod = `
         <div class="df col-lg-4 col-md-6 col-sm-6">
-            <div class="single-blog mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="${e.time_delay}">
+            <div class="single-blog mt-30">
                 <div class="blog-image">
                     <img src="${e.image}" alt="blog">
                 </div>
