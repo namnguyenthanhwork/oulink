@@ -6,6 +6,7 @@ var t_11, v_11, nn_11, vl_11, s_11, h_11, ls_11, d_11, cd_11;
 var t_12, v_12, nn_12, vl_12, s_12, h_12, ls_12, d_12, cd_12;
 var lop10, lop11, lop12;
 
+
 $(document).ready(function () {
     lop10 = JSON.parse(localStorage.getItem("lop10"));
     lop11 = JSON.parse(localStorage.getItem("lop11"));
@@ -16,6 +17,40 @@ $(document).ready(function () {
     if (localStorage.getItem('dtut')) {
         $('#dtut').val(localStorage.getItem('dtut'))
     };
+
+    for (var i = 0; i < lop10.length; i++)
+        if (lop10[i] != '' || lop11[i] != '' || lop12[i] != '') {
+            const toast = document.querySelector(".toast")
+            closeIcon = document.querySelector(".close"),
+                progress = document.querySelector(".progress");
+
+            let timer1, timer2;
+
+            toast.classList.add("active");
+            progress.classList.add("active");
+
+            timer1 = setTimeout(() => {
+                toast.classList.remove("active");
+            }, 5000); //1s = 1000 milliseconds
+
+            timer2 = setTimeout(() => {
+                progress.classList.remove("active");
+            }, 5300);
+
+
+            closeIcon.addEventListener("click", () => {
+                toast.classList.remove("active");
+
+                setTimeout(() => {
+                    progress.classList.remove("active");
+                }, 300);
+
+                clearTimeout(timer1);
+                clearTimeout(timer2);
+            });
+        } else
+            return;
+
     // dữ liệu điểm lớp 10
     $("#t10").val(lop10[0]);
     $("#v10").val(lop10[1]);
@@ -55,7 +90,7 @@ $(document).ready(function () {
             event.preventDefault();
         }
         if ($(this).val() < 0 || $(this).val() > 10) {
-            
+
         }
     });
 

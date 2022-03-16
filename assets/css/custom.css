@@ -226,6 +226,108 @@ label {
 }
 
 
+/* Toast */
+.toast {
+    position: fixed;
+    z-index: 99999;
+    top: 55px;
+    right: 30px;
+    border-radius: 12px;
+    background: #fff;
+    padding: 20px 35px 20px 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-left: 6px solid #4070f4;
+    overflow: hidden;
+    transform: translateX(calc(100% + 30px));
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+    max-width: unset;
+    /*font-size: unset;
+    border: unset;
+    backdrop-filter: unset;*/
+    opacity: unset;
+}
+
+.toast.active {
+    transform: translateX(0%);
+}
+
+.toast .toast-content {
+    display: flex;
+    align-items: center;
+}
+
+.toast-content .check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    background-color: #4070f4;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 50%;
+}
+
+.toast-content .message {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+.message .text {
+    font-size: 15px;
+    font-weight: 400;
+    ;
+    color: #666666;
+}
+
+.message .text.text-1 {
+    font-weight: 600;
+    color: #333;
+}
+
+.toast .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding: 5px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.toast .close:hover {
+    opacity: 1;
+}
+
+.toast .progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: #ddd;
+}
+
+.toast .progress:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #4070f4;
+}
+
+.progress.active:before {
+    animation: progress 5s linear forwards;
+}
+
+@keyframes progress {
+    100% {
+        right: 100%;
+    }
+}
+
 @media (max-width: 767px) {
 
     .faculty h4,
@@ -280,6 +382,21 @@ label {
     div.dataTables_wrapper div div.dataTables_paginate ul.pagination li a {
         font-size: 11px;
     }
+
+    .toast {
+        max-width: 330px;
+        padding: 10px 25px 10px 15px;
+    }
+
+    .message .text {
+        font-size: 13px;
+    }
+
+    .toast-content .check {
+        font-size: 11px;
+        height: 30px;
+        width: 30px;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -318,4 +435,6 @@ label {
     .hc-blog-data {
         width: 90%;
     }
+
+
 }
