@@ -18,39 +18,6 @@ $(document).ready(function () {
         $('#dtut').val(localStorage.getItem('dtut'))
     };
 
-    for (var i = 0; i < lop10.length; i++)
-        if (lop10[i] != '' || lop11[i] != '' || lop12[i] != '') {
-            const toast = document.querySelector(".toast")
-            closeIcon = document.querySelector(".close"),
-                progress = document.querySelector(".progress");
-
-            let timer1, timer2;
-
-            toast.classList.add("active");
-            progress.classList.add("active");
-
-            timer1 = setTimeout(() => {
-                toast.classList.remove("active");
-            }, 5000); //1s = 1000 milliseconds
-
-            timer2 = setTimeout(() => {
-                progress.classList.remove("active");
-            }, 5300);
-
-
-            closeIcon.addEventListener("click", () => {
-                toast.classList.remove("active");
-
-                setTimeout(() => {
-                    progress.classList.remove("active");
-                }, 300);
-
-                clearTimeout(timer1);
-                clearTimeout(timer2);
-            });
-        } else
-            return;
-
     // dữ liệu điểm lớp 10
     $("#t10").val(lop10[0]);
     $("#v10").val(lop10[1]);
@@ -83,6 +50,40 @@ $(document).ready(function () {
     $("#ls12").val(lop12[6]);
     $("#d12").val(lop12[7]);
     $("#cd12").val(lop12[8]);
+
+    // toast check data is exist
+    for (var i = 0; i < lop10.length; i++) {
+        if (lop10[i] != '' || lop11[i] != '' || lop12[i] != '') {
+            const toast = document.querySelector(".toast")
+            closeIcon = document.querySelector(".close"),
+                progress = document.querySelector(".progress");
+
+            let timer1, timer2;
+
+            toast.classList.add("active");
+            progress.classList.add("active");
+
+            timer1 = setTimeout(() => {
+                toast.classList.remove("active");
+            }, 5000); //1s = 1000 milliseconds
+
+            timer2 = setTimeout(() => {
+                progress.classList.remove("active");
+            }, 5300);
+
+            closeIcon.addEventListener("click", () => {
+                toast.classList.remove("active");
+
+                setTimeout(() => {
+                    progress.classList.remove("active");
+                }, 300);
+
+                clearTimeout(timer1);
+                clearTimeout(timer2);
+            });
+            return;
+        }
+    }
 
     $('#my-grade input').keypress(function (event) {
         if ((event.which != 46 || $(this).val().indexOf('.') !=
