@@ -177,7 +177,7 @@ function Tinh_Diem() {
         Swal.fire({
             icon: 'success',
             title: 'Tính điểm thành công !',
-            text: 'Lưu ý: có thay đổi gì thì nhớ ấn lại tui nhé 🥰🥰🥰',
+            text: 'Lưu ý: có thay đổi điểm thì ấn tính điểm lại nhé 🥰🥰🥰',
             footer: '<a href="https://www.facebook.com/groups/oumembers" target="_blank" class="text-center">Vào group <span class="text-danger">"Sinh Viên Đại Học Mở TP.HCM- HCMCOU"</span> để biết nhiều thông tin hơn. Nhấn vào đây!</a>'
         })
 
