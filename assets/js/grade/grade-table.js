@@ -874,7 +874,7 @@ function Tinh_Diem() {
                 'Đại trà',
                 '7380101',
                 'Luật',
-                `${c00.toFixed(2) - 1.5}`,
+                `${c00.toFixed(2)}`,
                 'Văn, Sử, Địa (C00)',
                 'Điểm trúng tuyển phải cao hơn điểm chuẩn 1.5'
             ],
@@ -908,7 +908,7 @@ function Tinh_Diem() {
                 'Đại trà',
                 '7380107',
                 'Luật Kinh Tế',
-                `${c00.toFixed(2) - 1.5}`,
+                `${c00.toFixed(2)}`,
                 'Văn, Sử, Địa (C00)',
                 'Điểm trúng tuyển phải cao hơn điểm chuẩn 1.5'
             ],
@@ -1578,14 +1578,14 @@ function Tinh_Diem() {
                 [5, 10, 15, 20, 25, "Tất cả"]
             ],
             "oLanguage": {
-                "sSearch": "Tìm kiếm ngành",
+                "sSearch": "Tìm kiếm",
                 "sLengthMenu": "Hiển thị _MENU_ dòng",
                 "sInfo": "Đang hiện thị dòng _START_ đến _END_ trong _TOTAL_ dòng",
                 "sInfoFiltered": " - lọc từ _MAX_ dòng",
                 "sInfoEmpty": "Không tìm thấy dữ liệu",
                 "oPaginate": {
-                    "sPrevious": "<<",
-                    "sNext": ">>"
+                    "sPrevious": "<",
+                    "sNext": ">"
                 }
             },
             language: {
