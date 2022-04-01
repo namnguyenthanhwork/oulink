@@ -8,6 +8,18 @@ var lop10, lop11, lop12;
 
 
 $(document).ready(function () {
+    // disable type input
+    $('#my-grade input').keypress(function (event) {
+        if ((event.which != 46 || $(this).val().indexOf('.') !=
+                -1) && (event.which < 48 || event.which > 57)) {
+            event.preventDefault();
+        }
+        if ($(this).val() < 0 || $(this).val() > 10) {
+            event.preventDefault();
+        }
+    });
+
+    // load data from logostorage
     lop10 = JSON.parse(localStorage.getItem("lop10"));
     lop11 = JSON.parse(localStorage.getItem("lop11"));
     lop12 = JSON.parse(localStorage.getItem("lop12"));
@@ -84,16 +96,6 @@ $(document).ready(function () {
             return;
         }
     }
-
-    $('#my-grade input').keypress(function (event) {
-        if ((event.which != 46 || $(this).val().indexOf('.') !=
-                -1) && (event.which < 48 || event.which > 57)) {
-            event.preventDefault();
-        }
-        if ($(this).val() < 0 || $(this).val() > 10) {
-
-        }
-    });
 
     $("#check").click(function () {
         Tinh_Diem()
@@ -397,7 +399,7 @@ function Tinh_Diem() {
                 '7220204',
                 'Ngôn ngữ Trung Quốc',
                 `${d01hs2nn.toFixed(2)}`,
-                'Văn, Toán, Ngoại Ngữ (D01-D06, DD2)',
+                `Văn, Toán, Ngoại Ngữ <br> (D01-D06, DD2)`,
                 'Môn Ngoại ngữ hệ số 2'
             ],
             [
@@ -405,7 +407,7 @@ function Tinh_Diem() {
                 '7220204',
                 'Ngôn ngữ Trung Quốc',
                 `${d78hs2nn.toFixed(2)}`,
-                'Văn, KHXH, Ngoại Ngữ (D78-D83, DH8)',
+                `Văn, KHXH, Ngoại Ngữ <br> (D78-D83, DH8)`,
                 'Môn Ngoại ngữ hệ số 2'
             ],
 
@@ -415,7 +417,7 @@ function Tinh_Diem() {
                 '7220209',
                 'Ngôn ngữ Nhật',
                 `${d01hs2nn.toFixed(2)}`,
-                'Văn, Toán, Ngoại Ngữ (D01-D06, DD2)',
+                `Văn, Toán, Ngoại Ngữ <br> (D01-D06, DD2)`,
                 'Môn Ngoại ngữ hệ số 2'
             ],
             [
@@ -423,7 +425,7 @@ function Tinh_Diem() {
                 '7220209',
                 'Ngôn ngữ Nhật',
                 `${d78hs2nn.toFixed(2)}`,
-                'Văn, KHXH, Ngoại Ngữ (D78-D83, DH8)',
+                `Văn, KHXH, Ngoại Ngữ <br> (D78-D83, DH8)`,
                 'Môn Ngoại ngữ hệ số 2'
             ],
 
@@ -433,7 +435,7 @@ function Tinh_Diem() {
                 '7220210',
                 'Ngôn ngữ Hàn Quốc',
                 `${d01hs2nn.toFixed(2)}`,
-                'Văn, Toán, Ngoại Ngữ (D01-D06, DD2)',
+                `Văn, Toán, Ngoại Ngữ <br> (D01-D06, DD2)`,
                 'Môn Ngoại ngữ hệ số 2'
             ],
             [
@@ -441,7 +443,7 @@ function Tinh_Diem() {
                 '7220210',
                 'Ngôn ngữ Hàn Quốc',
                 `${d78hs2nn.toFixed(2)}`,
-                'Văn, KHXH, Ngoại Ngữ (D78-D83, DH8)',
+                `Văn, KHXH, Ngoại Ngữ <br> (D78-D83, DH8)`,
                 'Môn Ngoại ngữ hệ số 2'
             ],
 
@@ -501,7 +503,7 @@ function Tinh_Diem() {
                 '7310301',
                 'Xã Hội Học',
                 `${d01.toFixed(2)}`,
-                'Toán, Văn, Ngoại Ngữ (D01-D06, DD2)',
+                `Toán, Văn, Ngoại Ngữ <br> (D01-D06, DD2)`,
                 'Không có môn hệ số 2'
             ],
             [
@@ -509,7 +511,7 @@ function Tinh_Diem() {
                 '7310301',
                 'Xã Hội Học',
                 `${d78.toFixed(2)}`,
-                'Văn, KHXH, Ngoại Ngữ (D78-D83, DH8)',
+                `Văn, KHXH, Ngoại Ngữ <br> (D78-D83, DH8)`,
                 'Không có môn hệ số 2'
             ],
 
@@ -535,7 +537,7 @@ function Tinh_Diem() {
                 '7310620',
                 'Đông Nam Á học',
                 `${d01.toFixed(2)}`,
-                'Toán, Văn, Ngoại Ngữ (D01-D06, DD2)',
+                `Toán, Văn, Ngoại Ngữ <br> (D01-D06, DD2)`,
                 'Không có môn hệ số 2'
             ],
             [
@@ -543,7 +545,7 @@ function Tinh_Diem() {
                 '7310620',
                 'Đông Nam Á học',
                 `${d78.toFixed(2)}`,
-                'Văn, KHXH, Ngoại Ngữ (D78-D83, DH8)',
+                `Văn, KHXH, Ngoại Ngữ <br> (D78-D83, DH8)`,
                 'Không có môn hệ số 2'
             ],
 
@@ -917,7 +919,7 @@ function Tinh_Diem() {
                 '7380107',
                 'Luật Kinh Tế',
                 `${d01.toFixed(2)}`,
-                'Toán, Văn, Ngoại Ngữ (D01, D03, D05, D06)',
+                `Toán, Văn, Ngoại Ngữ <br> (D01, D03, D05, D06)`,
                 'Không có môn hệ số 2'
             ],
 
@@ -1181,7 +1183,7 @@ function Tinh_Diem() {
                 '7760101',
                 'Công Tác Xã Hội',
                 `${d01.toFixed(2)}`,
-                'Toán, Văn, Ngoại Ngữ (D01-D06, DD2)',
+                `Toán, Văn, Ngoại Ngữ <br> (D01-D06, DD2)`,
                 'Không có môn hệ số 2'
             ],
             [
@@ -1189,7 +1191,7 @@ function Tinh_Diem() {
                 '7760101',
                 'Công Tác Xã Hội',
                 `${d78.toFixed(2)}`,
-                'Văn, KHXH, Ngoại Ngữ (D78-D83, DH8)',
+                `Văn, KHXH, Ngoại Ngữ <br> (D78-D83, DH8)`,
                 'Không có môn hệ số 2'
             ],
 
@@ -1267,7 +1269,7 @@ function Tinh_Diem() {
                 '7220204C',
                 'Ngôn ngữ Trung Quốc CLC',
                 `${d01hs2nn.toFixed(2)}`,
-                'Văn, Toán, Ngoại Ngữ (D01-D06, DD2)',
+                `Văn, Toán, Ngoại Ngữ <br> (D01-D06, DD2)`,
                 'Môn Ngoại ngữ hệ số 2'
             ],
             [
@@ -1275,7 +1277,7 @@ function Tinh_Diem() {
                 '7220204C',
                 'Ngôn ngữ Trung Quốc CLC',
                 `${d78hs2nn.toFixed(2)}`,
-                'Văn, KHXH, Ngoại Ngữ (D78-D83, DH8)',
+                `Văn, KHXH, Ngoại Ngữ <br> (D78-D83, DH8)`,
                 'Môn Ngoại ngữ hệ số 2'
             ],
 
@@ -1285,7 +1287,7 @@ function Tinh_Diem() {
                 '7220209C',
                 'Ngôn ngữ Nhật CLC',
                 `${d01hs2nn.toFixed(2)}`,
-                'Văn, Toán, Ngoại Ngữ (D01-D06, DD2)',
+                `Văn, Toán, Ngoại Ngữ <br> (D01-D06, DD2)`,
                 'Môn Ngoại ngữ hệ số 2'
             ],
             [
@@ -1293,7 +1295,7 @@ function Tinh_Diem() {
                 '7220209C',
                 'Ngôn ngữ Nhật CLC',
                 `${d78hs2nn.toFixed(2)}`,
-                'Văn, KHXH, Ngoại Ngữ (D78-D83, DH8)',
+                `Văn, KHXH, Ngoại Ngữ <br> (D78-D83, DH8)`,
                 'Môn Ngoại ngữ hệ số 2'
             ],
 

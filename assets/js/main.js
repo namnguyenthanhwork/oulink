@@ -1,5 +1,5 @@
 $(function () {
-   
+
     "use strict";
     //===== Prealoder
     window.addEventListener("load", () => {
@@ -12,10 +12,10 @@ $(function () {
         var scroll = $(window).scrollTop();
         if (scroll < 20) {
             $(".navbar-area").removeClass("sticky");
-            $(".navbar .navbar-brand img").attr("src", "assets/lib/loader-page/logo-dark.svg");
+            $(".navbar .navbar-brand img").attr("src", "assets/lib/loader-page/ou-logo-light.svg");
         } else {
             $(".navbar-area").addClass("sticky");
-            $(".navbar .navbar-brand img").attr("src", "assets/lib/loader-page/logo.svg");
+            $(".navbar .navbar-brand img").attr("src", "assets/lib/loader-page/ou-logo-scroll.svg");
         }
     });
 
