@@ -165,15 +165,37 @@ renderNews(news);
 /* =============== post group =============== */
 let post = [{
         author: 'Thành Nam',
-        image: 'assets/images/postGr/post-12.jpg',
+        image: 'assets/images/postGr/post-8.png',
         image_hot: 'assets/images/postGr/new.gif',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1457381638011773/',
+        time: '04/04/2022',
+        title: 'Cần chuẩn bị gì trước khi đăng ký xét học bạ online ?'
+    },
+    {
+        author: 'Thành Nam',
+        image: 'assets/images/postGr/post-9.jpg',
+        image_hot: 'assets/images/postGr/new.gif',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1455695938180343/',
+        time: '01/04/2022',
+        title: 'Thông báo đăng ký tuyển sinh học bạ Đại học Chính quy năm 2022'
+    },
+    {
+        author: 'Thành Nam',
+        image: 'assets/images/postGr/post-11.jpg',
+        image_hot: 'assets/images/postGr/new.gif',
+        link: 'https://www.facebook.com/groups/oumembers/posts/1444214249328512/',
+        time: '15/03/2022',
+        title: 'Giới thiệu Ngành - Chuyên ngành đào tạo - Cơ hội việc làm ở Trường ĐH Mở Tp.HCM'
+    },
+    {
+        author: 'Thành Nam',
+        image: 'assets/images/postGr/post-12.jpg',
         link: 'https://www.facebook.com/groups/oumembers/posts/1435431036873500/',
         time: '02/03/2022',
         title: 'Chỉ tiêu tuyển sinh - Học phí năm 2022 - 2023 & Điểm chuẩn các năm'
     }, {
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-13.jpg',
-        image_hot: 'assets/images/postGr/new.gif',
         link: 'https://www.facebook.com/groups/oumembers/posts/1428577757558828/',
         time: '20/02/2022',
         title: 'Công cụ tính điểm xét tuyển (Xét học bạ & xét thi THPT)'
@@ -181,31 +203,9 @@ let post = [{
     {
         author: 'Thành Nam',
         image: 'assets/images/postGr/post-14.jpg',
-        image_hot: 'assets/images/postGr/new.gif',
         link: 'https://www.facebook.com/groups/oumembers/posts/1426346964448574/',
         time: '17/02/2022',
         title: 'Thông tin tuyển sinh Đại học chính quy năm 2022'
-    },
-    {
-        author: 'Thành Nam',
-        image: 'assets/images/postGr/post-15.jpg',
-        link: 'https://www.facebook.com/groups/oumembers/posts/1325308404552431/',
-        time: '16/09/2021',
-        title: 'Thông báo điểm chuẩn trúng tuyển kỳ tuyển sinh ĐHCQ năm 2021'
-    },
-    {
-        author: 'Quang Hà',
-        image: 'assets/images/postGr/post-17.jpg',
-        link: 'https://www.facebook.com/groups/oumembers/posts/1321268808289724/',
-        time: '10/09/2021',
-        title: 'HƯỚNG DẪN Tân sinh viên khóa 2021 sử dụng các tài khoản được cấp và tham gia kiểm tra trình độ đầu vào (Tiếng Anh và Tin học)'
-    },
-    {
-        author: 'Thành Nam',
-        image: 'assets/images/postGr/post-3.jpg',
-        link: 'https://www.facebook.com/groups/oumembers/posts/1312833805799891/',
-        time: '29/08/2021',
-        title: 'THÔNG BÁO VỀ VIỆC TỔ CHỨC KIỂM TRA TRÌNH ĐỘ TIẾNG ANH - TIN HỌC ĐẦU VÀO CHO TÂN SINH VIÊN KHÓA 2021'
     }
 ]
 
