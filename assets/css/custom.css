@@ -31,7 +31,32 @@
         -20px -20px 60px #ffffff;
 }
 
+.button-3d--sky {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: #3a86ff;
+    box-shadow: 0 5px #4433ff;
+}
 
+.button-3d--sky:hover {
+    box-shadow: 0 3px #4433ff;
+    top: 1px;
+}
+
+.button-3d--sky:active {
+    box-shadow: 0 0 #4433ff;
+    top: 5px;
+}
 
 .faculty .blog-content a,
 .club .blog-content a {
