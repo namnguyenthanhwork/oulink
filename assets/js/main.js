@@ -4,6 +4,13 @@ $(function () {
     //===== Prealoder
     window.addEventListener("load", () => {
         document.body.classList.add("loaded");
+        Swal.fire({
+            title: 'Thông báo !',
+            html: '<span class="font-weight-bold">Đã mở đăng ký xét tuyển học bạ 2022</span><br>' +
+                '<p class="text-left mt-15">⌚ Thời gian xét tuyển: Từ 9h 04/04/2022 đến 17h 30/05/2022</p>' +
+                '<p class="text-left">📌 Hình thức xét: online (chỉ nhận hồ sơ khi trúng tuyển)</p>' +
+                '<p class="text-left"> Xem hướng dẫn:</p> <p class="text-left">📌 PT xét học bạ 3 năm THPT: <a href="https://thanhnam.gitbook.io/so-tay-tuyen-sinh-ou/huong-dan-ho-so-tuyen-sinh/huong-dan-dang-ky-xet-tuyen-online/phuong-thuc-xet-hoc-ba-3-nam-thpt" target="_blank">Nhấn vào đây !</a></p><p class="text-left">📌 PT xét học bạ 3 năm có CCNN: <a href="https://thanhnam.gitbook.io/so-tay-tuyen-sinh-ou/huong-dan-ho-so-tuyen-sinh/huong-dan-dang-ky-xet-tuyen-online/phuong-thuc-xet-hoc-ba-3-nam-thpt-co-chung-chi-ngoai-ngu" target="_blank">Nhấn vào đây !</a></p><p class="text-left">📌 PT xét học bạ HSG: <a href="https://thanhnam.gitbook.io/so-tay-tuyen-sinh-ou/huong-dan-ho-so-tuyen-sinh/huong-dan-dang-ky-xet-tuyen-online/phuong-thuc-uu-tien-xet-hoc-sinh-gioi" target="_blank">Nhấn vào đây !</a></p></p>'
+        })
     });
 
     //===== Sticky

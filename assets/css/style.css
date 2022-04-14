@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "OpenSan", sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #6A6972;
@@ -416,6 +416,8 @@ p {
     top: 100%;
     left: 0;
     width: 100%;
+    width: 100%;
+    margin-top: 10px;
     background-color: #fff;
     z-index: 9;
     -webkit-box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
@@ -1657,4 +1659,3 @@ p {
   height: 4px;
   width: 0%;
 }
-
