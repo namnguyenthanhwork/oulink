@@ -497,8 +497,13 @@ label {
 }
 
 @media (max-width:575px) {
-    .df {
+    .single-blog .blog-image img {
         width: 90%;
+        margin: auto;
+        display: block;
+    }
+    
+    .df {
         margin: auto;
     }
 
