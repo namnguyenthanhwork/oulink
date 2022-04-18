@@ -1,3 +1,22 @@
+.tired {
+    position: fixed;
+    z-index: 999999999999;
+    background: #fff;
+    color: #000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.tired span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+}
+
 .section-content {
     list-style-type: disc;
     margin-left: 20px;
@@ -97,7 +116,7 @@
     display: inline-block;
     cursor: pointer;
 
-    margin:0 10px 20px 0;
+    margin: 0 10px 20px 0;
     padding: 10px 30px;
 
     border-radius: 20px;
@@ -502,7 +521,7 @@ label {
         margin: auto;
         display: block;
     }
-    
+
     .df {
         margin: auto;
     }
@@ -510,6 +529,4 @@ label {
     .hc-blog-data {
         width: 90%;
     }
-
-
 }
