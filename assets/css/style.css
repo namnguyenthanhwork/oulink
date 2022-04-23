@@ -1056,9 +1056,9 @@ p {
 
 .about-shape-2 {
   position: absolute;
-  top: 0;
+  top: -100px;
   left: 0;
-  width: 35%;
+  width: 30%;
   height: 100%;
   z-index: -1;
 }

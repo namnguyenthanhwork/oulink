@@ -5,14 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Công cụ tính điểm xét tuyển - Trang sinh viên Đại học Mở Tp.HCM">
-    <meta property="og:image"
-        content="https://scontent.fsgn5-1.fna.fbcdn.net/v/t39.30808-6/273511030_1574476582916868_3419330720757364915_n.png?stp=dst-jpg&_nc_cat=101&ccb=1-5&_nc_sid=8631f5&_nc_ohc=4oswkt4KlRYAX_CrFdE&_nc_ht=scontent.fsgn5-1.fna&oh=00_AT9tRAdcPjNlp07N0Tq8pbj7LJkIo2WmoKyOeq-yBpgcKA&oe=62472AD9">
-    <meta property="og:description" content="Công cụ tính điểm của trường Đại học Mở Tp.HCM">
-    <meta property="og:url" content="https://namnguyenthanhwork.github.io/oulink">
+    <title>Tính điểm kết quả học tập THPT - Sinh viên Đại học Mở Tp.HCM</title>
+    <meta property="og:site_name" content="https://namnguyenthanhwork.github.io/oulink" />
+    <meta property="og:title" content="Tính điểm kết quả học tập THPT" />
+    <meta name="description" content="Tính điểm kết quả học tập THPT 3 năm học bạ" />
+    <meta property="og:description" content="Tính điểm kết quả học tập THPT 3 năm học bạ" />
+    <meta property="og:image" itemprop="thumbnailUrl"
+        content="https://res.cloudinary.com/thanhnam/image/upload/v1647767855/Banner_group_wukvgx.png" />
+    <meta property="og:url" itemprop="url" content="https://namnguyenthanhwork.github.io/oulink" />
+    <meta name="keywords" content="tính điểm, tính điểm học tập, tính điểm học bạ, kết quả học bạ, kết quả học tập, tính điểm ou,
+    tính điểm đh mở, học bạ đh mở, đh mở tphcm, tính điểm đh mở tphcm, kết quả đh mở, xét tuyển đh mở, tuyển sinh đh mở, tính điểm học tập,
+    sinh viên mở, đại học mở, sinh viên đh mở, group sinh viên đh mở" />
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="author" content="Nguyễn Thành Nam" />
-    <title>Công cụ tính điểm xét tuyển - Sinh viên Đại học Mở Tp.HCM</title>
+    <meta name="copyright" content="Thành Nam Nguyễn" />
+    <meta name="author" content="Thành Nam Nguyễn" />
 
     <!--====== Favicon Icon ======-->
     <link rel="icon" type="image/png" sizes="250x250" href="assets/images/home&favico/ou-logo.png">
@@ -32,9 +38,6 @@
     <!-- ====== Fontawesome CDN Link ====== -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 
-    <!--====== Font Awesome CSS ======-->
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-
     <!--====== Bootstrap CSS ======-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
@@ -44,6 +47,7 @@
     <!--====== Style CSS ======-->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/countdown.css">
 
     <!-- Lib -->
     <link rel="stylesheet" href="assets/lib/cursor/cursor.css">
@@ -51,9 +55,6 @@
 </head>
 
 <body>
-    <!-- .... -->
-    <!-- <div class="tired"><span>😥</span></div> -->
-
     <!--====== PRELOADER PART START ======-->
     <div id="loader-wrapper">
         <div id="loader"></div>
@@ -159,8 +160,84 @@
     </header>
     <!--====== HEADER PART ENDS ======-->
 
+    <!-- CLOCK START -->
+    <section class="blog-area position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 quote-container">
+                    <h4 class="title-quote text-center">Đếm ngược ngày thi tốt nghiệp THPTQG 2022</h4>
+                    <h6 class="quote-area">
+                        <span id="quote"></span>
+                    </h6>
+                    <p class="date text-center mt-20">Ngày thi: 07/07/2022</p>
+                    <div class="countdown">
+                        <div class="countdown-block">
+                            <span class="days time-elem">
+                                <span class="top">00</span>
+                                <span class="top-back">
+                                    <span>00</span>
+                                </span>
+                                <span class="bottom">00</span>
+                                <span class="bottom-back">
+                                    <span>00</span>
+                                </span>
+                            </span>
+                            <span class="title">Ngày</span>
+                        </div>
+
+                        <div class="countdown-block">
+                            <span class="hours time-elem">
+                                <span class="top">00</span>
+                                <span class="top-back">
+                                    <span>00</span>
+                                </span>
+                                <span class="bottom">00</span>
+                                <span class="bottom-back">
+                                    <span>00</span>
+                                </span>
+                            </span>
+                            <span class="title">Giờ</span>
+                        </div>
+
+                        <div class="countdown-block">
+                            <span class="minutes time-elem">
+                                <span class="top">00</span>
+                                <span class="top-back">
+                                    <span>00</span>
+                                </span>
+                                <span class="bottom">00</span>
+                                <span class="bottom-back">
+                                    <span>00</span>
+                                </span>
+                            </span>
+                            <span class="title">Phút</span>
+                        </div>
+
+                        <div class="countdown-block">
+                            <span class="seconds time-elem">
+                                <span class="top">00</span>
+                                <span class="top-back">
+                                    <span>00</span>
+                                </span>
+                                <span class="bottom">00</span>
+                                <span class="bottom-back">
+                                    <span>00</span>
+                                </span>
+                            </span>
+                            <span class="title">Giây</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-shape-2">
+            <img src="assets/images/about-shape-2.svg" alt="shape" />
+        </div>
+    </section>
+    <!-- CLOCK END -->
+
     <!--====== GROUP PART START ======-->
-    <section class="blog-area">
+    <section class="blog-area position-relative">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -543,6 +620,9 @@
 
                     </div>
                 </div>
+                <div class="about-shape-1">
+                    <img src="assets/images/about-shape-1.svg" alt="shape" />
+                </div>
     </section>
     <!--====== GROUP PART ENDS ======-->
 
@@ -698,8 +778,12 @@
     <!--====== Particles js ======-->
     <script src="assets/lib/particles.min.js"></script>
 
+    <!-- Gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
     <!--====== Main js ======-->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/countdown.js"></script>
     <script src="assets/lib/database/datatables.min.js"></script>
     <script src="assets/js/grade/grade-table.js"></script>
     <script src="assets/lib/cursor/cursor.js"></script>
