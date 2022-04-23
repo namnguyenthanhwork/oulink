@@ -11,7 +11,7 @@ $(function () {
                 '<p class="text-left"><b>📌 Hình thức xét:</b> online (chỉ nhận hồ sơ khi trúng tuyển)</p>' +
                 '<p class="text-left"><b>Xem hướng dẫn:</p> <p class="text-left">📌 PT xét học bạ 3 năm THPT: <a href="https://thanhnam.gitbook.io/so-tay-tuyen-sinh-ou/huong-dan-ho-so-tuyen-sinh/huong-dan-dang-ky-xet-tuyen-online/phuong-thuc-xet-hoc-ba-3-nam-thpt" target="_blank">Nhấn vào đây !</a></p><p class="text-left">📌 PT xét học bạ 3 năm có CCNN: <a href="https://thanhnam.gitbook.io/so-tay-tuyen-sinh-ou/huong-dan-ho-so-tuyen-sinh/huong-dan-dang-ky-xet-tuyen-online/phuong-thuc-xet-hoc-ba-3-nam-thpt-co-chung-chi-ngoai-ngu" target="_blank">Nhấn vào đây !</a></p><p class="text-left">📌 PT xét học bạ HSG: <a href="https://thanhnam.gitbook.io/so-tay-tuyen-sinh-ou/huong-dan-ho-so-tuyen-sinh/huong-dan-dang-ky-xet-tuyen-online/phuong-thuc-uu-tien-xet-hoc-sinh-gioi" target="_blank">Nhấn vào đây !</a></p></p>'
         })
-    });
+    }); 
 
     //===== Sticky
 
