@@ -173,14 +173,14 @@ function Tinh_Diem() {
             icon: 'error',
             title: 'Tính điểm thất bại !',
             text: 'Không nhập điểm lấy gì mà tính 🤬🤬🤬',
-            footer: '<a href="https://www.facebook.com/groups/oumembers" target="_blank" class="text-center">Vào group <span class="text-danger">"Sinh Viên Đại Học Mở TP.HCM- HCMCOU"</span> để biết nhiều thông tin hơn. Nhấn vào đây!</a>'
+            footer: '<a href="https://www.facebook.com/groups/ou.community" target="_blank" class="text-center">Vào group <span class="text-danger">"Cộng đồng Sinh viên Đại học Mở Tp.HCM - HCMCOU"</span> để biết nhiều thông tin hơn. Nhấn vào đây!</a>'
         })
     } else {
         Swal.fire({
             icon: 'success',
             title: 'Tính điểm thành công !',
             text: 'Lưu ý: có thay đổi điểm thì ấn tính điểm lại nhé 🥰🥰🥰',
-            footer: '<a href="https://www.facebook.com/groups/oumembers" target="_blank" class="text-center">Vào group <span class="text-danger">"Sinh Viên Đại Học Mở TP.HCM- HCMCOU"</span> để biết nhiều thông tin hơn. Nhấn vào đây!</a>'
+            footer: '<a href="https://www.facebook.com/groups/ou.community" target="_blank" class="text-center">Vào group <span class="text-danger">"Cộng đồng Sinh viên Đại học Mở Tp.HCM - HCMCOU"</span> để biết nhiều thông tin hơn. Nhấn vào đây!</a>'
         })
 
         // lưu vào local storage

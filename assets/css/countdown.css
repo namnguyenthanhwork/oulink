@@ -188,6 +188,10 @@ h4.title-quote {
 }
 
 @media only screen and (max-width: 768px) {
+    h4.title-quote {
+        margin: 0 0 20px;
+    }
+
     .quote-container {
         margin-bottom: 0px;
     }
