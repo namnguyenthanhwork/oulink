@@ -8,7 +8,8 @@ Website sinh viên Đại học Mở Tp.HCM
 - Framework: không sử dụng
 - Library: `Datatable`, `Gsap`, `Jquery`, `Slick Carousel`, `Sweet Alert 2`
 - Database: không sử dụng
-- Nền tảng deploy: `Github page` kết hợp với `Gitbook`
+- Plugin: `messenger - chatbot`, `Gitbook`
+- Nền tảng deploy: `Github page`
 - IDE, Công cụ: `Vscode`, `Git/GitHub`
 
 # Chức năng
@@ -17,12 +18,11 @@ Website sinh viên Đại học Mở Tp.HCM
 - Countdown - đếm ngược ngày thi
 - Thông tin danh sách khoa - ngành
 - Thông tin điểm học bạ - thi qua từng năm
-- Bài viết trong group `Sinh viên Đại học Mở - OUHCMC`
 - Câu lạc bộ
 - Tính điểm xét tuyển 3 năm THPT
 
 # Giao diện trang web
 
-![config](https://res.cloudinary.com/thanhnam/image/upload/v1647767855/Banner_group_wukvgx.png)
+![config](https://res.cloudinary.com/thanhnam/image/upload/v1652323261/background-banner/homepage_jplor3.png)
 
-# Link website: [Sinh viên Đại học Mở Tp.HCM](https://namnguyenthanhwork.github.io/sinh-vien-dai-hoc-mo-tphcm)
+# Link website: [Trang Sinh viên Đại học Mở Tp.HCM](https://namnguyenthanhwork.github.io/oulink)
