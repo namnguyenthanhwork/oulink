@@ -1,4 +1,4 @@
-.tired {
+.alert-url {
     position: fixed;
     z-index: 999999999999;
     background: #fff;
@@ -9,12 +9,14 @@
     bottom: 0;
 }
 
-.tired span {
+.alert-url .content-alert {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 50px;
+    font-size: 18px;
+    text-align: justify;
+    font-weight: bold;
 }
 
 .section-content {
